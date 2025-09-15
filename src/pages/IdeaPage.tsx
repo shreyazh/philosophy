@@ -11,7 +11,7 @@ export function IdeaPage() {
 
   if (!idea) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center max-w-7xl mx-auto w-full">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-gray-800 mb-4">Idea Not Found</h1>
           <Link to="/ideas" className="text-blue-600 hover:text-blue-800">Return to Ideas</Link>
@@ -25,7 +25,7 @@ export function IdeaPage() {
   const relatedIdeas = ideasData.filter(i => idea.relatedIdeas.includes(i.id));
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 max-w-6xl mx-auto w-full">
       <div className="container mx-auto px-6 py-8">
         <Link 
           to="/ideas" 
