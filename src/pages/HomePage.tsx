@@ -48,13 +48,13 @@ export function HomePage() {
         />
 
         <div className="mb-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-2 max-w-7xl mx-auto w-full">
+          <h2 className="text-2xl font-bold text-gray-800 mb-2 max-w-6xl mx-auto w-full">
             {selectedTimelinePeriod 
               ? `${philosophyData.find(p => p.id === selectedTimelinePeriod)?.name} Schools`
               : 'All Philosophical Schools'
             }
           </h2>
-          <p className="text-gray-600 max-w-7xl mx-auto w-full">
+          <p className="text-gray-600 max-w-6xl mx-auto w-full">
             {filteredSchools.length} {filteredSchools.length === 1 ? 'school' : 'schools'} found
           </p>
         </div>
