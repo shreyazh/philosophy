@@ -1,217 +1,191 @@
-import React from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Users, Lightbulb, BookOpen, ExternalLink, Clock, MapPin, Target, TrendingUp } from 'lucide-react';
-import { allSchools } from '../data/philosophyData';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Users, Search, Filter, User } from 'lucide-react';
 import { philosophersData } from '../data/philosophersData';
-import { ideasData } from '../data/ideasData';
 
-export function SchoolPage() {
-  const { id } = useParams<{ id: string }>();
-  const school = allSchools.find(s => s.id === id);
+export function PhilosophersListPage() {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedNationality, setSelectedNationality] = useState('All');
+  const [selectedCentury, setSelectedCentury] = useState('All');
 
-  if (!school) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center max-w-6 xl mx-auto w-full">
-        <div className="text-center">
-          <h1 className="text-2xl font-bold text-gray-800 mb-4">School Not Found</h1>
-          <Link to="/" className="text-blue-600 hover:text-blue-800">Return to Home</Link>
-        </div>
-      </div>
-    );
-  }
+  const nationalities = ['All', ...Array.from(new Set(philosophersData.map(p => p.nationality))).sort()];
+  const centuries = ['All', 'Ancient', 'Medieval', 'Renaissance', 'Modern', 'Contemporary'];
 
-  const schoolPhilosophers = philosophersData.filter(p => p.schools.includes(school.id));
-  const schoolIdeas = ideasData.filter(i => i.originSchool === school.id);
-  const relatedSchools = allSchools.filter(s => school.relatedSchools.includes(s.id));
+  const filteredPhilosophers = philosophersData.filter(philosopher => {
+    const matchesSearch = searchTerm === '' || 
+      philosopher.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      philosopher.biography.toLowerCase().includes(searchTerm.toLowerCase());
+
+    const matchesNationality = selectedNationality === 'All' || 
+      philosopher.nationality === selectedNationality;
+
+    // Helper to extract century from years string
+    function getCentury(years: string): string | null {
+      // Match BCE years like "384–322 BCE"
+      const bceMatch = years.match(/(\d+)[–-](\d+)\s*BCE/);
+      if (bceMatch) {
+        // Use the later year (the smaller number) for BCE
+        const year = parseInt(bceMatch[2], 10);
+        const century = Math.ceil(year / 100);
+        return `${century} BCE`;
+      }
+      // Match CE years like "1724–1804"
+      const ceMatch = years.match(/(\d{3,4})[–-](\d{3,4})/);
+      if (ceMatch) {
+        // Use the earlier year for CE
+        const year = parseInt(ceMatch[1], 10);
+        const century = Math.ceil(year / 100);
+        return `${century}`;
+      }
+      // Match single BCE year
+      const singleBce = years.match(/(\d+)\s*BCE/);
+      if (singleBce) {
+        const year = parseInt(singleBce[1], 10);
+        const century = Math.ceil(year / 100);
+        return `${century} BCE`;
+      }
+      // Match single CE year
+      const singleCe = years.match(/(\d{3,4})/);
+      if (singleCe) {
+        const year = parseInt(singleCe[1], 10);
+        const century = Math.ceil(year / 100);
+        return `${century}`;
+      }
+      return null;
+    }
+
+    const philosopherCentury = getCentury(philosopher.years);
+
+    const matchesCentury =
+      selectedCentury === 'All' ||
+      (selectedCentury === 'Ancient' && philosopherCentury && philosopherCentury.includes('BCE')) ||
+      (selectedCentury === 'Medieval' && philosopherCentury && !philosopherCentury.includes('BCE') && ['5','6','7','8','9','10','11','12','13','14','15'].includes(philosopherCentury)) ||
+      (selectedCentury === 'Renaissance' && philosopherCentury && !philosopherCentury.includes('BCE') && ['15','16'].includes(philosopherCentury)) ||
+      (selectedCentury === 'Modern' && philosopherCentury && !philosopherCentury.includes('BCE') && ['17','18','19'].includes(philosopherCentury)) ||
+      (selectedCentury === 'Contemporary' && philosopherCentury && !philosopherCentury.includes('BCE') && ['20','21'].includes(philosopherCentury));
+
+    return matchesSearch && matchesNationality && matchesCentury;
+  });
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 max-w-6xl mx-auto w-full">
       <div className="container mx-auto px-6 py-8">
-        <Link 
-          to="/" 
-          className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-6 transition-colors"
-        >
-          <ArrowLeft size={20} />
-          Back to Timeline
-        </Link>
-
         {/* Header */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
-          <div className="flex items-start gap-6">
-            <div 
-              className="w-16 h-16 rounded-lg flex-shrink-0"
-              style={{ backgroundColor: school.color }}
-            ></div>
-            <div className="flex-1">
-              <h1 className="text-4xl font-bold text-gray-800 mb-4">{school.name}</h1>
-              <div className="flex flex-wrap gap-6 text-gray-600 mb-4">
-                <div className="flex items-center gap-2">
-                  <Clock size={18} />
-                  <span>{school.years}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <MapPin size={18} />
-                  <span>{school.region}</span>
-                </div>
-              </div>
-              <p className="text-lg text-gray-700 leading-relaxed">{school.detailedDescription}</p>
+        <div className="text-center mb-8">
+          <div className="flex justify-center items-center gap-3 mb-4">
+            <Users size={48} className="text-blue-600" />
+          </div>
+          <h1 className="text-4xl font-bold text-gray-800 mb-4">Philosophers</h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Explore the great minds that shaped human thought throughout history
+          </p>
+        </div>
+
+        {/* Search and Filter */}
+        <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
+          <div className="flex items-center gap-2 mb-4">
+            <Filter size={20} className="text-gray-600" />
+            <h2 className="text-lg font-semibold text-gray-800">Search & Filter</h2>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-4">
+            <div className="relative">
+              <Search size={20} className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+              <input
+                type="text"
+                placeholder="Search philosophers..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              />
             </div>
+
+            <select
+              value={selectedNationality}
+              onChange={(e) => setSelectedNationality(e.target.value)}
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            >
+              {nationalities.map(nationality => (
+                <option key={nationality} value={nationality}>{nationality}</option>
+              ))}
+            </select>
+
+            <select
+              value={selectedCentury}
+              onChange={(e) => setSelectedCentury(e.target.value)}
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            >
+              {centuries.map(century => (
+                <option key={century} value={century}>{century}</option>
+              ))}
+            </select>
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
-          {/* Main Content */}
-          <div className="lg:col-span-2 space-y-8">
-            {/* Key Ideas */}
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <div className="flex items-center gap-2 mb-4">
-                <Lightbulb className="text-yellow-600" size={24} />
-                <h2 className="text-2xl font-bold text-gray-800">Key Ideas</h2>
-              </div>
-              <div className="grid md:grid-cols-2 gap-4">
-                {school.keyIdeas.map((idea, index) => (
-                  <div key={index} className="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
-                    <span className="font-medium text-gray-800">{idea}</span>
+        {/* Results */}
+        <div className="mb-6">
+          <p className="text-gray-600">
+            {filteredPhilosophers.length} {filteredPhilosophers.length === 1 ? 'philosopher' : 'philosophers'} found
+          </p>
+        </div>
+
+        {/* Philosophers Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredPhilosophers.map((philosopher) => (
+            <Link
+              key={philosopher.id}
+              to={`/philosopher/${philosopher.id}`}
+              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
+            >
+              <div className="p-6">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                    <User size={24} className="text-white" />
                   </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Major Thinkers */}
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <div className="flex items-center gap-2 mb-4">
-                <Users className="text-blue-600" size={24} />
-                <h2 className="text-2xl font-bold text-gray-800">Major Thinkers</h2>
-              </div>
-              <div className="grid md:grid-cols-2 gap-4">
-                {schoolPhilosophers.map((philosopher) => (
-                  <Link
-                    key={philosopher.id}
-                    to={`/philosopher/${philosopher.id}`}
-                    className="p-4 bg-gray-50 rounded-lg hover:bg-blue-50 hover:border-blue-200 border border-transparent transition-all duration-200"
-                  >
-                    <h3 className="font-semibold text-gray-800 mb-1">{philosopher.name}</h3>
-                    <p className="text-sm text-gray-600">{philosopher.years}</p>
-                    <p className="text-sm text-gray-700 mt-2 line-clamp-2">{philosopher.biography}</p>
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-            {/* Influences and Challenges */}
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-xl shadow-lg p-6">
-                <div className="flex items-center gap-2 mb-4">
-                  <TrendingUp className="text-green-600" size={24} />
-                  <h2 className="text-xl font-bold text-gray-800">Influences</h2>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-800">{philosopher.name}</h3>
+                    <p className="text-sm text-gray-600">{philosopher.years} • {philosopher.nationality}</p>
+                  </div>
                 </div>
-                <ul className="space-y-2">
-                  {school.influences.map((influence, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <span className="text-green-600 mt-1">•</span>
-                      <span className="text-gray-700">{influence}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="bg-white rounded-xl shadow-lg p-6">
-                <div className="flex items-center gap-2 mb-4">
-                  <Target className="text-red-600" size={24} />
-                  <h2 className="text-xl font-bold text-gray-800">Challenged</h2>
-                </div>
-                <ul className="space-y-2">
-                  {school.challenged.map((challenge, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <span className="text-red-600 mt-1">•</span>
-                      <span className="text-gray-700">{challenge}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            {/* Legacy */}
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">Legacy & Impact</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">{school.legacy}</p>
-              <div className="space-y-2">
-                <h3 className="font-semibold text-gray-800">Key Developments:</h3>
-                <ul className="grid md:grid-cols-2 gap-2">
-                  {school.developments.map((development, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <span className="text-blue-600 mt-1">•</span>
-                      <span className="text-gray-700">{development}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Sidebar */}
-          <div className="space-y-6">
-            {/* Related Schools */}
-            {relatedSchools.length > 0 && (
-              <div className="bg-white rounded-xl shadow-lg p-6">
-                <h3 className="text-lg font-bold text-gray-800 mb-4">Related Schools</h3>
-                <div className="space-y-3">
-                  {relatedSchools.map((relatedSchool) => (
-                    <Link
-                      key={relatedSchool.id}
-                      to={`/school/${relatedSchool.id}`}
-                      className="block p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-                    >
-                      <div className="flex items-center gap-3">
-                        <div 
-                          className="w-4 h-4 rounded-full"
-                          style={{ backgroundColor: relatedSchool.color }}
-                        ></div>
-                        <span className="font-medium text-gray-800">{relatedSchool.name}</span>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* Key Texts */}
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <div className="flex items-center gap-2 mb-4">
-                <BookOpen className="text-purple-600" size={20} />
-                <h3 className="text-lg font-bold text-gray-800">Key Texts</h3>
-              </div>
-              <ul className="space-y-2">
-                {school.keyTexts.map((text, index) => (
-                  <li key={index} className="text-gray-700 text-sm">{text}</li>
-                ))}
-              </ul>
-            </div>
-
-            {/* External Links */}
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <div className="flex items-center gap-2 mb-4">
-                <ExternalLink className="text-blue-600" size={20} />
-                <h3 className="text-lg font-bold text-gray-800">Learn More</h3>
-              </div>
-              <div className="space-y-3">
-                {school.externalLinks.map((link, index) => (
-                  <a
-                    key={index}
-                    href={link.url}
-                    className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-blue-50 transition-colors group"
-                  >
-                    <ExternalLink size={16} className="text-gray-400 group-hover:text-blue-600" />
-                    <div>
-                      <div className="font-medium text-gray-800 group-hover:text-blue-800">{link.title}</div>
-                      <div className="text-xs text-gray-500 capitalize">{link.type}</div>
+                
+                <p className="text-gray-700 mb-4 line-clamp-3">{philosopher.biography}</p>
+                
+                {philosopher.keyWorks && philosopher.keyWorks.length > 0 && (
+                  <div className="mb-4">
+                    <h4 className="font-semibold text-gray-800 mb-2">Key Works:</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {philosopher.keyWorks.slice(0, 2).map((work, index) => (
+                        <span key={index} className="px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs">
+                          {work}
+                        </span>
+                      ))}
+                      {philosopher.keyWorks.length > 2 && (
+                        <span className="px-2 py-1 bg-gray-100 text-gray-600 rounded text-xs">
+                          +{philosopher.keyWorks.length - 2} more
+                        </span>
+                      )}
                     </div>
-                  </a>
-                ))}
+                  </div>
+                )}
+
+                <div className="flex flex-wrap gap-2">
+                  {philosopher.keyIdeas.slice(0, 3).map((idea, index) => (
+                    <span key={index} className="px-2 py-1 bg-yellow-100 text-yellow-800 rounded text-xs">
+                      {idea.replace(/-/g, ' ')}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
-          </div>
+            </Link>
+          ))}
         </div>
+
+        {filteredPhilosophers.length === 0 && (
+          <div className="text-center py-12">
+            <p className="text-gray-500 text-lg">No philosophers match your current filters.</p>
+            <p className="text-gray-400 mt-2">Try adjusting your search terms or filters.</p>
+          </div>
+        )}
       </div>
     </div>
   );
