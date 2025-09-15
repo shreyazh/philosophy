@@ -17,7 +17,7 @@ export function Timeline({ periods, selectedPeriod, onPeriodSelect }: TimelinePr
   };
 
   return (
-    <div className="w-full bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl shadow-xl p-4 sm:p-6 lg:p-8 mb-8 sm:mb-12 overflow-hidden mx-4 sm:mx-0">
+    <div className="w-full max-w-4xl mx-auto bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl shadow-xl p-4 sm:p-6 lg:p-8 mb-8 sm:mb-12 overflow-hidden">
       {/* Header */}
       <div className="text-center mb-6 sm:mb-8 lg:mb-10">
         <div className="flex items-center justify-center gap-3 mb-4">
@@ -33,7 +33,7 @@ export function Timeline({ periods, selectedPeriod, onPeriodSelect }: TimelinePr
       </div>
 
       {/* Navigation Bar */}
-{/*       <div className="flex gap-2 sm:gap-3 justify-center flex-wrap mb-6 sm:mb-8 px-2">
+      {/* <div className="flex gap-2 sm:gap-3 justify-center flex-wrap mb-6 sm:mb-8 px-2">
         {periods.map((p) => (
           <button
             key={p.id}
