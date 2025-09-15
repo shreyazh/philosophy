@@ -1,3 +1,4 @@
+import { Github } from "lucide-react";
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navigation } from './components/Navigation';
@@ -34,7 +35,19 @@ function App() {
               A comprehensive guide to the history of philosophical thought
             </p>
             <p className="text-gray-400 text-sm mt-2">
-              Exploring wisdom across cultures and centuries
+             export default function GithubStarButton() {
+                return (
+                  <a
+                    href="https://github.com/shreyazh/philosophy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-2xl bg-gray-900 px-4 py-2 text-white shadow-md hover:bg-gray-800 transition"
+                  >
+                    <Github size={18} />
+                    ⭐ Star us on GitHub
+                  </a>
+                );
+              }
             </p>
           </div>
         </footer>
