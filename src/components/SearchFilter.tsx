@@ -22,7 +22,7 @@ export function SearchFilter({
   const periods = ['All Periods', 'Ancient', 'Medieval', 'Renaissance', 'Enlightenment', '19th Century', 'Contemporary'];
 
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
+    <div className="bg-white rounded-lg shadow-lg p-6 mb-8 max-w-6xl mx-auto w-full">
       <div className="flex items-center gap-2 mb-4">
         <Filter size={20} className="text-gray-600" />
         <h2 className="text-lg font-semibold text-gray-800">Search & Filter</h2>
