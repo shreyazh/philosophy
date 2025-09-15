@@ -33,7 +33,7 @@ export function Timeline({ periods, selectedPeriod, onPeriodSelect }: TimelinePr
       </div>
 
       {/* Navigation Bar */}
-      <div className="flex gap-2 sm:gap-3 justify-center flex-wrap mb-6 sm:mb-8 px-2">
+{/*       <div className="flex gap-2 sm:gap-3 justify-center flex-wrap mb-6 sm:mb-8 px-2">
         {periods.map((p) => (
           <button
             key={p.id}
@@ -47,7 +47,7 @@ export function Timeline({ periods, selectedPeriod, onPeriodSelect }: TimelinePr
             {p.name}
           </button>
         ))}
-      </div>
+      </div> */}
 
       {/* Timeline */}
       <div className="relative max-w-6xl mx-auto px-2 sm:px-4">
