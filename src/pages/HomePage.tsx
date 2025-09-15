@@ -54,7 +54,7 @@ export function HomePage() {
               : 'All Philosophical Schools'
             }
           </h2>
-          <p className="text-gray-600 max-w-6xl mx-auto w-full">
+          <p className="text-gray-600 max-w-7xl mx-auto w-full">
             {filteredSchools.length} {filteredSchools.length === 1 ? 'school' : 'schools'} found
           </p>
         </div>
