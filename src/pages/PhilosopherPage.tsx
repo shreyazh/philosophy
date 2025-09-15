@@ -11,7 +11,7 @@ export function PhilosopherPage() {
 
   if (!philosopher) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center max-w-6xl mx-auto w-full">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-gray-800 mb-4">Philosopher Not Found</h1>
           <Link to="/philosophers" className="text-blue-600 hover:text-blue-800">Return to Philosophers</Link>
