@@ -20,7 +20,7 @@ export function ChallengesListPage() {
   });
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 max-w-6xl mx-auto w-full">
       <div className="container mx-auto px-6 py-8">
         {/* Header */}
         <div className="text-center mb-8">
@@ -29,7 +29,7 @@ export function ChallengesListPage() {
           </div>
           <h1 className="text-4xl font-bold text-gray-800 mb-4">Philosophical Challenges</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore the great debates and intellectual conflicts that advanced philosophical thought
+            Explore the great debates and intellectual conflicts that advanced philosophy
           </p>
         </div>
 
