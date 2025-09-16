@@ -4,15 +4,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'rationalism-vs-empiricism',
     name: 'Rationalism vs Empiricism',
-    description:
-      'Early modern philosophers argued over the primary source of knowledge: rationalists (e.g., Descartes, Spinoza, Leibniz) emphasized a priori reasoning and innate ideas, while empiricists (e.g., Locke, Berkeley, Hume) insisted that all ideas originate in sensory experience. The debate shaped questions about the reliability of perception, the possibility of certainty, and the limits of human understanding.',
+    description: `The fundamental debate about whether knowledge comes primarily from reason and innate ideas (rationalism) or from sensory experience (empiricism). Rationalists such as Descartes, Leibniz, and Spinoza argued that knowledge of metaphysical truths, mathematical certainty, and logical necessity can be accessed by reason alone, independent of experience. Empiricists such as Locke, Berkeley, and Hume contended that the mind begins as a blank slate (tabula rasa) and all knowledge derives from sense impressions. The dispute concerns the origin of concepts, the reliability of perception, and the scope of human understanding.`,
     challenger: 'British Empiricism',
     challenged: 'Continental Rationalism',
     period: 'Early Modern',
-    outcome:
-      'Kant’s Critical Philosophy synthesized the debate by distinguishing a priori forms of sensibility and understanding from empirical content, arguing for synthetic a priori knowledge and the phenomena/noumena distinction in the Critique of Pure Reason.',
-    significance:
-      'This debate set the agenda for modern epistemology, influenced the scientific method’s balance of theory and observation, and framed later discussions of analytic/synthetic, a priori/a posteriori, and concept acquisition.',
+    outcome: `Kant’s synthesis in Critical Philosophy: Immanuel Kant proposed that while all knowledge begins with experience, the mind provides innate forms (space, time) and categories (causality, substance) that structure experience. This preserved empiricism’s emphasis on sensory input while retaining rationalism’s insistence on necessity and universality. Kant reframed the debate as transcendental idealism, marking a turning point in epistemology.`,
+    significance: `This debate shaped modern epistemology and the foundations of the scientific method. It clarified how observation and reasoning complement one another in forming knowledge. It also influenced skepticism, philosophy of mind, and cognitive science by probing the limits of perception and the mind’s role in constructing reality. The rationalism-empiricism tension continues to inform debates about innate cognition, artificial intelligence, and the reliability of empirical science.`,
     externalLinks: [
       { title: 'Rationalism vs. Empiricism (SEP)', url: 'https://plato.stanford.edu/entries/rationalism-empiricism/', type: 'encyclopedia' },
       { title: 'Immanuel Kant (IEP) – overview of transcendental idealism', url: 'https://iep.utm.edu/kantview/', type: 'encyclopedia' },
@@ -22,15 +19,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'faith-vs-reason',
     name: 'Faith vs Reason',
-    description:
-      'Medieval and early modern thinkers asked whether revealed faith and philosophical reason conflict or complement each other. Figures like Augustine and Aquinas argued that reason can clarify and defend truths of faith, while others emphasized the distinct domains and limits of each.',
+    description: `The medieval debate about the relationship between religious faith and philosophical reason. Thinkers such as Augustine, Anselm, and Aquinas asked whether belief in God and Christian doctrine required faith alone, or whether reason and philosophy could demonstrate religious truths. Scholastic philosophers attempted to integrate Aristotelian logic into theology, while others held that faith must be kept separate or above reason. The tension influenced church authority, methods of education, and the intellectual climate of medieval Europe.`,
     challenger: 'Scholastic Philosophy',
     challenged: 'Pure Faith Traditions',
     period: 'Medieval',
-    outcome:
-      'Thomistic synthesis: Aquinas held that certain truths are knowable by reason (e.g., God’s existence via natural theology) while mysteries of faith exceed reason yet are not irrational, establishing a durable model of harmony and hierarchy between the two.',
-    significance:
-      'Provided a conceptual framework for philosophy of religion, natural theology, and later debates about secular reason and the autonomy of science vis-à-vis theology.',
+    outcome: `Thomas Aquinas provided a synthesis by arguing that reason can demonstrate some truths (e.g., God’s existence) but that faith is necessary for mysteries beyond human comprehension. His Thomistic philosophy influenced Catholic theology and preserved the value of both domains, shaping scholastic method and theological argumentation.`,
+    significance: `This debate set the groundwork for religious philosophy, affecting how theology interacts with philosophy. It influenced later disputes in the Enlightenment between secular rationalism and faith traditions, and remains relevant in modern debates about the compatibility of science, philosophy, and religion. The framework developed in scholasticism continues to shape Catholic education and natural theology.`,
     externalLinks: [
       { title: 'Faith (SEP)', url: 'https://plato.stanford.edu/entries/faith/', type: 'encyclopedia' },
       { title: 'Thomas Aquinas (SEP)', url: 'https://plato.stanford.edu/entries/aquinas/', type: 'encyclopedia' },
@@ -40,15 +34,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'determinism-vs-free-will',
     name: 'Determinism vs Free Will',
-    description:
-      'Are human actions determined by prior causes and the laws of nature, or do agents possess genuine freedom? Philosophers distinguish hard determinism, libertarianism, and compatibilism, while contemporary discussion engages neuroscience, psychology, and moral responsibility.',
+    description: `The philosophical question of whether human actions are determined by prior causes or whether genuine freedom of choice exists. Determinism claims that all events follow necessarily from antecedent conditions, grounded in natural laws, divine foreknowledge, or causal chains. Free will advocates argue that moral responsibility requires the ability to choose otherwise. The debate includes positions such as hard determinism (denying free will), libertarianism (affirming undetermined freedom), and compatibilism (reconciling causal determination with meaningful agency).`,
     challenger: 'Scientific Determinism',
     challenged: 'Moral Responsibility',
     period: 'Modern to Contemporary',
-    outcome:
-      'No final resolution; influential compatibilist accounts reconcile causal determination with responsibility, while libertarians defend indeterministic or agent-causal models. Empirical findings inform but do not settle the normative questions.',
-    significance:
-      'Foundational for ethics, criminal law, and self-understanding, shaping doctrines of blame, punishment, and autonomy across the sciences and humanities.',
+    outcome: `The debate remains unresolved but has yielded nuanced theories. Compatibilists like Hume and modern philosophers argue that freedom can be defined as acting according to one’s desires without coercion. Others, influenced by neuroscience, argue that brain activity undermines free choice. Libertarians and existentialists affirm authentic freedom. No consensus exists, but sophisticated models of freedom and causation enrich philosophy, ethics, and psychology.`,
+    significance: `The issue affects ethics, law, and personal identity. If determinism holds, the basis for moral responsibility and punishment is challenged. If freedom exists, metaphysical questions about causality arise. The discussion continues to shape debates in neuroscience, criminal law, and theology, making it one of the most enduring problems in philosophy.`,
     externalLinks: [
       { title: 'Free Will (SEP)', url: 'https://plato.stanford.edu/entries/freewill/', type: 'encyclopedia' },
       { title: 'Determinism (Britannica)', url: 'https://www.britannica.com/topic/determinism', type: 'encyclopedia' },
@@ -58,15 +49,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'vedanta-vs-buddhism',
     name: 'Vedānta vs Buddhism',
-    description:
-      'Indian philosophical debates contrasted Buddhist anātman (no enduring self) with Vedāntic affirmations of ātman/Brahman. Disputes ranged over the nature of consciousness, self, liberation, and the status of appearances vs ultimate reality.',
+    description: `The debate over the nature of self and ultimate reality in classical Indian thought. Vedānta, especially Advaita, maintains that the true self (ātman) is identical with Brahman, the ultimate non-dual reality. Buddhism, by contrast, denies the existence of a permanent self (anātman) and emphasizes impermanence, dependent origination, and emptiness (śūnyatā). These traditions contested each other’s metaphysics, theories of liberation, and epistemologies. Buddhist logicians critiqued Vedānta’s ontology, while Vedāntins criticized Buddhist denial of self as nihilistic.`,
     challenger: 'Buddhist Philosophy',
     challenged: 'Advaita Vedānta',
     period: 'Ancient to Medieval India',
-    outcome:
-      'An enduring, multifaceted controversy: Vedānta became dominant within Hindu philosophy, while Buddhist logic and epistemology (e.g., Dignāga–Dharmakīrti) profoundly shaped Indian debates about perception, inference, and self.',
-    significance:
-      'Central to comparative metaphysics of self and consciousness; continues to inform global philosophy of mind, ethics, and soteriology.',
+    outcome: `Vedānta became dominant in Hindu philosophy while Buddhism’s presence declined in India but persisted globally. The debates sharpened both traditions: Vedānta incorporated logical rigor and epistemological insights from Buddhism, while Buddhism influenced Indian and Tibetan thought in logic and meditation.`,
+    significance: `Central to Indian metaphysics and comparative philosophy of self. The debate continues to shape global philosophy of mind and consciousness, interreligious dialogue, and the comparative study of personal identity and liberation.`,
     externalLinks: [
       { title: 'Advaita Vedānta (SEP)', url: 'https://plato.stanford.edu/entries/vedanta-advaita/', type: 'encyclopedia' },
       { title: 'Buddhist Philosophy: Anattā / No-Self (IEP)', url: 'https://iep.utm.edu/anatta/', type: 'encyclopedia' },
@@ -76,15 +64,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'jainism-vs-hinduism',
     name: 'Jainism vs Hindu Orthodoxy',
-    description:
-      'Jain thinkers critiqued Vedic sacrifice and caste, arguing for rigorous non-violence (ahiṃsā), many-sidedness (anekāntavāda), and spiritual equality. Their polemics targeted ritualism and metaphysical assumptions of orthodox schools.',
+    description: `Jainism, arising in ancient India, rejected central features of Vedic religion such as sacrificial rituals and caste hierarchy. Jain philosophy emphasizes non-violence (ahimsa), non-possession, and the plurality of viewpoints (anekāntavāda). By contrast, Vedic orthodoxy upheld animal sacrifice, ritualism, and social stratification based on caste. Jains denied the authority of the Vedas and pursued liberation through asceticism and strict ethical discipline rather than ritual sacrifice. Their critique influenced social and religious practices across India.`,
     challenger: 'Jain Philosophy',
     challenged: 'Vedic Orthodoxy',
     period: 'Ancient India',
-    outcome:
-      'Jainism consolidated as an independent philosophical–religious system with distinctive ethics, metaphysics, and ascetic practice, dialoguing extensively with Hindu and Buddhist schools.',
-    significance:
-      'Introduced systematic commitments to non-violence and pluralism that influenced Indian ethics, law, and interreligious discourse.',
+    outcome: `Jainism established itself as an independent religious-philosophical system. While remaining a minority tradition, it endured through rich textual traditions, monastic orders, and lay communities. Its ethical emphasis influenced wider Indian thought, especially the value of ahimsa adopted by later Hindu, Buddhist, and modern reform movements.`,
+    significance: `Jainism’s critique reshaped Indian philosophy by introducing pluralism and strict non-violence, later inspiring Gandhi and global non-violent resistance. It illustrates how minority traditions can shape broader cultural and ethical landscapes despite limited demographic presence.`,
     externalLinks: [
       { title: 'Jain Philosophy (SEP)', url: 'https://plato.stanford.edu/entries/jainism/', type: 'encyclopedia' },
       { title: 'Anekāntavāda (IEP)', url: 'https://iep.utm.edu/anekanta/', type: 'encyclopedia' },
@@ -94,50 +79,43 @@ export const challengesData: Challenge[] = [
   {
     id: 'carvaka-vs-orthodox',
     name: 'Cārvāka vs Orthodox Schools',
-    description:
-      'The materialist Cārvāka (Lokāyata) tradition rejected Vedic authority, karma, and rebirth, defending perception as the primary pramāṇa and critiquing religious practice as socially and epistemically suspect.',
+    description: `The Cārvāka or Lokāyata school represented ancient India’s materialist philosophy. It denied the authority of the Vedas, karma, rebirth, and liberation, holding that only direct perception is a valid source of knowledge. The Cārvāka rejected inference when it extended beyond empirical verification and denied the existence of an afterlife or unseen entities. Orthodox Hindu schools: Nyāya, Vaiśeṣika, Vedānta, Mīmāṃsā, Yoga, Sāṃkhya; defending inference, scripture, and metaphysical doctrines against Cārvāka criticism.`,
     challenger: 'Cārvāka (Lokāyata)',
-    challenged: 'Āstika (orthodox schools)',
+    challenged: 'Astika (orthodox schools)',
     period: 'Ancient India',
-    outcome:
-      'As an organized school it waned, but its skeptical and empiricist critiques persisted through doxographies and counter-arguments by rivals.',
-    significance:
-      'Represents one of the world’s earliest explicit materialisms and a counterpoint to religious orthodoxy in Indian intellectual history.',
+    outcome: `The Cārvāka tradition declined, with few original texts surviving, but its arguments were preserved in opponents’ refutations. It exerted influence as a counterpoint, representing skepticism toward religion and metaphysics in Indian philosophy.`,
+    significance: `Cārvāka is important as India’s earliest materialist philosophy, anticipating modern naturalism and atheism. Its focus on empirical perception and rejection of supernatural claims foreshadowed later scientific approaches and critical philosophy.`,
     externalLinks: [
       { title: 'Indian Materialism (IEP)', url: 'https://iep.utm.edu/indmat/', type: 'encyclopedia' },
+      { title: 'Carvaka – Internet Encyclopedia of Philosophy', url: 'https://iep.utm.edu/lokayata/', type: 'encyclopedia' },
       { title: 'Cārvāka / Lokāyata (Britannica)', url: 'https://www.britannica.com/topic/Charvaka', type: 'encyclopedia' }
     ]
   },
   {
     id: 'nyaya-vs-buddhist-logic',
     name: 'Nyāya vs Buddhist Logic',
-    description:
-      'Nyāya realists defended external objects, universals, and robust inference; Buddhist logicians (Dignāga, Dharmakīrti) advanced sophisticated theories of perception, exclusion (apoha), and momentariness. Their debates shaped criteria for knowledge and valid reasoning.',
+    description: `Nyāya realism posited an external world with real universals, selves, and valid sources of knowledge (perception, inference, analogy, testimony). Buddhist logicians such as Dignāga and Dharmakīrti emphasized momentariness, denial of universals, and a refined theory of perception and inference. Buddhists argued that cognition constructs reality, while Nyāya philosophers defended realism against Buddhist idealism. Their exchanges produced some of the most rigorous logical and epistemological debates in Indian thought.`,
     challenger: 'Buddhist Logicians (Dignāga, Dharmakīrti)',
     challenged: 'Nyāya School',
     period: 'Classical India',
-    outcome:
-      'Sustained dialectic refined both sides: Buddhist epistemology matured, while late (Navya-)Nyāya developed highly technical analytic tools adopted across traditions.',
-    significance:
-      'Catalyzed a uniquely rigorous tradition of logic and epistemology in India, comparable in sophistication to classical Greek and later scholastic logic.',
+    outcome: `Both traditions enriched Indian logic and epistemology. Nyāya refined its defenses of realism, while Buddhist philosophers developed a sophisticated theory of perception and inference. Even as Buddhism declined in India, Nyāya absorbed and systematized aspects of Buddhist logical theory.`,
+    significance: `The debate advanced theories of knowledge, logic, and language in Indian philosophy. It influenced later Hindu and Buddhist traditions and remains a major resource for comparative philosophy and the history of logic.`,
     externalLinks: [
       { title: 'Dignāga (SEP)', url: 'https://plato.stanford.edu/entries/dignaga/', type: 'encyclopedia' },
       { title: 'Dharmakīrti (SEP)', url: 'https://plato.stanford.edu/entries/dharmakiirti/', type: 'encyclopedia' },
-      { title: 'Nyāya (IEP)', url: 'https://iep.utm.edu/nyaya/', type: 'encyclopedia' }
+      { title: 'Nyāya (IEP)', url: 'https://iep.utm.edu/nyaya/', type: 'encyclopedia' },
+      { title: 'Buddhist Logic – Stanford Encyclopedia of Philosophy', url: 'https://plato.stanford.edu/entries/buddhist-logic/', type: 'encyclopedia' }
     ]
   },
   {
     id: 'bhakti-vs-ritualism',
     name: 'Bhakti vs Ritualism',
-    description:
-      'Bhakti movements challenged rigid ritual authority and caste barriers by emphasizing personal devotion, vernacular expression, and direct access to the divine. Saints and poets reoriented religious practice toward love and grace.',
+    description: `The Bhakti devotional movements arose across medieval India, emphasizing personal devotion to God over ritual performance and priestly authority. Saints and poets such as Kabir, Mirabai, and the Alvars and Nayanars composed vernacular hymns stressing love and surrender rather than sacrificial rites or caste exclusivity. Ritualism emphasized adherence to Vedic rites, caste norms, and priestly mediation. Bhakti challenged these hierarchies, democratizing spirituality through music, poetry, and direct experience of the divine.`,
     challenger: 'Bhakti Philosophy',
     challenged: 'Vedic Ritualism',
     period: 'Medieval India',
-    outcome:
-      'Devotional traditions spread widely across Hinduism (Vaiṣṇava, Śaiva, Śākta), influencing social reform, music, and literature.',
-    significance:
-      'Recast religious authority and community, promoting accessibility and ethical critique of social hierarchies.',
+    outcome: `Bhakti spread widely, transforming Hindu religious life. It produced rich devotional literature and regional traditions while diminishing the exclusive authority of ritual specialists. While rituals continued, devotion became a central path to liberation across Hindu communities.`,
+    significance: `Bhakti reshaped Indian religious philosophy by prioritizing devotion, equality, and emotional expression. It influenced social reform, vernacular literature, and interfaith exchange, leaving a legacy that persists in modern Hinduism and global spirituality.`,
     externalLinks: [
       { title: 'Bhakti (Britannica)', url: 'https://www.britannica.com/topic/bhakti', type: 'encyclopedia' },
       { title: 'Bhakti & Sufism (IGNOU eGyanKosh unit)', url: 'https://egyankosh.ac.in/bitstream/123456789/21721/1/Unit-24.pdf', type: 'course' }
@@ -146,15 +124,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'advaita-vs-dvaita',
     name: 'Advaita vs Dvaita Vedānta',
-    description:
-      'Śaṅkara’s Advaita argues ultimate non-duality of Brahman, with the world and self ultimately identical to Brahman; Madhva’s Dvaita defends real and eternal distinction between God (Viṣṇu), souls, and matter.',
+    description: `The Vedānta school split into major branches, most notably Śaṅkara’s Advaita (non-dualism) and Madhva’s Dvaita (dualism). Advaita holds that Brahman alone is real, the world is ultimately illusory (māyā), and the individual self (ātman) is identical with Brahman. Liberation (moksha) comes from realizing this non-duality through knowledge. Dvaita, in contrast, maintains that the individual soul and God (Vishnu) are eternally distinct, and that devotion (bhakti) and divine grace are the only path to liberation. These views clash over metaphysics, theology, soteriology, and the interpretation of sacred texts.`,
     challenger: 'Dvaita Vedānta (Madhva)',
     challenged: 'Advaita Vedānta (Śaṅkara)',
     period: 'Medieval India',
-    outcome:
-      'Multiple Vedāntic systems (Advaita, Viśiṣṭādvaita, Dvaita, etc.) coexisted, each building extensive scriptural commentaries and devotional/monastic lineages.',
-    significance:
-      'Defines core options for understanding the relation among self, world, and God—continuing to inform theology, ritual, and spiritual practice.',
+    outcome: `Both schools coexisted with vibrant traditions, creating a plurality of Vedāntic systems. Advaita gained intellectual prestige, while Dvaita inspired devotional communities. Their debates refined metaphysical arguments on self, world, and God, and shaped Hindu theology’s diversity.`,
+    significance: `The rivalry defined central issues of Indian philosophy: whether reality is ultimately one or many, and whether devotion or knowledge leads to liberation. It shaped Hindu practice, theology, and interfaith dialogue, influencing both scholars and lay practitioners.`,
     externalLinks: [
       { title: 'Dvaita Vedānta (IEP)', url: 'https://iep.utm.edu/dvaita/', type: 'encyclopedia' },
       { title: 'Advaita Vedānta (IEP)', url: 'https://iep.utm.edu/adv-veda/', type: 'encyclopedia' },
@@ -164,15 +139,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'sankhya-vs-vedanta',
     name: 'Sāṃkhya vs Vedānta',
-    description:
-      'Sāṃkhya posits a dualism of puruṣa (conscious self) and prakṛti (primordial matter), with liberation via discriminative knowledge; Vedānta often reads ultimate reality as non-dual Brahman, challenging Sāṃkhya’s dualism.',
+    description: `Sāṃkhya, one of the oldest Indian systems, is a dualistic philosophy positing two eternal principles: Purusha (pure consciousness) and Prakriti (primordial matter). It teaches liberation comes from discriminating between the two. Vedānta, particularly Advaita, rejects dualism, affirming monism: the world and consciousness are ultimately Brahman. This conflict pits dualist realism against monist idealism. The debate addressed whether liberation requires knowledge of separation (Sāṃkhya) or realization of unity (Vedānta), and whether Prakriti is an independent reality or only appearance.`,
     challenger: 'Sāṃkhya',
     challenged: 'Vedānta',
     period: 'Ancient to Medieval India',
-    outcome:
-      'Vedānta absorbed select Sāṃkhya concepts (e.g., guṇas) while resisting dualism; debates continued in commentarial traditions.',
-    significance:
-      'Framed enduring Indian discussions of consciousness, causation, and metaphysical dependence.',
+    outcome: `Vedānta absorbed Sāṃkhya categories of matter and evolution but reinterpreted them as appearances within Brahman. Sāṃkhya’s independent system declined, though its cosmology influenced Yoga and other schools.`,
+    significance: `This debate shaped Indian metaphysical discourse, contributing enduring discussions of dualism, causation, and consciousness. It influenced Yoga philosophy and modern cross-cultural debates about the nature of matter and mind.`,
     externalLinks: [
       { title: 'Sāṃkhya (IEP)', url: 'https://iep.utm.edu/samkhya/', type: 'encyclopedia' },
       { title: 'Sāṃkhya (Britannica)', url: 'https://www.britannica.com/topic/Sankhya', type: 'encyclopedia' },
@@ -182,15 +154,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'mimamsa-vs-vedanta',
     name: 'Mīmāṃsā vs Vedānta',
-    description:
-      'Pūrva-Mīmāṃsā prioritizes Vedic ritual, linguistic analysis, and dharma as action-guiding authority; Vedānta centers metaphysics and liberation (mokṣa) through knowledge of Brahman.',
+    description: `Mīmāṃsā, or Purva-Mīmāṃsā, emphasized the authority of the Vedas and ritual action (karma) as the path to maintaining cosmic order. It denied a permanent self beyond ritual obligations and focused on dharma as revealed in scripture. Vedānta (Uttara-Mīmāṃsā), by contrast, emphasized ultimate reality (Brahman) and liberation (moksha) through knowledge, interpreting the Vedas metaphysically rather than ritually. This debate reflects a transition in Indian thought from ritual-centered orthodoxy toward speculative metaphysics and mysticism.`,
     challenger: 'Vedānta',
     challenged: 'Mīmāṃsā',
     period: 'Classical India',
-    outcome:
-      'Vedānta rose to prominence in later periods, while Mīmāṃsā’s semantic and hermeneutic insights remained foundational in Indian legal and ritual exegesis.',
-    significance:
-      'Marks a shift from ritual orthopraxy toward soteriological and metaphysical concerns, while preserving sophisticated theories of language and normativity.',
+    outcome: `Mīmāṃsā declined in prominence, though its hermeneutics shaped Hindu law and ritual practice. Vedānta emerged as the dominant Hindu philosophy, integrating aspects of ritual but prioritizing metaphysical realization.`,
+    significance: `This contest illustrates the evolution of Hindu philosophy from ritual orthodoxy to spirituality and metaphysical speculation. It shaped interpretive methods of scripture and influenced the balance between action and knowledge in Hindu practice.`,
     externalLinks: [
       { title: 'Mīmāṃsā (IEP)', url: 'https://iep.utm.edu/mimamsa/', type: 'encyclopedia' },
       { title: 'Mīmāṃsā (Britannica)', url: 'https://www.britannica.com/topic/Mimamsa', type: 'encyclopedia' },
@@ -200,17 +169,15 @@ export const challengesData: Challenge[] = [
   {
     id: 'hindu-vs-islamic-thought',
     name: 'Hindu Philosophy vs Islamic Thought',
-    description:
-      'In medieval South Asia, Hindu philosophers engaged Islamic theologians, Sufis, and philosophers on divine unity, metaphysics, and ethics. Translation projects (e.g., Persian Upaniṣads) and shared devotional forms fostered exchange.',
+    description: `During the Delhi Sultanate and Mughal rule, Hindu philosophers engaged with Islamic scholars on theology, metaphysics, and ethics. Hindu traditions like Vedānta, Nyāya, and Bhakti debated Islamic kalām, Sufi mysticism, and Aristotelian philosophy transmitted through Islam. Dialogues explored the nature of God, soul, creation, and ethical law. Some conflicts arose over idolatry vs monotheism, but exchanges also fostered mutual respect and synthesis. Thinkers like Dara Shikoh studied the Upanishads and Sufi texts side by side, encouraging cross-fertilization.`,
     challenger: 'Islamic Philosophers (e.g., Sufis, Theologians)',
     challenged: 'Hindu Philosophers (Vedānta, Nyāya, Bhakti)',
     period: 'Medieval India',
-    outcome:
-      'Mutual influence and syncretisms emerged (e.g., Bhakti–Sufi resonances), alongside vigorous debate on scripture, reason, and mystical experience.',
-    significance:
-      'Shaped interfaith philosophy in South Asia and the comparative study of metaphysics and devotion.',
+    outcome: `The interaction produced syncretic traditions such as Sufism’s influence on Bhakti and Sikhism’s blending of Hindu and Islamic elements. Intellectual exchange enriched both traditions, though political tensions often overshadowed dialogue.`,
+    significance: `These debates shaped interfaith relations in South Asia, fostering syncretic traditions and shared spirituality. They remain relevant to contemporary interreligious dialogue and comparative theology.`,
     externalLinks: [
       { title: 'Dārā Shikōh (Britannica)', url: 'https://www.britannica.com/biography/Dara-Shikoh', type: 'encyclopedia' },
+      { title: 'Sufism in India – Britannica', url: 'https://www.britannica.com/topic/Sufism', type: 'encyclopedia' },
       { title: 'Islamic Philosophy (Britannica)', url: 'https://www.britannica.com/topic/Islamic-philosophy', type: 'encyclopedia' }
     ]
   },
@@ -228,6 +195,8 @@ export const challengesData: Challenge[] = [
       'Laid foundations for modern Indian political philosophy, religious pluralism, and cross-cultural dialogue.',
     externalLinks: [
       { title: 'Vivekananda (Britannica)', url: 'https://www.britannica.com/biography/Vivekananda', type: 'encyclopedia' },
+      { title: 'Modern Indian Philosophy – Internet Encyclopedia of Philosophy', url: 'https://iep.utm.edu/modern-indian-philosophy/', type: 'encyclopedia' },
+      { title: 'Gandhi – Stanford Encyclopedia of Philosophy', url: 'https://plato.stanford.edu/entries/gandhi/', type: 'encyclopedia' },
       { title: 'Sri Aurobindo (Britannica)', url: 'https://www.britannica.com/biography/Sri-Aurobindo', type: 'encyclopedia' },
       { title: 'Pax Gandhiana (OUP book)', url: 'https://academic.oup.com/book/12258', type: 'book' }
     ]
@@ -235,15 +204,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'idealism-vs-materialism',
     name: 'Idealism vs Materialism',
-    description:
-      'Metaphysicians dispute whether reality is fundamentally mental or physical. Idealists give priority to mind, concepts, or experience; materialists (often physicalists) hold that all phenomena, including mind, are ultimately physical.',
+    description: `This debate concerns the fundamental nature of reality: is it mental/spiritual (idealism) or physical/material (materialism)? Idealists such as Berkeley argue that reality is dependent on mind or consciousness, with matter existing only as perception. German idealists like Hegel saw reality as rational spirit. Materialists, from Democritus to Marx, argue that matter is primary, with consciousness arising from material processes. The clash has persisted through metaphysics, philosophy of mind, and political theory.`,
     challenger: 'Materialism',
     challenged: 'Idealism',
     period: 'Ancient to Modern',
-    outcome:
-      'No consensus; contemporary philosophy of mind features diverse physicalist approaches alongside neo-idealistic proposals and neutral monisms.',
-    significance:
-      'Structures debates about consciousness, causation, scientific explanation, and the unity of knowledge.',
+    outcome: `Neither side has fully triumphed; instead, philosophies coexist. Materialism dominates science, while forms of idealism persist in metaphysics, theology, and phenomenology. The debate continues in consciousness studies and physics.`,
+    significance: `This debate shaped Western philosophy, influencing metaphysics, theology, and political theory. It remains central in philosophy of mind, especially in debates over consciousness, artificial intelligence, and the relation between thought and matter.`,
     externalLinks: [
       { title: 'Idealism (Britannica)', url: 'https://www.britannica.com/topic/idealism', type: 'encyclopedia' },
       { title: 'Materialism (Britannica)', url: 'https://www.britannica.com/topic/materialism-philosophy', type: 'encyclopedia' },
@@ -253,15 +219,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'realism-vs-nominalism',
     name: 'Realism vs Nominalism',
-    description:
-      'The medieval problem of universals asks whether shared features (e.g., “redness,” “humanity”) exist mind-independently (realism) or are merely names/concepts applied to particulars (nominalism).',
+    description: `In medieval philosophy, the problem of universals asked whether general concepts like “redness” or “humanity” exist independently of the mind. Realists (e.g., Aquinas) argued universals exist either in God’s mind or as real essences. Nominalists (e.g., Ockham) claimed universals are merely names we use to group particulars. The dispute influenced theology, metaphysics, and logic. It also raised issues about language, meaning, and the relationship between words and reality.`,
     challenger: 'Nominalism',
     challenged: 'Scholastic Realism',
     period: 'Medieval',
-    outcome:
-      'Persistent divergence among realist, conceptualist, and nominalist positions, each with sophisticated variants and implications for logic and language.',
-    significance:
-      'Influences metaphysics, semantics, philosophy of mathematics, and the ontology of properties and kinds.',
+    outcome: `The debate produced divergent schools with no consensus. Nominalism gained influence in late medieval thought, paving the way for empiricism, while realism persisted in Thomism and Catholic theology.`,
+    significance: `The problem of universals shaped medieval scholasticism and later analytic philosophy. It remains relevant in metaphysics, philosophy of language, and logic, as well as in debates over scientific classification and abstract objects.`,
     externalLinks: [
       { title: 'Medieval Problem of Universals (SEP)', url: 'https://plato.stanford.edu/entries/universals-medieval/', type: 'encyclopedia' },
       { title: 'Nominalism (Britannica)', url: 'https://www.britannica.com/topic/nominalism', type: 'encyclopedia' },
@@ -271,15 +234,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'mind-vs-body',
     name: 'Mind-Body Problem',
-    description:
-      'How do mental phenomena relate to physical processes? Views range from Cartesian dualism to physicalism and property dualism, with ongoing debates about consciousness, mental causation, and reduction.',
+    description: `This debate examines the relationship between consciousness and the physical body. Cartesian dualism holds that mind and body are distinct substances. Physicalists argue that mental states are brain states, reducible to neural activity. Alternative theories include functionalism, panpsychism, and emergentism. The debate raises questions about free will, personal identity, and whether consciousness can be explained by science.`,
     challenger: 'Physicalism',
     challenged: 'Cartesian Dualism',
     period: 'Modern to Contemporary',
-    outcome:
-      'Neuroscience and cognitive science support physicalist frameworks, yet hard problems of consciousness and qualia sustain plural positions in philosophy.',
-    significance:
-      'Central to philosophy of mind and cognitive science, with implications for AI, psychiatry, and the nature of persons.',
+    outcome: `Neuroscience increasingly supports physicalism, linking consciousness to brain activity. Yet many philosophers argue dualist or non-reductive accounts better capture subjective experience. No consensus exists.`,
+    significance: `Central to philosophy of mind, the mind-body problem influences neuroscience, psychology, and AI. It shapes debates on consciousness, personal identity, and the possibility of artificial intelligence with subjective experience.`,
     externalLinks: [
       { title: 'Mind–Body Problem (Britannica)', url: 'https://www.britannica.com/topic/mind-body-problem', type: 'encyclopedia' },
       { title: 'Mind–Body Dualism (Britannica)', url: 'https://www.britannica.com/topic/mind-body-dualism', type: 'encyclopedia' },
@@ -289,15 +249,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'nature-vs-nurture',
     name: 'Nature vs Nurture',
-    description:
-      'Do genetics or environment primarily shape human traits? Contemporary views emphasize gene–environment interaction, epigenetics, and developmental systems over simple dichotomies.',
+    description: `This debate examines whether human traits, behaviors, and intelligence are primarily shaped by genetic inheritance (nature) or environmental influences (nurture). Nativists argue biological determinism plays the dominant role, while empiricists and social scientists emphasize upbringing, culture, and education. Studies of twins, adoption, and cross-cultural psychology provide evidence for both sides. The debate extends to morality, personality, language acquisition, and mental health. It also raises ethical concerns about reductionism, determinism, and the social consequences of attributing traits to genes versus social context.`,
     challenger: 'Environmentalism',
     challenged: 'Nativism',
     period: 'Modern to Contemporary',
-    outcome:
-      'Consensus that both are integral, with complex interactions varying by trait and context; simplistic “blank slate” or genetic determinism positions are largely rejected.',
-    significance:
-      'Guides research in psychology, education, behavioral genetics, and bioethics, influencing policy and practice.',
+    outcome: `Modern consensus accepts an interactionist model: genes and environment interact dynamically, with epigenetics showing how environment influences gene expression. Neither factor alone suffices to explain human development.`,
+    significance: `This debate shaped psychology, education, and sociology. It informs policies on inequality, criminal justice, and healthcare, as well as ongoing research in behavioral genetics, neuroscience, and developmental psychology.`,
     externalLinks: [
       { title: 'Nature vs. Nurture (SimplyPsychology)', url: 'https://www.simplypsychology.org/naturevsnurture.html', type: 'article' },
       { title: 'Evolutionary psychology: controversy (Britannica)', url: 'https://www.britannica.com/science/evolutionary-psychology/Controversy', type: 'encyclopedia' },
@@ -307,15 +264,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'liberty-vs-authority',
     name: 'Liberty vs Authority',
-    description:
-      'Political philosophy seeks a just balance between individual freedoms and the coercive powers needed for social order. Liberal theories stress rights and limits on state power; rival views emphasize cohesion, virtue, or security.',
+    description: `This debate explores the balance between individual freedom and political or social authority. Thinkers like Hobbes emphasized the need for strong authority to prevent chaos, while Locke and Mill defended natural rights and liberty against tyranny. Authority provides security and order, but unchecked power can oppress individuals. Liberty enables personal autonomy, but without limits can lead to conflict and instability. The debate spans theories of government, constitutional law, and ethics, influencing revolutions, liberal democracies, and authoritarian regimes.`,
     challenger: 'Liberalism',
     challenged: 'Absolutism',
     period: 'Enlightenment to Modern',
-    outcome:
-      'Constitutional democracies articulated rights, checks and balances, and rule-of-law frameworks to mediate freedom and authority.',
-    significance:
-      'Frames contemporary debates on civil liberties, emergency powers, and the scope of state action.',
+    outcome: `Constitutional democracies established systems balancing liberty with authority, through rule of law, separation of powers, and rights protections. However, tensions remain, especially in crises when security is prioritized over freedom.`,
+    significance: `Central to political philosophy, this debate shapes debates on governance, civil rights, and legitimacy of state power. It influences contemporary issues like surveillance, freedom of speech, and public health mandates.`,
     externalLinks: [
       { title: 'On Liberty (J. S. Mill, Project Gutenberg)', url: 'https://www.gutenberg.org/ebooks/34901', type: 'book' },
       { title: 'Constitutionalism (Britannica)', url: 'https://www.britannica.com/topic/constitutionalism', type: 'encyclopedia' },
@@ -323,17 +277,14 @@ export const challengesData: Challenge[] = [
     ]
   },
   {
-    id: 'reason-vs-emotion',
+     id: 'reason-vs-emotion',
     name: 'Reason vs Emotion',
-    description:
-      'Should reasoning or feelings guide deliberation and value? From Stoics to Hume to contemporary cognitive science, philosophers analyze emotions as sources of insight, motivation, and bias alongside practical reason.',
+    description: `This philosophical dispute concerns whether reason or emotion should guide decision-making and morality. Rationalists argue that logic and universal principles provide reliable guidance, while romantics and sentimentalists emphasize the moral insights of feeling, empathy, and passion. Thinkers from Plato to Hume, Kant, and Nietzsche debated the respective roles of intellect and affect. Modern psychology and neuroscience show cognition and emotion are deeply intertwined. The issue extends to ethics, aesthetics, and theories of human motivation.`,
     challenger: 'Romanticism',
     challenged: 'Rationalism',
     period: 'Modern',
-    outcome:
-      'A broad recognition that emotions and reasons are intertwined: emotions can be cognitively rich and action-guiding, while practical reason evaluates and integrates affect.',
-    significance:
-      'Impacts ethics, decision theory, and aesthetics, reshaping how we understand agency and practical wisdom.',
+    outcome: `Philosophers increasingly recognize that both reason and emotion play indispensable roles in human life. Moral psychology suggests emotions guide action and moral judgment, while reason provides structure and justification.`,
+    significance: `The debate reshaped ethics and aesthetics, influencing literature, political philosophy, and psychology. It remains vital in understanding moral decision-making, AI ethics, and cultural attitudes toward rationality versus passion.`,
     externalLinks: [
       { title: 'Emotion (SEP)', url: 'https://plato.stanford.edu/entries/emotion/', type: 'encyclopedia' },
       { title: 'Practical Reason (SEP)', url: 'https://plato.stanford.edu/entries/practical-reason/', type: 'encyclopedia' },
@@ -343,15 +294,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'science-vs-religion',
     name: 'Science vs Religion',
-    description:
-      'Across history, science and religion have related in modes of conflict, independence, dialogue, and integration. Contemporary scholarship examines methodological boundaries, cosmology, evolution, and personhood.',
+    description: `Science explains phenomena through empirical observation and testable theories, while religion appeals to revelation, sacred texts, and tradition. Historical conflicts include Galileo’s heliocentrism versus the Church, and Darwin’s evolution versus creationism. Yet not all encounters are antagonistic: many propose science and religion address different domains (facts vs values). Some theologians reinterpret religious doctrine in light of science, while others resist perceived secular encroachment. The debate also concerns ethics—e.g., biotechnology, climate change, and AI—where science provides means, and religion provides moral frameworks.`,
     challenger: 'Scientific Naturalism',
     challenged: 'Religious Orthodoxy',
     period: 'Modern to Contemporary',
-    outcome:
-      'No single model prevails; diverse traditions adopt coexistence or integration strategies while acknowledging areas of tension.',
-    significance:
-      'Shapes public understanding of knowledge, education policy, and ethics of emerging technologies.',
+    outcome: `There is no resolution; instead, multiple models coexist—conflict, independence, dialogue, and integration. Many religious groups accept scientific findings, while others oppose them. Philosophers explore complementarity or irreducible tension.`,
+    significance: `Defines cultural worldviews and shapes education, public policy, and identity. It affects debates over evolution, climate action, and bioethics, influencing how societies reconcile tradition with modernity.`,
     externalLinks: [
       { title: 'Science & Religion (Oxford Bibliographies)', url: 'https://www.oxfordbibliographies.com/display/document/obo-9780195396577/obo-9780195396577-0147.xml', type: 'article' },
       { title: 'On the Intersection of Science and Religion (Pew Research Center)', url: 'https://www.pewresearch.org/science/2020/08/26/on-the-intersection-of-science-and-religion/', type: 'article' },
@@ -361,15 +309,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'relativism-vs-universalism',
     name: 'Relativism vs Universalism',
-    description:
-      'Are truth and value relative to cultures or perspectives, or are there universally valid norms? Philosophers distinguish descriptive cultural diversity from metaethical and epistemic relativisms.',
+    description: `This ethical debate asks whether values, morals, and truths are culturally relative or universally valid. Relativists argue that moral systems are context-dependent, shaped by culture and history, and that no single framework is objectively correct. Universalists argue for timeless moral truths—human rights, justice, and rational norms—that transcend culture. Anthropologists often highlight cultural diversity, while philosophers argue for or against universal ethical principles. The debate underlies disputes about human rights, international law, and cultural practices.`,
     challenger: 'Cultural Relativism',
     challenged: 'Moral Universalism',
     period: 'Contemporary',
-    outcome:
-      'No uniform verdict; many endorse pluralism compatible with limited universals (e.g., human rights), while others defend robust objectivism or context-sensitive relativisms.',
-    significance:
-      'Crucial for cross-cultural ethics, law, anthropology, and debates over tolerance and critique.',
+    outcome: `No consensus exists. Modern ethics often adopts pluralism, recognizing cultural variation but defending minimal universal standards (e.g., against genocide, slavery). Debates continue in human rights discourse and global ethics.`,
+    significance: `Central to philosophy, anthropology, and politics. It shapes international relations, debates on tolerance, multiculturalism, and global justice. It remains vital in addressing cultural conflict and globalization.`,
     externalLinks: [
       { title: 'Relativism (SEP)', url: 'https://plato.stanford.edu/entries/relativism/', type: 'encyclopedia' },
       { title: 'Moral Relativism (IEP)', url: 'https://iep.utm.edu/moral-re/', type: 'encyclopedia' },
@@ -379,15 +324,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'egoism-vs-altruism',
     name: 'Egoism vs Altruism',
-    description:
-      'Are humans primarily self-interested, or can they be genuinely motivated by concern for others? Distinctions among psychological, ethical, and rational egoism contrast with theories of altruism in ethics and evolutionary biology.',
+    description: `This debate addresses human motivation: are people fundamentally self-interested (egoism) or genuinely capable of caring for others (altruism)? Psychological egoists argue all actions ultimately serve self-interest, even seemingly generous ones. Ethical egoists maintain people ought to act in their own interest. Altruists insist that humans can and should act out of genuine concern for others. The debate shapes ethics, evolutionary biology, and political philosophy, and raises questions about morality’s foundation.`,
     challenger: 'Psychological Egoism',
     challenged: 'Ethical Altruism',
     period: 'Ancient to Modern',
-    outcome:
-      'Empirical and philosophical debates yield mixed conclusions: motivational complexity undermines simple egoism, yet normative theories continue to weigh self-interest against impartial beneficence.',
-    significance:
-      'Informs moral theory, public policy, and social science models of cooperation and welfare.',
+    outcome: `Philosophers and scientists present mixed evidence: while self-interest motivates much behavior, altruism appears in parental care, cooperation, and empathy. The debate remains unresolved but nuanced theories integrate both.`,
+    significance: `The issue influences moral philosophy, political theory, and social policy. It affects debates about charity, cooperation, capitalism, and human nature. It also shapes discussions in evolutionary psychology and ethics.`,
     externalLinks: [
       { title: 'Egoism (IEP)', url: 'https://iep.utm.edu/egoism/', type: 'encyclopedia' },
       { title: 'Altruism (Britannica)', url: 'https://www.britannica.com/topic/altruism-ethics', type: 'encyclopedia' },
@@ -397,15 +339,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'order-vs-chaos',
     name: 'Order vs Chaos',
-    description:
-      'A recurrent theme from Greek cosmogony to Nietzsche’s aesthetics contrasts structured order with generative disorder. Philosophers explore how form emerges from flux and the role of restraint and transgression in culture.',
+    description: `Philosophical reflection on order and chaos addresses whether the universe is fundamentally structured or fundamentally unpredictable. Traditional metaphysics emphasized cosmic order—law, reason, logos—while modern existentialism and postmodernism explore the creative and destructive role of chaos. Literature, art, and science grapple with the tension between pattern and disorder, stability and creativity. Nietzsche, existentialists, and modern chaos theory highlight chaos as a condition of possibility for freedom and novelty, while classical philosophy emphasized order as essential for truth and morality.`,
     challenger: 'Existentialism',
     challenged: 'Traditional Metaphysics',
     period: 'Modern to Contemporary',
-    outcome:
-      'In modern thought, “order vs. chaos” becomes a creative tension rather than a winner-take-all dispute, informing accounts of art, normativity, and science.',
-    significance:
-      'Shapes aesthetics, cultural criticism, and metaphysical pictures of stability and change.',
+    outcome: `Existentialist and postmodern thought valorized chaos as creative, while science reveals chaotic dynamics within order (chaos theory). The tension remains unresolved but generative.`,
+    significance: `This theme influences philosophy, art, literature, and cultural theory. It shapes how we conceive human freedom, creativity, and the cosmos, and resonates in science, politics, and psychology.`,
     externalLinks: [
       { title: 'Apollonian (Britannica)', url: 'https://www.britannica.com/art/Apollonian', type: 'encyclopedia' },
       { title: 'Chaos (ancient Greek religion) – Britannica', url: 'https://www.britannica.com/topic/Chaos-ancient-Greek-religion', type: 'encyclopedia' },
@@ -415,15 +354,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'self-vs-other',
     name: 'Self vs Other',
-    description:
-      'From phenomenology to ethics, thinkers analyze how selfhood is constituted in relation to others. Topics include intersubjectivity, recognition, and the ethical priority of the Other (e.g., Levinas).',
+    description: `This debate explores identity, subjectivity, and recognition of the Other. Classical individualism prioritizes autonomous selfhood, while phenomenology (Husserl, Levinas) and existentialism stress intersubjectivity and ethical responsibility toward others. Levinas argued that the face of the Other commands ethical response prior to reason. Feminist and postcolonial thinkers highlight how the “Other” is marginalized in systems of power. The debate extends into ethics, political theory, and cultural identity, shaping discourses on inclusion and difference.`,
     challenger: 'Phenomenology',
     challenged: 'Classical Individualism',
     period: 'Contemporary',
-    outcome:
-      'Shift from atomistic selves toward relational and dialogical accounts of identity and normativity.',
-    significance:
-      'Informs contemporary ethics, political theory, and social ontology, emphasizing responsibility and recognition.',
+    outcome: `Shift toward intersubjectivity and relational conceptions of self. Modern thought recognizes identity as socially and ethically constituted, not purely autonomous.`,
+    significance: `This debate reshapes ethics and social philosophy, influencing feminism, postcolonial studies, and multiculturalism. It emphasizes empathy, recognition, and justice in shaping human relations.`,
     externalLinks: [
       { title: 'Husserl: Phenomenology of Embodiment (IEP)', url: 'https://iep.utm.edu/husspemb/', type: 'encyclopedia' },
       { title: 'Emmanuel Levinas (Britannica)', url: 'https://www.britannica.com/biography/Emmanuel-Levinas', type: 'encyclopedia' },
@@ -433,15 +369,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'freedom-vs-security',
     name: 'Freedom vs Security',
-    description:
-      'Modern states balance civil liberties with public safety and national security. Political philosophy and constitutional law specify protections, limits, and emergency powers.',
+    description: `This political debate considers how societies balance individual freedoms with collective security. Liberal traditions emphasize rights, liberties, and minimal interference, while authoritarian traditions stress stability, order, and safety. The tension intensifies during crises such as wars, terrorism, and pandemics, when governments impose restrictions in the name of security. Philosophers and political theorists debate whether trade-offs are justified, how much liberty can be limited, and what legitimizes authority.`,
     challenger: 'Authoritarianism',
     challenged: 'Liberal Freedom',
     period: 'Modern to Contemporary',
-    outcome:
-      'Institutional mechanisms—rights charters, judicial review, proportionality tests—mediate trade-offs, though tensions flare in crises.',
-    significance:
-      'A perennial issue for democratic legitimacy, surveillance ethics, and human rights.',
+    outcome: `Most societies adopt pragmatic trade-offs, balancing civil liberties with public safety. Democracies enshrine rights while permitting emergency powers; authoritarian states tilt heavily toward security.`,
+    significance: `Core issue in political philosophy and governance. It shapes constitutional law, surveillance policy, and civil rights, raising perennial questions about democracy and legitimacy.`,
     externalLinks: [
       { title: 'Civil Liberties & the Bill of Rights (Britannica)', url: 'https://www.britannica.com/topic/Constitution-of-the-United-States-of-America/Civil-liberties-and-the-Bill-of-Rights', type: 'encyclopedia' },
       { title: 'On Liberty (J. S. Mill, Project Gutenberg)', url: 'https://www.gutenberg.org/ebooks/34901', type: 'book' },
@@ -451,15 +384,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'skepticism-vs-certainty',
     name: 'Skepticism vs Certainty',
-    description:
-      'Can we attain certain knowledge, or must we suspend judgment? From ancient Pyrrhonism to Cartesian doubt and contemporary externalism, skepticism tests the scope and grounding of justification.',
+    description: `Skeptics argue that knowledge claims are doubtful, pointing to sensory error, disagreement, and regress of justification. From Pyrrho to Hume, skepticism challenged dogmatism. Certainty-seekers like Descartes aimed to establish indubitable foundations of knowledge. Kant, pragmatists, and modern epistemologists seek middle paths, acknowledging fallibility while defending reliable knowledge. The debate concerns epistemic justification, truth, and the limits of human cognition.`,
     challenger: 'Skepticism',
     challenged: 'Dogmatism',
     period: 'Ancient to Modern',
-    outcome:
-      'Critical philosophy seeks fallible, context-sensitive justification rather than infallible certainty; skepticism remains a methodological and substantive challenge.',
-    significance:
-      'Drives developments in epistemology, philosophy of science, and theories of evidence.',
+    outcome: `Philosophy developed critical approaches balancing doubt and justification. Modern epistemology accepts fallibilism—knowledge without absolute certainty—while rejecting radical skepticism.`,
+    significance: `Key to epistemology, this debate shaped methods of science, rational inquiry, and philosophy itself. It continues in discussions of relativism, post-truth, and skepticism about AI or perception.`,
     externalLinks: [
       { title: 'Skepticism (SEP)', url: 'https://plato.stanford.edu/entries/skepticism/', type: 'encyclopedia' },
       { title: 'Skepticism (Britannica)', url: 'https://www.britannica.com/topic/skepticism', type: 'encyclopedia' },
@@ -469,15 +399,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'individual-vs-community',
     name: 'Individual vs Community',
-    description:
-      'How should we prioritize individual rights against communal goods and traditions? Communitarian critiques of liberalism stress the social embeddedness of persons and the value of shared practices.',
+    description: `This debate explores the priority of individual rights versus collective welfare. Individualists emphasize autonomy, personal freedom, and self-interest, while communitarians stress social obligations, solidarity, and common good. The tension underlies debates in political theory, ethics, and economics. Liberal democracies often try to balance both, while collectivist traditions prioritize the community over the individual. Issues include public health, taxation, cultural identity, and social justice.`,
     challenger: 'Communitarianism',
     challenged: 'Individualism',
     period: 'Modern to Contemporary',
-    outcome:
-      'Many political theories now incorporate both personal rights and community-shaping institutions, negotiating tensions through constitutional and civic frameworks.',
-    significance:
-      'Shapes debates on social policy, multiculturalism, and civic education.',
+    outcome: `Philosophy recognizes both individual rights and communal obligations. Models of balance differ by culture and politics, but neither principle alone suffices for just society.`,
+    significance: `Shapes social and political thought, influencing public policy, law, and ethics. The debate remains active in questions about social welfare, cultural rights, and global responsibility.`,
     externalLinks: [
       { title: 'Communitarianism (SEP)', url: 'https://plato.stanford.edu/entries/communitarianism/', type: 'encyclopedia' },
       { title: 'Communitarianism (Britannica)', url: 'https://www.britannica.com/topic/communitarianism', type: 'encyclopedia' },
@@ -487,15 +414,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'analytic-vs-continental',
     name: 'Analytic vs Continental Philosophy',
-    description:
-      'Twentieth-century philosophy diverged into analytic (clarity, logic, language) and continental (phenomenology, hermeneutics, critical theory, post-structuralism) traditions. Despite differences in style and method, there are many overlaps and dialogues.',
+    description: `The 20th century saw philosophy divided into two broad traditions. Analytic philosophy, dominant in the Anglo-American world, emphasized logic, language, clarity, and scientific rigor (Russell, Frege, Wittgenstein). Continental philosophy, rooted in European traditions, engaged phenomenology, existentialism, hermeneutics, and post-structuralism (Heidegger, Sartre, Derrida). The division shaped methods, subject matter, and academic culture. While analytic philosophers critiqued continental obscurity, continentals critiqued analytic narrowness.`,
     challenger: 'Analytic Philosophy',
     challenged: 'Continental Philosophy',
     period: '20th century',
-    outcome:
-      'Ongoing cross-pollination: contemporary work increasingly bridges methods, topics, and canons across the divide.',
-    significance:
-      'Defines much of the contemporary philosophical landscape, curricula, and research cultures.',
+    outcome: `The traditions developed largely in parallel, with limited dialogue. Recent decades have seen increasing cross-fertilization, especially in ethics, political philosophy, and philosophy of mind.`,
+    significance: `Defines the contemporary philosophical landscape. Understanding the split helps contextualize academic traditions, methods, and debates still active today.`,
     externalLinks: [
       { title: 'Analytic Philosophy (IEP)', url: 'https://iep.utm.edu/analytic-philosophy/', type: 'encyclopedia' },
       { title: 'Continental Philosophy (IEP)', url: 'https://iep.utm.edu/category/traditions/continental/', type: 'encyclopedia' },
@@ -505,15 +429,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'humanism-vs-nihilism',
     name: 'Humanism vs Nihilism',
-    description:
-      'Humanism affirms human dignity, reason, and cultural achievement; nihilism denies objective value or meaning. Modernity confronts the collapse of traditional sources of meaning while seeking new grounds for value.',
+    description: `Humanism affirms human dignity, rationality, and capacity for meaning, often emphasizing ethics without divine authority. Nihilism, associated with Nietzsche, denies inherent meaning, value, or purpose in life. The clash reflects modern crises of faith, morality, and existentialism. Humanists argue that meaning can be created through human agency and solidarity. Nihilists warn of illusion and despair, pushing philosophy to confront life’s lack of ultimate justification.`,
     challenger: 'Nihilism',
     challenged: 'Humanism',
     period: 'Modern to Contemporary',
-    outcome:
-      'Philosophical responses range from affirmations of human creativity and responsibility to existentialist and pragmatic reconstructions of value.',
-    significance:
-      'Informs debates about secular ethics, education, and cultural pessimism/renewal.',
+    outcome: `Existentialist philosophers like Sartre sought to move beyond nihilism by affirming self-created meaning and freedom. Humanism remains influential in secular ethics and education.`,
+    significance: `This debate influences ethics, literature, and existential philosophy. It shapes discussions of meaning, despair, and human creativity in the absence of transcendent grounding.`,
     externalLinks: [
       { title: 'Humanism (Britannica)', url: 'https://www.britannica.com/topic/humanism', type: 'encyclopedia' },
       { title: 'Nihilism (IEP)', url: 'https://iep.utm.edu/nihilism/', type: 'encyclopedia' },
@@ -523,15 +444,12 @@ export const challengesData: Challenge[] = [
   {
     id: 'tradition-vs-progress',
     name: 'Tradition vs Progress',
-    description:
-      'Societies weigh the value of inherited practices against innovation and reform. Conservative outlooks stress continuity, organic change, and skepticism about rationalist schemes; progressive currents emphasize improvement, inclusion, and social experimentation.',
+    description: `This debate concerns whether societies should preserve traditions or embrace progress and innovation. Traditionalists value continuity, inherited wisdom, and stability, warning against radical change. Progressives emphasize reform, innovation, and adaptation to new circumstances. The debate spans politics, culture, religion, and philosophy, influencing revolutions, modernization, and cultural identity. It reflects the tension between conserving values and adapting to evolving challenges.`,
     challenger: 'Progressivism',
     challenged: 'Traditionalism',
     period: 'Modern to Contemporary',
-    outcome:
-      'Context-dependent equilibria emerge through institutions that can conserve core goods while enabling incremental change.',
-    significance:
-      'Central to public philosophy and policymaking, shaping disputes over education, culture, technology, and rights.',
+    outcome: `Societies typically negotiate context-dependent balances, sometimes leaning on tradition for stability, sometimes pursuing progress to address injustice or adapt to change.`,
+    significance: `Central to social and political debates worldwide. It shapes discussions on education, technology, cultural heritage, and political reform, reflecting the tension between preservation and innovation.`,
     externalLinks: [
       { title: 'Political Philosophy – overview (Britannica)', url: 'https://www.britannica.com/topic/political-philosophy', type: 'encyclopedia' },
       { title: 'Constitutionalism (Britannica)', url: 'https://www.britannica.com/topic/constitutionalism', type: 'encyclopedia' }
