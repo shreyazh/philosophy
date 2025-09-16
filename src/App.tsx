@@ -1,3 +1,5 @@
+// src/App.js
+
 import { Github } from "lucide-react";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -12,7 +14,9 @@ import { IdeasListPage } from "./pages/IdeasListPage";
 import { SchoolsListPage } from "./pages/SchoolsListPage";
 import { ChallengesListPage } from "./pages/ChallengesListPage";
 
-// ✅ Define the button as a component
+// ✅ Import the ScrollToTop component
+import { ScrollToTop } from "./ScrollToTop";
+
 function GithubStarButton() {
   return (
     <a
@@ -30,6 +34,9 @@ function GithubStarButton() {
 function App() {
   return (
     <Router>
+      {/* ✅ Add ScrollToTop here so it listens to path changes */}
+      <ScrollToTop />
+      
       <div className="min-h-screen bg-gray-50">
         <Navigation />
         <Routes>
@@ -51,7 +58,6 @@ function App() {
             </p>
 
             <div className="mt-4">
-              {/* ✅ Use the component here */}
               <GithubStarButton />
             </div>
           </div>
@@ -60,5 +66,4 @@ function App() {
     </Router>
   );
 }
-
 export default App;
