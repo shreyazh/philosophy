@@ -25,7 +25,7 @@ export function SchoolPage() {
   const relatedSchools = allSchools.filter(s => school.relatedSchools.includes(s.id));
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 max-w-6xl mx-auto w-full">
       <div className="container mx-auto px-6 py-8">
         <Link 
           to="/" 
