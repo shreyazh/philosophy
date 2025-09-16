@@ -1,5 +1,5 @@
 # Philosophy Roadmap
-
+![Repo Size](https://img.shields.io/github/repo-size/shreyazh/philosophy)
 ## Overview
 This project explores the complete history of human philosophical thought, from ancient wisdom to contemporary insights. It maps how ideas emerged, evolved, and interacted to shape our understanding of existence, knowledge, and ethics.
 
