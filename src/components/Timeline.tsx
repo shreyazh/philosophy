@@ -17,7 +17,7 @@ export function Timeline({ periods, selectedPeriod, onPeriodSelect }: TimelinePr
   };
 
   return (
-    <div className="w-full max-w-6xl mx-auto bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl shadow-xl p-4 sm:p-6 lg:p-8 mb-8 sm:mb-12 overflow-hidden">
+    <div className="w-full max-w-4xl mx-auto bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl shadow-xl p-4 sm:p-6 lg:p-8 mb-8 sm:mb-12 overflow-hidden">
       {/* Header */}
       <div className="text-center mb-6 sm:mb-8 lg:mb-10">
         <div className="flex items-center justify-center gap-3 mb-4">
@@ -146,7 +146,7 @@ export function Timeline({ periods, selectedPeriod, onPeriodSelect }: TimelinePr
                   </button>
 
                   {/* Expandable schools list */}
-                  <div
+                  {/* <div
                     className={`transition-all duration-500 ease-in-out overflow-hidden ${
                       isActive ? "max-h-96 mt-2 sm:mt-4" : "max-h-0"
                     }`}
@@ -163,7 +163,7 @@ export function Timeline({ periods, selectedPeriod, onPeriodSelect }: TimelinePr
                         ))}
                       </ul>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             );
