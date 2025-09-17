@@ -23,6 +23,11 @@ export interface PhilosophicalIdea {
   relatedIdeas: string[];
   challenges: string[];
   modernApplications: string[];
+  // Optional sections to mirror school module richness
+  influences?: string[];
+  developments?: string[];
+  legacy?: string;
+  keyTexts?: string[];
   externalLinks: ExternalLink[];
 }
 
