@@ -1,6 +1,6 @@
 import { Philosopher } from '../types/philosophy';
 
-export const philosophersDataBatch1: Philosopher[] = [
+export const philosophersData: Philosopher[] = [
   {
     id: 'socrates',
     name: 'Socrates',
@@ -13,15 +13,15 @@ export const philosophersDataBatch1: Philosopher[] = [
     schools: ['classical'],
     challenges: ['sophistry', 'moral-relativism'],
     quotes: [
-      'The unexamined life is not worth living.',
-      'I know that I know nothing.',
-      'Virtue is knowledge.',
-      'No one does wrong willingly.'
+      'The unexamined life is not worth living',
+      'I know that I know nothing',
+      'Virtue is knowledge',
+      'No one does wrong willingly'
     ],
     externalLinks: [
-      { title: 'Internet Encyclopedia: Socrates', url: 'https://iep.utm.edu/socrates/', type: 'encyclopedia' },
-      { title: 'Britannica: Socrates', url: 'https://www.britannica.com/biography/Socrates', type: 'article' },
-      { title: 'Socratic Method Overview – Philosophy Now', url: 'https://philosophynow.org/issues/137/The_Socratic_Method', type: 'article' }
+      { title: 'Stanford Encyclopedia: Socrates', url: '#', type: 'encyclopedia' },
+      { title: 'The Trial of Socrates', url: '#', type: 'article' },
+      { title: 'Socratic Method in Practice', url: '#', type: 'video' }
     ]
   },
   {
@@ -37,15 +37,15 @@ export const philosophersDataBatch1: Philosopher[] = [
     schools: ['classical'],
     challenges: ['materialism', 'sophistry', 'democracy'],
     quotes: [
-      'The beginning is the most important part of the work.',
-      'Ignorance, the root and stem of all evil.',
-      'Justice is nothing other than the advantage of the stronger.',
-      'Philosophy begins in wonder.'
+      'The beginning is the most important part of the work',
+      'Ignorance, the root and stem of all evil',
+      'Justice is nothing other than the advantage of the stronger',
+      'Philosophy begins in wonder'
     ],
     externalLinks: [
-      { title: 'Internet Encyclopedia: Plato', url: 'https://iep.utm.edu/plato/', type: 'encyclopedia' },
-      { title: 'Britannica: Plato', url: 'https://www.britannica.com/biography/Plato', type: 'article' },
-      { title: 'The Allegory of the Cave (full text at MIT Classics)', url: 'http://classics.mit.edu/Plato/republic.7.vii.html', type: 'book' }
+      { title: 'Stanford Encyclopedia: Plato', url: '#', type: 'encyclopedia' },
+      { title: 'The Republic - Full Text', url: '#', type: 'book' },
+      { title: 'Plato\'s Cave Allegory Explained', url: '#', type: 'video' }
     ]
   },
   {
@@ -61,15 +61,15 @@ export const philosophersDataBatch1: Philosopher[] = [
     schools: ['classical'],
     challenges: ['platonic-idealism', 'pre-socratic-materialism'],
     quotes: [
-      'Man is by nature a political animal.',
-      'We are what we repeatedly do. Excellence then, is not an act, but a habit.',
-      'The whole is greater than the sum of its parts.',
-      'Knowing yourself is the beginning of all wisdom.'
+      'We are what we repeatedly do. Excellence, then, is not an act, but a habit',
+      'The whole is greater than the sum of its parts',
+      'Man is by nature a political animal',
+      'Knowing yourself is the beginning of all wisdom'
     ],
     externalLinks: [
-      { title: 'Internet Encyclopedia: Aristotle', url: 'https://iep.utm.edu/aristotl/', type: 'encyclopedia' },
-      { title: 'Britannica: Aristotle', url: 'https://www.britannica.com/biography/Aristotle', type: 'article' },
-      { title: 'Nicomachean Ethics – Project Gutenberg', url: 'https://www.gutenberg.org/ebooks/8438', type: 'book' }
+      { title: 'Stanford Encyclopedia: Aristotle', url: '#', type: 'encyclopedia' },
+      { title: 'Nicomachean Ethics - Study Guide', url: '#', type: 'article' },
+      { title: 'Aristotle\'s Logic System', url: '#', type: 'course' }
     ]
   },
   {
@@ -85,15 +85,15 @@ export const philosophersDataBatch1: Philosopher[] = [
     schools: ['german-idealism'],
     challenges: ['dogmatic-metaphysics', 'moral-heteronomy', 'empirical-skepticism'],
     quotes: [
-      'Act only according to that maxim whereby you can at the same time will that it should become a universal law.',
-      'Two things fill the mind with ever-increasing wonder and awe: the starry heavens above me and the moral law within me.',
-      'Science is organized knowledge. Wisdom is organized life.',
-      'Enlightenment is man’s emergence from his self-incurred immaturity.'
+      'Act only according to that maxim whereby you can at the same time will that it should become a universal law',
+      'Sapere aude! Have courage to use your own understanding',
+      'Two things fill the mind with ever-increasing wonder and awe: the starry heavens above me and the moral law within me',
+      'Enlightenment is man\'s emergence from his self-incurred immaturity'
     ],
     externalLinks: [
-      { title: 'Internet Encyclopedia: Kant', url: 'https://iep.utm.edu/kantview/', type: 'encyclopedia' },
-      { title: 'Britannica: Immanuel Kant', url: 'https://www.britannica.com/biography/Immanuel-Kant', type: 'article' },
-      { title: 'Critique of Pure Reason – Project Gutenberg', url: 'https://www.gutenberg.org/ebooks/4280', type: 'book' }
+      { title: 'Stanford Encyclopedia: Kant', url: '#', type: 'encyclopedia' },
+      { title: 'Kant\'s Categorical Imperative Explained', url: '#', type: 'video' },
+      { title: 'Critical Philosophy Course', url: '#', type: 'course' }
     ]
   },
   {
@@ -626,6 +626,32 @@ export const philosophersDataBatch1: Philosopher[] = [
     challenges: ['christian-extremists'],
     quotes: ['Reserve your right to think, for even to think wrongly is better than not to think at all'],
     externalLinks: [{ title: 'Hypatia Profile', url: '#', type: 'article' }]
+  },
+    {
+    id: 'schopenhauer',
+    name: 'Arthur Schopenhauer',
+    years: '1788-1860',
+    nationality: 'German',
+    keyWorks: ['The World as Will and Representation', 'On the Basis of Morality', 'Parerga and Paralipomena'],
+    biography: 'Schopenhauer was a German philosopher known for his metaphysical doctrine that the world is driven by a blind, irrational will. He is regarded as a major figure in pessimism and influenced existentialism, psychoanalysis, and art theory.',
+    keyIdeas: ['will-as-thing-in-itself', 'pessimism', 'aesthetic-contemplation', 'asceticism'],
+    influences: ['kant', 'plato', 'upanishads', 'buddhism'],
+    influenced: ['nietzsche', 'freud', 'wagner'],
+    schools: ['german-idealism', 'pessimism'],
+    challenges: ['hegelian-idealism', 'rationalism'],
+    quotes: [
+      'The world is my representation',
+      'Man can do what he wills but he cannot will what he wills',
+      'Compassion is the basis of morality',
+      'Life is a constant oscillation between desire and boredom'
+    ],
+    externalLinks: [
+      { title: 'Stanford Encyclopedia: Schopenhauer', url: 'https://plato.stanford.edu/entries/schopenhauer/', type: 'encyclopedia' },
+      { title: 'Internet Encyclopedia: Upanishads (Schopenhauer’s influence)', url: 'https://iep.utm.edu/upanisad/', type: 'encyclopedia' },
+      { title: 'On the Basis of Morality - Wikipedia', url: 'https://en.wikipedia.org/wiki/On_the_Basis_of_Morality', type: 'article' },
+      { title: 'On the Basis of Morality - Full Text (Project Gutenberg)', url: 'https://www.gutenberg.org/files/44929/44929-h/44929-h.htm', type: 'book' },
+      { title: 'Philosophy Now: Schopenhauer’s Compassionate Morality', url: 'https://philosophynow.org/issues/52/Schopenhauers_Compassionate_Morality', type: 'article' }
+    ]
   },
   {
     id: 'ibn-khaldun',
