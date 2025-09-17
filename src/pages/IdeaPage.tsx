@@ -1,14 +1,6 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import {
-  ArrowLeft,
-  Lightbulb,
-  Users,
-  BookOpen,
-  ExternalLink,
-  Target,
-  Zap,
-} from "lucide-react";
+import { ArrowLeft, Lightbulb, Users, BookOpen, ExternalLink, Target, Zap, TrendingUp } from "lucide-react";
 import { ideasData } from "../data/ideasData";
 import { allSchools } from "../data/philosophyData";
 import { philosophersData } from "../data/philosophersData";
@@ -16,6 +8,7 @@ import { philosophersData } from "../data/philosophersData";
 export function IdeaPage() {
   const { id } = useParams<{ id: string }>();
   const idea = ideasData.find((i) => i.id === id);
+  
 
   if (!idea) {
     return (
@@ -32,7 +25,9 @@ export function IdeaPage() {
     );
   }
 
-  const originSchool = allSchools.find((s) => s.id === idea.originSchool);
+  const originSchool = allSchools.find((s) => 
+    s.id === idea.originSchool
+  );
   const keyThinkers = philosophersData.filter((p) =>
     idea.keyThinkers.includes(p.id)
   );
@@ -40,16 +35,17 @@ export function IdeaPage() {
     idea.relatedIdeas.includes(i.id)
   );
 
+  // Back navigation is handled globally with scroll restoration
+  
   return (
     <div className="min-h-screen bg-gray-50 max-w-6xl mx-auto w-full">
       <div className="container mx-auto px-6 py-8">
-        <Link
-          to="/ideas"
-          className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-6 transition-colors"
-        >
-          <ArrowLeft size={20} />
-          Back to Ideas
-        </Link>
+        <button
+                   onClick={() => window.history.back()}
+                  className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-6 transition-colors"
+                >
+                  <ArrowLeft size={20} />Move Back
+                </button>
 
         {/* Header */}
         <div className="bg-white rounded-xl shadow-lg p-6 mb-7">
@@ -158,6 +154,62 @@ export function IdeaPage() {
               </ul>
             </div>
           </div>
+
+          {/* Influences */}
+          {idea.influences && idea.influences.length > 0 && (
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <div className="flex items-center gap-2 mb-4">
+                <TrendingUp className="text-green-600" size={24} />
+                <h2 className="text-2xl font-bold text-gray-800">Influences</h2>
+              </div>
+              <ul className="space-y-2">
+                {idea.influences.map((influence, index) => (
+                  <li key={index} className="flex items-start gap-2">
+                    <span className="text-green-600 mt-1">•</span>
+                    <span className="text-gray-700">{influence}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {/* Developments */}
+          {idea.developments && idea.developments.length > 0 && (
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">Key Developments</h2>
+              <ul className="grid md:grid-cols-2 gap-2">
+                {idea.developments.map((dev, index) => (
+                  <li key={index} className="flex items-start gap-2">
+                    <span className="text-blue-600 mt-1">•</span>
+                    <span className="text-gray-700">{dev}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {/* Legacy */}
+          {idea.legacy && (
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">Legacy & Impact</h2>
+              <p className="text-gray-700 leading-relaxed">{idea.legacy}</p>
+            </div>
+          )}
+
+          {/* Key Texts */}
+          {idea.keyTexts && idea.keyTexts.length > 0 && (
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <div className="flex items-center gap-2 mb-4">
+                <BookOpen className="text-purple-600" size={20} />
+                <h3 className="text-lg font-bold text-gray-800">Key Texts</h3>
+              </div>
+              <ul className="space-y-2">
+                {idea.keyTexts.map((text, idx) => (
+                  <li key={idx} className="text-gray-700 text-sm">{text}</li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           {/* Sidebar */}
           <div className="space-y-6">
