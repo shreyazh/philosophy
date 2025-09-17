@@ -49,16 +49,17 @@ export function PhilosopherPage() {
     philosopher.influences.includes(p.id)
   );
 
+  // Back navigation is handled globally with scroll restoration
+  
   return (
     <div className="min-h-screen bg-gray-50 max-w-6xl mx-auto w-full">
       <div className="container mx-auto px-6 py-8">
-        <Link
-          to="/philosophers"
-          className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-6 transition-colors"
-        >
-          <ArrowLeft size={20} />
-          Back to Philosophers
-        </Link>
+         <button
+             onClick={() => window.history.back()}
+                   className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-6 transition-colors"
+                 >
+                   <ArrowLeft size={20} />Move Back
+            </button>       
 
         {/* Header */}
         <div className="bg-white rounded-xl shadow-lg p-6 mb-7">
