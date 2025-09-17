@@ -1,11 +1,13 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, Zap, ExternalLink, Target, TrendingUp, Award } from 'lucide-react';
 import { challengesData } from '../data/challengesData';
-
+import { ideasData } from "../data/ideasData";
+import { allSchools } from "../data/philosophyData";
 export function ChallengePage() {
   const { id } = useParams<{ id: string }>();
   const challenge = challengesData.find(c => c.id === id);
+  
 
   if (!challenge) {
     return (
@@ -17,17 +19,16 @@ export function ChallengePage() {
       </div>
     );
   }
-
+ // Back navigation is handled globally with scroll restoration
   return (
     <div className="min-h-screen bg-gray-50 max-w-6xl mx-auto w-full">
       <div className="container mx-auto px-6 py-8">
-        <Link 
-          to="/challenges" 
-          className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-6 transition-colors"
-        >
-          <ArrowLeft size={20} />
-          Back to Challenges
-        </Link>
+        <button
+                   onClick={() => window.history.back()}
+                  className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-6 transition-colors"
+                >
+                  <ArrowLeft size={20} /> Move Back
+                </button>
 
         {/* Header */}
         <div className="bg-white rounded-xl shadow-lg p-6 mb-7">
