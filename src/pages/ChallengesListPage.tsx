@@ -27,9 +27,11 @@ export function ChallengesListPage() {
           <div className="flex justify-center items-center gap-3 mb-4">
             <Zap size={48} className="text-orange-600" />
           </div>
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">Philosophical Challenges</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore the great debates and intellectual conflicts that advanced philosophy
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center sm:text-center">
+            Philosophical Challenges
+          </h1>
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4 sm:px-0 text-center sm:text-center">
+            Explore great debates and intellectual conflicts that advanced philosophy
           </p>
         </div>
 
