@@ -13,15 +13,15 @@ export const philosophersData: Philosopher[] = [
     schools: ['classical'],
     challenges: ['sophistry', 'moral-relativism'],
     quotes: [
-      'The unexamined life is not worth living',
-      'I know that I know nothing',
-      'Virtue is knowledge',
-      'No one does wrong willingly'
+      'The unexamined life is not worth living.',
+      'I know that I know nothing.',
+      'Virtue is knowledge.',
+      'No one does wrong willingly.'
     ],
     externalLinks: [
-      { title: 'Stanford Encyclopedia: Socrates', url: '#', type: 'encyclopedia' },
-      { title: 'The Trial of Socrates', url: '#', type: 'article' },
-      { title: 'Socratic Method in Practice', url: '#', type: 'video' }
+      { title: 'Internet Encyclopedia: Socrates', url: 'https://iep.utm.edu/socrates/', type: 'encyclopedia' },
+      { title: 'Britannica: Socrates', url: 'https://www.britannica.com/biography/Socrates', type: 'article' },
+      { title: 'Socratic Method Overview – Philosophy Now', url: 'https://philosophynow.org/issues/137/The_Socratic_Method', type: 'article' }
     ]
   },
   {
@@ -37,15 +37,15 @@ export const philosophersData: Philosopher[] = [
     schools: ['classical'],
     challenges: ['materialism', 'sophistry', 'democracy'],
     quotes: [
-      'The beginning is the most important part of the work',
-      'Ignorance, the root and stem of all evil',
-      'Justice is nothing other than the advantage of the stronger',
-      'Philosophy begins in wonder'
+      'The beginning is the most important part of the work.',
+      'Ignorance, the root and stem of all evil.',
+      'Justice is nothing other than the advantage of the stronger.',
+      'Philosophy begins in wonder.'
     ],
     externalLinks: [
-      { title: 'Stanford Encyclopedia: Plato', url: '#', type: 'encyclopedia' },
-      { title: 'The Republic - Full Text', url: '#', type: 'book' },
-      { title: 'Plato\'s Cave Allegory Explained', url: '#', type: 'video' }
+      { title: 'Internet Encyclopedia: Plato', url: 'https://iep.utm.edu/plato/', type: 'encyclopedia' },
+      { title: 'Britannica: Plato', url: 'https://www.britannica.com/biography/Plato', type: 'article' },
+      { title: 'The Allegory of the Cave (full text at MIT Classics)', url: 'http://classics.mit.edu/Plato/republic.7.vii.html', type: 'book' }
     ]
   },
   {
@@ -61,15 +61,15 @@ export const philosophersData: Philosopher[] = [
     schools: ['classical'],
     challenges: ['platonic-idealism', 'pre-socratic-materialism'],
     quotes: [
-      'We are what we repeatedly do. Excellence, then, is not an act, but a habit',
-      'The whole is greater than the sum of its parts',
-      'Man is by nature a political animal',
-      'Knowing yourself is the beginning of all wisdom'
+      'Man is by nature a political animal.',
+      'We are what we repeatedly do. Excellence then, is not an act, but a habit.',
+      'The whole is greater than the sum of its parts.',
+      'Knowing yourself is the beginning of all wisdom.'
     ],
     externalLinks: [
-      { title: 'Stanford Encyclopedia: Aristotle', url: '#', type: 'encyclopedia' },
-      { title: 'Nicomachean Ethics - Study Guide', url: '#', type: 'article' },
-      { title: 'Aristotle\'s Logic System', url: '#', type: 'course' }
+      { title: 'Internet Encyclopedia: Aristotle', url: 'https://iep.utm.edu/aristotl/', type: 'encyclopedia' },
+      { title: 'Britannica: Aristotle', url: 'https://www.britannica.com/biography/Aristotle', type: 'article' },
+      { title: 'Nicomachean Ethics – Project Gutenberg', url: 'https://www.gutenberg.org/ebooks/8438', type: 'book' }
     ]
   },
   {
@@ -85,15 +85,15 @@ export const philosophersData: Philosopher[] = [
     schools: ['german-idealism'],
     challenges: ['dogmatic-metaphysics', 'moral-heteronomy', 'empirical-skepticism'],
     quotes: [
-      'Act only according to that maxim whereby you can at the same time will that it should become a universal law',
-      'Sapere aude! Have courage to use your own understanding',
-      'Two things fill the mind with ever-increasing wonder and awe: the starry heavens above me and the moral law within me',
-      'Enlightenment is man\'s emergence from his self-incurred immaturity'
+      'Act only according to that maxim whereby you can at the same time will that it should become a universal law.',
+      'Two things fill the mind with ever-increasing wonder and awe: the starry heavens above me and the moral law within me.',
+      'Science is organized knowledge. Wisdom is organized life.',
+      'Enlightenment is man’s emergence from his self-incurred immaturity.'
     ],
     externalLinks: [
-      { title: 'Stanford Encyclopedia: Kant', url: '#', type: 'encyclopedia' },
-      { title: 'Kant\'s Categorical Imperative Explained', url: '#', type: 'video' },
-      { title: 'Critical Philosophy Course', url: '#', type: 'course' }
+      { title: 'Internet Encyclopedia: Kant', url: 'https://iep.utm.edu/kantview/', type: 'encyclopedia' },
+      { title: 'Britannica: Immanuel Kant', url: 'https://www.britannica.com/biography/Immanuel-Kant', type: 'article' },
+      { title: 'Critique of Pure Reason – Project Gutenberg', url: 'https://www.gutenberg.org/ebooks/4280', type: 'book' }
     ]
   },
   {
@@ -109,15 +109,15 @@ export const philosophersData: Philosopher[] = [
     schools: ['existentialism-precursors'],
     challenges: ['christian-morality', 'platonic-idealism', 'german-idealism'],
     quotes: [
-      'God is dead. God remains dead. And we have killed him',
-      'What does not kill me, makes me stronger',
-      'He who has a why to live can bear almost any how',
-      'In individuals, insanity is rare; but in groups, parties, nations and epochs, it is the rule'
+      'God is dead. God remains dead. And we have killed him.',
+      'He who has a why to live can bear almost any how.',
+      'What does not kill me makes me stronger.',
+      'There are no facts, only interpretations.'
     ],
     externalLinks: [
-      { title: 'Stanford Encyclopedia: Nietzsche', url: '#', type: 'encyclopedia' },
-      { title: 'Thus Spoke Zarathustra Analysis', url: '#', type: 'article' },
-      { title: 'Nietzsche\'s Philosophy Explained', url: '#', type: 'video' }
+      { title: 'Internet Encyclopedia: Nietzsche', url: 'https://iep.utm.edu/nietzsche/', type: 'encyclopedia' },
+      { title: 'Britannica: Friedrich Nietzsche', url: 'https://www.britannica.com/biography/Friedrich-Nietzsche', type: 'article' },
+      { title: 'Beyond Good and Evil – Project Gutenberg', url: 'https://www.gutenberg.org/ebooks/4363', type: 'book' }
     ]
   },
   {
@@ -133,18 +133,18 @@ export const philosophersData: Philosopher[] = [
     schools: ['eastern-ancient'],
     challenges: ['social-chaos', 'moral-decay', 'political-corruption'],
     quotes: [
-      'It does not matter how slowly you go as long as you do not stop',
-      'The man who moves a mountain begins by carrying away small stones',
-      'Choose a job you love, and you will never have to work a day in your life',
-      'Real knowledge is to know the extent of one\'s ignorance'
+      'It does not matter how slowly you go as long as you do not stop.',
+      'The man who moves a mountain begins by carrying away small stones.',
+      'Real knowledge is to know the extent of one’s ignorance.',
+      'Respect yourself and others will respect you.'
     ],
     externalLinks: [
-      { title: 'Stanford Encyclopedia: Confucius', url: '#', type: 'encyclopedia' },
-      { title: 'The Analects - Complete Text', url: '#', type: 'book' },
-      { title: 'Confucian Ethics Today', url: '#', type: 'article' }
+      { title: 'Internet Encyclopedia: Confucius', url: 'https://iep.utm.edu/confucius/', type: 'encyclopedia' },
+      { title: 'Britannica: Confucius', url: 'https://www.britannica.com/biography/Confucius', type: 'article' },
+      { title: 'The Analects – Internet Archive (Legge translation)', url: 'https://archive.org/details/analectsofconfuc00confuoft', type: 'book' }
     ]
   },
-    {
+  {
     id: 'adi-shankara',
     name: 'Adi Shankara',
     years: '788-820 CE',
@@ -156,10 +156,16 @@ export const philosophersData: Philosopher[] = [
     influenced: ['ramanuja', 'vivekananda'],
     schools: ['vedanta'],
     challenges: ['buddhist-philosophy', 'ritualism'],
-    quotes: ['Brahman is real, the world is illusory, the self is none other than Brahman'],
+    quotes: [
+      'Brahman is real, the world is illusory, the self is none other than Brahman.',
+      'When the mind becomes still, the Self reveals itself.',
+      'Knowledge alone destroys ignorance, as light destroys deep darkness.',
+      'Liberation is not attained through actions, but only through knowledge.'
+    ],
     externalLinks: [
-      { title: 'Advaita Vedanta - SEP', url: '#', type: 'encyclopedia' },
-      { title: 'Shankara’s Works', url: '#', type: 'book' }
+      { title: 'Internet Encyclopedia: Advaita Vedanta', url: 'https://iep.utm.edu/adv-veda/', type: 'encyclopedia' },
+      { title: 'Upadesasahasri – HolyBooks English PDF', url: 'https://www.holybooks.com/upadeshasahasri-english/', type: 'book' },
+      { title: 'Britannica: Shankara', url: 'https://www.britannica.com/biography/Shankara', type: 'article' }
     ]
   },
   {
@@ -174,10 +180,16 @@ export const philosophersData: Philosopher[] = [
     influenced: ['madhva', 'bhakti-movement'],
     schools: ['vedanta'],
     challenges: ['advaita-vedanta'],
-    quotes: ['Surrender to God is the supreme means of liberation'],
+    quotes: [
+      'Surrender to God is the supreme means of liberation.',
+      'The Lord is the inner ruler of all beings.',
+      'Devotion, not mere knowledge, brings one close to the divine.',
+      'Bhakti is both the means and the end.'
+    ],
     externalLinks: [
-      { title: 'Ramanuja - SEP', url: '#', type: 'encyclopedia' },
-      { title: 'Sri Bhashya Summary', url: '#', type: 'article' }
+      { title: 'Internet Encyclopedia: Ramanuja', url: 'https://iep.utm.edu/ramanuja/', type: 'encyclopedia' },
+      { title: 'Britannica: Ramanuja', url: 'https://www.britannica.com/biography/Ramanuja', type: 'article' },
+      { title: 'Sri Bhashya – Internet Archive', url: 'https://archive.org/details/sribhashyaenglish', type: 'book' }
     ]
   },
   {
@@ -192,10 +204,16 @@ export const philosophersData: Philosopher[] = [
     influenced: ['bhakti-movement'],
     schools: ['vedanta'],
     challenges: ['advaita-vedanta'],
-    quotes: ['The soul and God are eternally distinct'],
+    quotes: [
+      'The soul and God are eternally distinct.',
+      'Devotion leads the soul to grace and liberation.',
+      'The world is real and not illusory.',
+      'Without God’s grace, liberation is impossible.'
+    ],
     externalLinks: [
-      { title: 'Dvaita Vedanta - SEP', url: '#', type: 'encyclopedia' },
-      { title: 'Madhvacharya Texts', url: '#', type: 'book' }
+      { title: 'Britannica: Madhva', url: 'https://www.britannica.com/biography/Madhva', type: 'article' },
+      { title: 'Internet Encyclopedia: Dvaita Vedanta', url: 'https://iep.utm.edu/dvaita/', type: 'encyclopedia' },
+      { title: 'Works of Madhvacharya – Internet Archive', url: 'https://archive.org/details/MadhvacharyaTexts', type: 'book' }
     ]
   },
   {
@@ -210,10 +228,16 @@ export const philosophersData: Philosopher[] = [
     influenced: ['indian-political-thought'],
     schools: ['ancient-indian-political-thought'],
     challenges: ['idealism'],
-    quotes: ['A person should not be too honest. Straight trees are cut first and honest people are screwed first.'],
+    quotes: [
+      'A person should not be too honest. Straight trees are cut first and honest people are taken advantage of first.',
+      'Education is the best friend. An educated person is respected everywhere.',
+      'There is some self-interest behind every friendship. There is no friendship without self-interest.',
+      'Do not reveal what you have thought upon doing, but by wise counsel keep it secret.'
+    ],
     externalLinks: [
-      { title: 'Arthashastra Overview', url: '#', type: 'article' },
-      { title: 'Chanakya Neeti', url: '#', type: 'book' }
+      { title: 'Arthashastra (English Translation) – Internet Archive', url: 'https://archive.org/details/Arthashastra_Kautilya', type: 'book' },
+      { title: 'Britannica: Kautilya', url: 'https://www.britannica.com/biography/Kautilya', type: 'article' },
+      { title: 'Philosophy Now: Chanakya and Indian Political Thought', url: 'https://philosophynow.org/issues/117/Kautilya_and_the_Arthashastra', type: 'article' }
     ]
   },
     {
@@ -222,14 +246,23 @@ export const philosophersData: Philosopher[] = [
     years: '563-483 BCE',
     nationality: 'Indian',
     keyWorks: ['Dhammapada'],
-    biography: 'Founder of Buddhism, taught Four Noble Truths and the Eightfold Path.',
+    biography: 'Founder of Buddhism, taught the Four Noble Truths and the Eightfold Path.',
     keyIdeas: ['four-noble-truths', 'eightfold-path', 'impermanence'],
     influences: ['indian-spiritual-traditions'],
     influenced: ['buddhism-worldwide'],
     schools: ['buddhism'],
     challenges: ['vedic-ritualism'],
-    quotes: ['All conditioned things are impermanent'],
-    externalLinks: [{ title: 'Stanford Encyclopedia: Buddha', url: '#', type: 'encyclopedia' }]
+    quotes: [
+      'All conditioned things are impermanent.',
+      'Peace comes from within. Do not seek it without.',
+      'Health is the greatest gift, contentment the greatest wealth, faithfulness the best relationship.',
+      'Three things cannot be long hidden: the sun, the moon, and the truth.'
+    ],
+    externalLinks: [
+      { title: 'Internet Encyclopedia: Buddha', url: 'https://iep.utm.edu/buddha/', type: 'encyclopedia' },
+      { title: 'Britannica: Buddha', url: 'https://www.britannica.com/biography/Buddha-founder-of-Buddhism', type: 'article' },
+      { title: 'Dhammapada (translation) – Internet Archive', url: 'https://archive.org/details/dhammapada_201911', type: 'book' }
+    ]
   },
   {
     id: 'nagarjuna',
@@ -237,21 +270,30 @@ export const philosophersData: Philosopher[] = [
     years: '150-250 CE',
     nationality: 'Indian',
     keyWorks: ['Mūlamadhyamakakārikā'],
-    biography: 'Buddhist philosopher who founded Madhyamaka school of emptiness.',
+    biography: 'Buddhist philosopher who founded the Madhyamaka school of emptiness.',
     keyIdeas: ['emptiness-sunyata', 'middle-way'],
     influences: ['buddha'],
     influenced: ['zen', 'tibetan-buddhism'],
     schools: ['madhyamaka'],
     challenges: ['essentialism'],
-    quotes: ['Emptiness wrongly grasped is like picking up a poisonous snake by the wrong end'],
-    externalLinks: [{ title: 'Stanford Encyclopedia: Nagarjuna', url: '#', type: 'encyclopedia' }]
+    quotes: [
+      'Emptiness wrongly grasped is like picking up a poisonous snake by the wrong end.',
+      'All is possible when emptiness is possible. Nothing is possible when emptiness is impossible.',
+      'The victorious ones have said that emptiness is the relinquishing of all views.',
+      'Nirvana is not different from samsara; samsara is not different from nirvana.'
+    ],
+    externalLinks: [
+      { title: 'Internet Encyclopedia: Nagarjuna', url: 'https://iep.utm.edu/nagarjun/', type: 'encyclopedia' },
+      { title: 'Britannica: Nagarjuna', url: 'https://www.britannica.com/biography/Nagarjuna-Buddhist-philosopher', type: 'article' },
+      { title: 'Mūlamadhyamakakārikā – Internet Archive', url: 'https://archive.org/details/Mulamadhyamakakarika', type: 'book' }
+    ]
   },
-    {
+  {
     id: 'mahavira',
     name: 'Mahavira',
     years: '599-527 BCE',
     nationality: 'Indian',
-    keyWorks: ['Jain Agamas (teachings)'],
+    keyWorks: ['Jain Agamas'],
     biography: 'Mahavira, also known as Vardhamana, was the 24th Tirthankara of Jainism. He revitalized and spread Jain philosophy, emphasizing non-violence (ahimsa), truth, and asceticism.',
     keyIdeas: ['ahimsa-nonviolence', 'anekantavada-manysidedness', 'aparigraha-nonpossession'],
     influences: ['parshvanatha', 'sramana-traditions'],
@@ -259,13 +301,15 @@ export const philosophersData: Philosopher[] = [
     schools: ['jain-philosophy'],
     challenges: ['vedic-ritualism', 'materialism'],
     quotes: [
-      'All souls are equal and eternal',
-      'Non-violence is the highest religion',
-      'A man is seated on top of a tree in the midst of a burning forest. He sees all living beings perish, but he does not realize that the same fate is soon to overtake him also.'
+      'All souls are equal and eternal.',
+      'Non-violence is the highest religion.',
+      'A man is seated on top of a tree in the midst of a burning forest. He sees all living beings perish, but he does not realize that the same fate is soon to overtake him also.',
+      'By sincerity, a man gains all he wishes for.'
     ],
     externalLinks: [
-      { title: 'Mahavira - Stanford Encyclopedia', url: '#', type: 'encyclopedia' },
-      { title: 'Principles of Jainism', url: '#', type: 'article' }
+      { title: 'Britannica: Mahavira', url: 'https://www.britannica.com/biography/Mahavira', type: 'article' },
+      { title: 'Internet Encyclopedia: Jain Philosophy', url: 'https://iep.utm.edu/jainism/', type: 'encyclopedia' },
+      { title: 'Sacred Texts: Jainism', url: 'https://www.sacred-texts.com/jai/index.htm', type: 'book' }
     ]
   },
   {
@@ -282,11 +326,14 @@ export const philosophersData: Philosopher[] = [
     challenges: ['ritualism', 'caste-orthodoxy'],
     quotes: [
       'Chant the holy name, chant the holy name, chant the holy name of the Lord, for there is no other way to liberation in this age of Kali.',
-      'When will tears flow from my eyes as I chant Your holy name?'
+      'When will tears flow from my eyes as I chant Your holy name?',
+      'Wherever the glories of Lord Krishna are sung, there reside Chaitanya and his devotees.',
+      'The essence of all religion is to develop love for God.'
     ],
     externalLinks: [
-      { title: 'Gaudiya Vaishnavism Overview', url: '#', type: 'article' },
-      { title: 'Chaitanya Charitamrita', url: '#', type: 'book' }
+      { title: 'Britannica: Chaitanya', url: 'https://www.britannica.com/biography/Caitanya', type: 'article' },
+      { title: 'Sacred Texts: Vaishnavism (includes Chaitanya sources)', url: 'https://www.sacred-texts.com/hin/vov/index.htm', type: 'book' },
+      { title: 'Gaudiya Vaishnavism Overview – Philosophy Now', url: 'https://philosophynow.org/issues/122/Vaishnavism_and_Philosophy', type: 'article' }
     ]
   },
   {
@@ -301,10 +348,16 @@ export const philosophersData: Philosopher[] = [
     influenced: ['gandhi', 'indian-modernism'],
     schools: ['modern-indian-philosophy'],
     challenges: ['colonialism'],
-    quotes: ['The highest education is that which does not merely give us information but makes our life in harmony with all existence'],
+    quotes: [
+      'The highest education is that which does not merely give us information but makes our life in harmony with all existence.',
+      'Faith is the bird that feels the light when the dawn is still dark.',
+      'You can’t cross the sea merely by standing and staring at the water.',
+      'Love is an endless mystery, for it has nothing else to explain it.'
+    ],
     externalLinks: [
-      { title: 'Tagore Philosophy Overview', url: '#', type: 'article' },
-      { title: 'The Religion of Man', url: '#', type: 'book' }
+      { title: 'Britannica: Rabindranath Tagore', url: 'https://www.britannica.com/biography/Rabindranath-Tagore', type: 'article' },
+      { title: 'Internet Archive: Sadhana (Tagore)', url: 'https://archive.org/details/sadhanaotheress00tagouoft', type: 'book' },
+      { title: 'The Religion of Man – Internet Archive', url: 'https://archive.org/details/religionofman00rabi', type: 'book' }
     ]
   },
   {
@@ -319,8 +372,17 @@ export const philosophersData: Philosopher[] = [
     influenced: ['zhuangzi', 'neo-taoists'],
     schools: ['daoism'],
     challenges: ['ritualism', 'political-control'],
-    quotes: ['A journey of a thousand miles begins with a single step'],
-    externalLinks: [{ title: 'Stanford Encyclopedia: Laozi', url: '#', type: 'encyclopedia' }]
+    quotes: [
+      'A journey of a thousand miles begins with a single step.',
+      'When I let go of what I am, I become what I might be.',
+      'Knowing others is intelligence; knowing yourself is true wisdom.',
+      'The best fighter is never angry.'
+    ],
+    externalLinks: [
+      { title: 'Internet Encyclopedia: Daoism (includes Laozi)', url: 'https://iep.utm.edu/daoism/', type: 'encyclopedia' },
+      { title: 'Britannica: Laozi', url: 'https://www.britannica.com/biography/Laozi', type: 'article' },
+      { title: 'Tao Te Ching – Internet Archive (Legge translation)', url: 'https://archive.org/details/taoteching00laot', type: 'book' }
+    ]
   },
   {
     id: 'zhuangzi',
@@ -334,8 +396,17 @@ export const philosophersData: Philosopher[] = [
     influenced: ['chan-buddhism'],
     schools: ['daoism'],
     challenges: ['dogmatism'],
-    quotes: ['Am I a man dreaming I am a butterfly, or a butterfly dreaming I am a man?'],
-    externalLinks: [{ title: 'Zhuangzi Text', url: '#', type: 'book' }]
+    quotes: [
+      'Am I a man dreaming I am a butterfly, or a butterfly dreaming I am a man?',
+      'Happiness is the absence of striving for happiness.',
+      'Flow with whatever may happen, and let your mind be free.',
+      'Do not use life to give life to death and do not use death to bring death to life.'
+    ],
+    externalLinks: [
+      { title: 'Britannica: Zhuangzi', url: 'https://www.britannica.com/biography/Zhuangzi', type: 'article' },
+      { title: 'Internet Encyclopedia: Zhuangzi', url: 'https://iep.utm.edu/zhuangzi/', type: 'encyclopedia' },
+      { title: 'The Book of Chuang Tzu – Internet Archive', url: 'https://archive.org/details/bookofchuangtzu00zhuarich', type: 'book' }
+    ]
   },
   {
     id: 'mencius',
@@ -349,8 +420,17 @@ export const philosophersData: Philosopher[] = [
     influenced: ['neo-confucianism'],
     schools: ['confucianism'],
     challenges: ['xunzi-human-nature-evil'],
-    quotes: ['The great man is he who does not lose his childlike heart'],
-    externalLinks: [{ title: 'Stanford Encyclopedia: Mencius', url: '#', type: 'encyclopedia' }]
+    quotes: [
+      'The great man is he who does not lose his childlike heart.',
+      'The tendency of human nature to do good is like that of water to flow downward.',
+      'Benevolence brings glory to a ruler, cruelty brings ruin.',
+      'Friendship with the righteous is the way to wealth and honor.'
+    ],
+    externalLinks: [
+      { title: 'Britannica: Mencius', url: 'https://www.britannica.com/biography/Mencius', type: 'article' },
+      { title: 'Internet Encyclopedia: Mencius', url: 'https://iep.utm.edu/mencius/', type: 'encyclopedia' },
+      { title: 'The Works of Mencius – Internet Archive', url: 'https://archive.org/details/worksofmencius00mencuoft', type: 'book' }
+    ]
   },
   {
     id: 'xunzi',
@@ -364,10 +444,19 @@ export const philosophersData: Philosopher[] = [
     influenced: ['legalists'],
     schools: ['confucianism'],
     challenges: ['mencius-human-goodness'],
-    quotes: ['Human nature is evil; goodness is a result of conscious activity'],
-    externalLinks: [{ title: 'Xunzi Essays', url: '#', type: 'book' }]
+    quotes: [
+      'Human nature is evil; goodness is a result of conscious activity.',
+      'A person becomes good by learning.',
+      'Rites are the greatest instruments of instruction.',
+      'The nature of man is such that he seeks profit.'
+    ],
+    externalLinks: [
+      { title: 'Britannica: Xunzi', url: 'https://www.britannica.com/biography/Xunzi', type: 'article' },
+      { title: 'Internet Encyclopedia: Xunzi', url: 'https://iep.utm.edu/xunzi/', type: 'encyclopedia' },
+      { title: 'The Works of Xunzi – Internet Archive', url: 'https://archive.org/details/xunzi00hsunuoft', type: 'book' }
+    ]
   },
-    {
+  {
     id: 'augustine',
     name: 'Saint Augustine',
     years: '354-430',
@@ -379,9 +468,16 @@ export const philosophersData: Philosopher[] = [
     influenced: ['aquinas', 'luther'],
     schools: ['christian-philosophy'],
     challenges: ['manichaeism', 'skepticism'],
-    quotes: ['Our hearts are restless until they rest in you'],
+    quotes: [
+      'Our hearts are restless until they rest in you.',
+      'Faith is to believe what you do not yet see; the reward for this faith is to see what you believe.',
+      'The world is a book, and those who do not travel read only one page.',
+      'Love, and do what you will.'
+    ],
     externalLinks: [
-      { title: 'Augustine - Stanford Encyclopedia', url: '#', type: 'encyclopedia' }
+      { title: 'Britannica: St. Augustine', url: 'https://www.britannica.com/biography/Saint-Augustine', type: 'article' },
+      { title: 'Confessions – Project Gutenberg', url: 'https://www.gutenberg.org/ebooks/3296', type: 'book' },
+      { title: 'The City of God – Internet Archive', url: 'https://archive.org/details/thecityofgod03088gut', type: 'book' }
     ]
   },
   {
@@ -396,9 +492,16 @@ export const philosophersData: Philosopher[] = [
     influenced: ['catholic-scholasticism', 'modern-ethics'],
     schools: ['scholasticism'],
     challenges: ['islamic-philosophy', 'secularism'],
-    quotes: ['To one who has faith, no explanation is necessary. To one without faith, no explanation is possible'],
+    quotes: [
+      'To one who has faith, no explanation is necessary. To one without faith, no explanation is possible.',
+      'Better to illuminate than merely to shine.',
+      'Wonder is the desire of knowledge.',
+      'There is nothing on this earth more to be prized than true friendship.'
+    ],
     externalLinks: [
-      { title: 'Aquinas - Stanford Encyclopedia', url: '#', type: 'encyclopedia' }
+      { title: 'Internet Encyclopedia: Aquinas', url: 'https://iep.utm.edu/aquinas/', type: 'encyclopedia' },
+      { title: 'Britannica: Thomas Aquinas', url: 'https://www.britannica.com/biography/Saint-Thomas-Aquinas', type: 'article' },
+      { title: 'Summa Theologica – Gutenberg', url: 'https://www.gutenberg.org/ebooks/17611', type: 'book' }
     ]
   },
   {
@@ -413,9 +516,16 @@ export const philosophersData: Philosopher[] = [
     influenced: ['spinoza', 'locke', 'kant'],
     schools: ['rationalism'],
     challenges: ['skepticism'],
-    quotes: ['I think, therefore I am'],
+    quotes: [
+      'I think, therefore I am.',
+      'The preservation of health should be the first study of one who is of any worth to oneself.',
+      'Except our own thoughts, there is nothing absolutely in our power.',
+      'The reading of all good books is like a conversation with the finest minds of past centuries.'
+    ],
     externalLinks: [
-      { title: 'Descartes - Stanford Encyclopedia', url: '#', type: 'encyclopedia' }
+      { title: 'Internet Encyclopedia: Descartes', url: 'https://iep.utm.edu/descarte/', type: 'encyclopedia' },
+      { title: 'Britannica: Descartes', url: 'https://www.britannica.com/biography/Rene-Descartes', type: 'article' },
+      { title: 'Meditations – Gutenberg', url: 'https://www.gutenberg.org/ebooks/23306', type: 'book' }
     ]
   },
   {
@@ -430,9 +540,16 @@ export const philosophersData: Philosopher[] = [
     influenced: ['rousseau', 'jefferson'],
     schools: ['empiricism', 'liberalism'],
     challenges: ['innatism', 'absolutism'],
-    quotes: ['All mankind... being all equal and independent, no one ought to harm another in his life, health, liberty or possessions'],
+    quotes: [
+      'All mankind... being all equal and independent, no one ought to harm another in his life, health, liberty or possessions.',
+      'The end of law is not to abolish or restrain, but to preserve and enlarge freedom.',
+      'Education begins the gentleman, but reading, good company and reflection must finish him.',
+      'New opinions are always suspected, and usually opposed.'
+    ],
     externalLinks: [
-      { title: 'Locke - Stanford Encyclopedia', url: '#', type: 'encyclopedia' }
+      { title: 'Internet Encyclopedia: Locke', url: 'https://iep.utm.edu/locke/', type: 'encyclopedia' },
+      { title: 'Britannica: Locke', url: 'https://www.britannica.com/biography/John-Locke', type: 'article' },
+      { title: 'Two Treatises of Government – Gutenberg', url: 'https://www.gutenberg.org/ebooks/7370', type: 'book' }
     ]
   },
   {
@@ -447,9 +564,16 @@ export const philosophersData: Philosopher[] = [
     influenced: ['kant', 'romanticism'],
     schools: ['enlightenment'],
     challenges: ['absolutism'],
-    quotes: ['Man is born free, and everywhere he is in chains'],
+    quotes: [
+      'Man is born free, and everywhere he is in chains.',
+      'People who know little are usually great talkers, while men who know much say little.',
+      'Patience is bitter, but its fruit is sweet.',
+      'The world of reality has its limits; the world of imagination is boundless.'
+    ],
     externalLinks: [
-      { title: 'Rousseau - Stanford Encyclopedia', url: '#', type: 'encyclopedia' }
+      { title: 'Internet Encyclopedia: Rousseau', url: 'https://iep.utm.edu/rousseau/', type: 'encyclopedia' },
+      { title: 'Britannica: Rousseau', url: 'https://www.britannica.com/biography/Jean-Jacques-Rousseau', type: 'article' },
+      { title: 'The Social Contract – Gutenberg', url: 'https://www.gutenberg.org/ebooks/46333', type: 'book' }
     ]
   },
   {
@@ -464,9 +588,16 @@ export const philosophersData: Philosopher[] = [
     influenced: ['kant', 'mill'],
     schools: ['empiricism'],
     challenges: ['rationalism'],
-    quotes: ['Reason is, and ought only to be the slave of the passions'],
+    quotes: [
+      'Reason is, and ought only to be the slave of the passions.',
+      'A wise man proportions his belief to the evidence.',
+      'Custom is the great guide of human life.',
+      'Beauty in things exists in the mind which contemplates them.'
+    ],
     externalLinks: [
-      { title: 'Hume - Stanford Encyclopedia', url: '#', type: 'encyclopedia' }
+      { title: 'Internet Encyclopedia: Hume', url: 'https://iep.utm.edu/hume/', type: 'encyclopedia' },
+      { title: 'Britannica: David Hume', url: 'https://www.britannica.com/biography/David-Hume', type: 'article' },
+      { title: 'Enquiry Concerning Human Understanding – Gutenberg', url: 'https://www.gutenberg.org/ebooks/9662', type: 'book' }
     ]
   },
   {
@@ -481,9 +612,16 @@ export const philosophersData: Philosopher[] = [
     influenced: ['marx', 'existentialists'],
     schools: ['german-idealism'],
     challenges: ['empiricism'],
-    quotes: ['The real is the rational and the rational is the real'],
+    quotes: [
+      'The real is the rational and the rational is the real.',
+      'Nothing great in the world has ever been accomplished without passion.',
+      'Truth is found neither in the thesis nor the antithesis, but in an emergent synthesis.',
+      'Education is the art of making man ethical.'
+    ],
     externalLinks: [
-      { title: 'Hegel - Stanford Encyclopedia', url: '#', type: 'encyclopedia' }
+      { title: 'Internet Encyclopedia: Hegel', url: 'https://iep.utm.edu/hegel/', type: 'encyclopedia' },
+      { title: 'Britannica: Hegel', url: 'https://www.britannica.com/biography/Georg-Wilhelm-Friedrich-Hegel', type: 'article' },
+      { title: 'Phenomenology of Spirit – Internet Archive', url: 'https://archive.org/details/phenomenologyofs00hege', type: 'book' }
     ]
   },
   {
@@ -498,9 +636,16 @@ export const philosophersData: Philosopher[] = [
     influenced: ['lenin', 'critical-theory'],
     schools: ['marxism'],
     challenges: ['capitalism'],
-    quotes: ['The philosophers have only interpreted the world, in various ways. The point, however, is to change it'],
+    quotes: [
+      'The philosophers have only interpreted the world, in various ways. The point, however, is to change it.',
+      'Workers of the world unite; you have nothing to lose but your chains.',
+      'Religion is the opium of the people.',
+      'From each according to his ability, to each according to his needs.'
+    ],
     externalLinks: [
-      { title: 'Marx - Stanford Encyclopedia', url: '#', type: 'encyclopedia' }
+      { title: 'Internet Encyclopedia: Marx', url: 'https://iep.utm.edu/marx/', type: 'encyclopedia' },
+      { title: 'Britannica: Karl Marx', url: 'https://www.britannica.com/biography/Karl-Marx', type: 'article' },
+      { title: 'The Communist Manifesto – Gutenberg', url: 'https://www.gutenberg.org/ebooks/61', type: 'book' }
     ]
   },
   {
@@ -515,9 +660,16 @@ export const philosophersData: Philosopher[] = [
     influenced: ['foucault', 'camus', 'de-beauvoir', 'fanon'],
     schools: ['existentialism'],
     challenges: ['determinism'],
-    quotes: ['Man is condemned to be free'],
+    quotes: [
+      'Man is condemned to be free.',
+      'Hell is other people.',
+      'Freedom is what you do with what’s been done to you.',
+      'Existence precedes essence.'
+    ],
     externalLinks: [
-      { title: 'Sartre - Stanford Encyclopedia', url: '#', type: 'encyclopedia' }
+      { title: 'Internet Encyclopedia: Sartre', url: 'https://iep.utm.edu/sartre-jean-paul/', type: 'encyclopedia' },
+      { title: 'Britannica: Jean-Paul Sartre', url: 'https://www.britannica.com/biography/Jean-Paul-Sartre', type: 'article' },
+      { title: 'Being and Nothingness – Internet Archive', url: 'https://archive.org/details/beingnothingness00sart', type: 'book' }
     ]
   },
   {
@@ -532,9 +684,16 @@ export const philosophersData: Philosopher[] = [
     influenced: ['feminist-philosophy'],
     schools: ['existentialism', 'feminism'],
     challenges: ['patriarchy'],
-    quotes: ['One is not born, but rather becomes, a woman'],
+    quotes: [
+      'One is not born, but rather becomes, a woman.',
+      'Change your life today. Don’t gamble on the future, act now, without delay.',
+      'Society cares for the individual only so far as he is profitable.',
+      'I am too intelligent, too demanding, and too resourceful for anyone to be able to take charge of me entirely.'
+    ],
     externalLinks: [
-      { title: 'Beauvoir - Stanford Encyclopedia', url: '#', type: 'encyclopedia' }
+      { title: 'Internet Encyclopedia: Simone de Beauvoir', url: 'https://iep.utm.edu/beauvoir/', type: 'encyclopedia' },
+      { title: 'Britannica: Simone de Beauvoir', url: 'https://www.britannica.com/biography/Simone-de-Beauvoir', type: 'article' },
+      { title: 'The Second Sex – Internet Archive', url: 'https://archive.org/details/second-sex-de-beauvoir', type: 'book' }
     ]
   },
   {
@@ -549,8 +708,17 @@ export const philosophersData: Philosopher[] = [
     influenced: ['avicenna'],
     schools: ['islamic-philosophy'],
     challenges: ['orthodoxy'],
-    quotes: ['The aim of society is the attainment of true happiness'],
-    externalLinks: [{ title: 'Stanford Encyclopedia: Al-Farabi', url: '#', type: 'encyclopedia' }]
+    quotes: [
+      'The aim of society is the attainment of true happiness.',
+      'Virtue is the perfection of the soul.',
+      'Knowledge is the cause of the perfection of the human soul.',
+      'Happiness is achieved through the cooperation of individuals in a virtuous city.'
+    ],
+    externalLinks: [
+      { title: 'Internet Encyclopedia: Al-Farabi', url: 'https://iep.utm.edu/al-farabi/', type: 'encyclopedia' },
+      { title: 'Britannica: Al-Farabi', url: 'https://www.britannica.com/biography/Al-Farabi', type: 'article' },
+      { title: 'Selections from Al-Farabi – Internet Archive', url: 'https://archive.org/details/alfarabiselectedtexts', type: 'book' }
+    ]
   },
   {
     id: 'avicenna',
@@ -564,8 +732,17 @@ export const philosophersData: Philosopher[] = [
     influenced: ['aquinas'],
     schools: ['islamic-philosophy'],
     challenges: ['theologians'],
-    quotes: ['The world is divided into men who have wit and no religion and men who have religion and no wit'],
-    externalLinks: [{ title: 'Stanford Encyclopedia: Avicenna', url: '#', type: 'encyclopedia' }]
+    quotes: [
+      'The world is divided into men who have wit and no religion and men who have religion and no wit.',
+      'Medicine is the science by which we learn the various states of the body.',
+      'The knowledge of anything, since all things have causes, is not acquired or complete unless it is known by its causes.',
+      'Human intellect at its perfection is angelic.'
+    ],
+    externalLinks: [
+      { title: 'Internet Encyclopedia: Avicenna', url: 'https://iep.utm.edu/avicenna/', type: 'encyclopedia' },
+      { title: 'Britannica: Avicenna', url: 'https://www.britannica.com/biography/Avicenna', type: 'article' },
+      { title: 'Canon of Medicine – Internet Archive', url: 'https://archive.org/details/AvicennaCanonOfMedicine', type: 'book' }
+    ]
   },
   {
     id: 'averroes',
@@ -579,8 +756,17 @@ export const philosophersData: Philosopher[] = [
     influenced: ['aquinas', 'scholastics'],
     schools: ['islamic-philosophy'],
     challenges: ['al-ghazali'],
-    quotes: ['Ignorance leads to fear, fear leads to hate, and hate leads to violence'],
-    externalLinks: [{ title: 'Stanford Encyclopedia: Averroes', url: '#', type: 'encyclopedia' }]
+    quotes: [
+      'Ignorance leads to fear, fear leads to hate, and hate leads to violence.',
+      'Truth does not contradict truth.',
+      'Knowledge is the conformity of the object and the intellect.',
+      'He who is engaged in the study of science is engaged in the contemplation of the divine.'
+    ],
+    externalLinks: [
+      { title: 'Internet Encyclopedia: Averroes', url: 'https://iep.utm.edu/averroes/', type: 'encyclopedia' },
+      { title: 'Britannica: Averroes', url: 'https://www.britannica.com/biography/Averroes', type: 'article' },
+      { title: 'Selections of Averroes – Internet Archive', url: 'https://archive.org/details/averroescommentaries', type: 'book' }
+    ]
   },
   {
     id: 'al-ghazali',
@@ -594,8 +780,17 @@ export const philosophersData: Philosopher[] = [
     influenced: ['averroes', 'islamic-mysticism'],
     schools: ['islamic-philosophy'],
     challenges: ['aristotelian-rationalism'],
-    quotes: ['Knowledge without action is wastefulness'],
-    externalLinks: [{ title: 'Stanford Encyclopedia: Al-Ghazali', url: '#', type: 'encyclopedia' }]
+    quotes: [
+      'Knowledge without action is wastefulness.',
+      'Desire makes slaves out of kings and patience makes kings out of slaves.',
+      'The ultimate happiness lies in nearness to God.',
+      'He who buries his head deep into a nosebag full of food cannot hope to see the invisible world.'
+    ],
+    externalLinks: [
+      { title: 'Internet Encyclopedia: Al-Ghazali', url: 'https://iep.utm.edu/al-ghazali/', type: 'encyclopedia' },
+      { title: 'Britannica: Al-Ghazali', url: 'https://www.britannica.com/biography/al-Ghazali', type: 'article' },
+      { title: 'The Incoherence of the Philosophers – Internet Archive', url: 'https://archive.org/details/GhazaliIncoherence', type: 'book' }
+    ]
   },
   {
     id: 'zoroaster',
@@ -609,10 +804,19 @@ export const philosophersData: Philosopher[] = [
     influenced: ['judaism', 'christianity'],
     schools: ['zoroastrianism'],
     challenges: ['polytheism'],
-    quotes: ['Good thoughts, good words, good deeds'],
-    externalLinks: [{ title: 'Zoroastrianism Overview', url: '#', type: 'article' }]
+    quotes: [
+      'Good thoughts, good words, good deeds.',
+      'He who sows righteousness reaps the most excellent fruit.',
+      'Turn yourself not away from three best things: good thoughts, good words, and good deeds.',
+      'The best of men is he who accepts joy and grief as if they were the same.'
+    ],
+    externalLinks: [
+      { title: 'Britannica: Zoroaster', url: 'https://www.britannica.com/biography/Zoroaster', type: 'article' },
+      { title: 'Internet Encyclopedia: Zoroastrianism', url: 'https://iep.utm.edu/zoroastr/', type: 'encyclopedia' },
+      { title: 'Avesta (Sacred Texts)', url: 'https://www.sacred-texts.com/zor/sbe04/index.htm', type: 'book' }
+    ]
   },
-  {
+    {
     id: 'hypatia',
     name: 'Hypatia of Alexandria',
     years: '350-415 CE',
@@ -624,10 +828,19 @@ export const philosophersData: Philosopher[] = [
     influenced: ['renaissance-humanists'],
     schools: ['neoplatonism'],
     challenges: ['christian-extremists'],
-    quotes: ['Reserve your right to think, for even to think wrongly is better than not to think at all'],
-    externalLinks: [{ title: 'Hypatia Profile', url: '#', type: 'article' }]
+    quotes: [
+      'Reserve your right to think, for even to think wrongly is better than not to think at all.',
+      'Fables should be taught as fables, myths as myths, and miracles as poetic fancies.',
+      'To teach superstitions as truths is a most terrible thing.',
+      'All formal dogmatic religions are fallacious and must never be accepted by self-respecting persons.'
+    ],
+    externalLinks: [
+      { title: 'Britannica: Hypatia', url: 'https://www.britannica.com/biography/Hypatia', type: 'article' },
+      { title: 'Internet Encyclopedia: Hypatia', url: 'https://iep.utm.edu/hypatia/', type: 'encyclopedia' },
+      { title: 'Hypatia Studies – Internet Archive', url: 'https://archive.org/details/hypatiaalexandria', type: 'book' }
+    ]
   },
-    {
+  {
     id: 'schopenhauer',
     name: 'Arthur Schopenhauer',
     years: '1788-1860',
@@ -640,17 +853,15 @@ export const philosophersData: Philosopher[] = [
     schools: ['german-idealism', 'pessimism'],
     challenges: ['hegelian-idealism', 'rationalism'],
     quotes: [
-      'The world is my representation',
-      'Man can do what he wills but he cannot will what he wills',
-      'Compassion is the basis of morality',
-      'Life is a constant oscillation between desire and boredom'
+      'The world is my representation.',
+      'Compassion is the basis of morality.',
+      'A man can do what he wills, but he cannot will what he wills.',
+      'Life is a constant oscillation between desire and boredom.'
     ],
     externalLinks: [
-      { title: 'Stanford Encyclopedia: Schopenhauer', url: 'https://plato.stanford.edu/entries/schopenhauer/', type: 'encyclopedia' },
-      { title: 'Internet Encyclopedia: Upanishads (Schopenhauer’s influence)', url: 'https://iep.utm.edu/upanisad/', type: 'encyclopedia' },
-      { title: 'On the Basis of Morality - Wikipedia', url: 'https://en.wikipedia.org/wiki/On_the_Basis_of_Morality', type: 'article' },
-      { title: 'On the Basis of Morality - Full Text (Project Gutenberg)', url: 'https://www.gutenberg.org/files/44929/44929-h/44929-h.htm', type: 'book' },
-      { title: 'Philosophy Now: Schopenhauer’s Compassionate Morality', url: 'https://philosophynow.org/issues/52/Schopenhauers_Compassionate_Morality', type: 'article' }
+      { title: 'Internet Encyclopedia: Schopenhauer', url: 'https://iep.utm.edu/schopenh/', type: 'encyclopedia' },
+      { title: 'Britannica: Schopenhauer', url: 'https://www.britannica.com/biography/Arthur-Schopenhauer', type: 'article' },
+      { title: 'On the Basis of Morality – Gutenberg', url: 'https://www.gutenberg.org/ebooks/44929', type: 'book' }
     ]
   },
   {
@@ -665,8 +876,17 @@ export const philosophersData: Philosopher[] = [
     influenced: ['modern-sociology'],
     schools: ['islamic-philosophy'],
     challenges: ['linear-historiography'],
-    quotes: ['History is a science'],
-    externalLinks: [{ title: 'Ibn Khaldun Biography', url: '#', type: 'article' }]
+    quotes: [
+      'History is a science.',
+      'Man is the child of his customs, not the child of his ancestors.',
+      'Government is an institution which prevents injustice other than such as it commits itself.',
+      'The past resembles the future more than one drop of water resembles another.'
+    ],
+    externalLinks: [
+      { title: 'Britannica: Ibn Khaldun', url: 'https://www.britannica.com/biography/Ibn-Khaldun', type: 'article' },
+      { title: 'Internet Encyclopedia: Ibn Khaldun', url: 'https://iep.utm.edu/ibn-khaldun/', type: 'encyclopedia' },
+      { title: 'Muqaddimah – Internet Archive (Rosenthal translation)', url: 'https://archive.org/details/MuqaddimahIbnKhaldun', type: 'book' }
+    ]
   },
   {
     id: 'simonede-beauvoir',
@@ -695,10 +915,18 @@ export const philosophersData: Philosopher[] = [
     influenced: ['postcolonial-theory'],
     schools: ['critical-theory'],
     challenges: ['colonialism'],
-    quotes: ['The colonized can see right away if decolonization is taking place or not'],
-    externalLinks: [{ title: 'Fanon Writings', url: '#', type: 'article' }]
+    quotes: [
+      'The colonized can see right away if decolonization is taking place or not.',
+      'Imperialism leaves behind germs of rot which we must clinically detect and remove from our land but from our minds as well.',
+      'To speak a language is to take on a world, a culture.',
+      'In the world through which I travel, I am endlessly creating myself.'
+    ],
+    externalLinks: [
+      { title: 'Internet Encyclopedia: Fanon', url: 'https://iep.utm.edu/fanon/', type: 'encyclopedia' },
+      { title: 'Britannica: Frantz Fanon', url: 'https://www.britannica.com/biography/Frantz-Fanon', type: 'article' },
+      { title: 'The Wretched of the Earth – Internet Archive', url: 'https://archive.org/details/wretched-of-the-earth', type: 'book' }
+    ]
   },
-
   {
     id: 'heidegger',
     name: 'Martin Heidegger',
@@ -711,8 +939,17 @@ export const philosophersData: Philosopher[] = [
     influenced: ['sartre', 'derrida'],
     schools: ['existentialism'],
     challenges: ['metaphysics'],
-    quotes: ['Language is the house of Being'],
-    externalLinks: [{ title: 'Stanford Encyclopedia: Heidegger', url: '#', type: 'encyclopedia' }]
+    quotes: [
+      'Language is the house of Being.',
+      'Every man is born as many men and dies as a single one.',
+      'Being is always the Being of a being.',
+      'The human being is not the lord of beings, but the shepherd of Being.'
+    ],
+    externalLinks: [
+      { title: 'Internet Encyclopedia: Heidegger', url: 'https://iep.utm.edu/heidegge/', type: 'encyclopedia' },
+      { title: 'Britannica: Martin Heidegger', url: 'https://www.britannica.com/biography/Martin-Heidegger', type: 'article' },
+      { title: 'Being and Time – Internet Archive', url: 'https://archive.org/details/BeingAndTime', type: 'book' }
+    ]
   },
   {
     id: 'foucault',
@@ -726,8 +963,17 @@ export const philosophersData: Philosopher[] = [
     influenced: ['critical-theory'],
     schools: ['post-structuralism'],
     challenges: ['humanism'],
-    quotes: ['Where there is power, there is resistance'],
-    externalLinks: [{ title: 'Stanford Encyclopedia: Foucault', url: '#', type: 'encyclopedia' }]
+    quotes: [
+      'Where there is power, there is resistance.',
+      'Knowledge is not made for understanding; it is made for cutting.',
+      'The soul is the prison of the body.',
+      'Power is everywhere… because it comes from everywhere.'
+    ],
+    externalLinks: [
+      { title: 'Internet Encyclopedia: Foucault', url: 'https://iep.utm.edu/foucault/', type: 'encyclopedia' },
+      { title: 'Britannica: Michel Foucault', url: 'https://www.britannica.com/biography/Michel-Foucault', type: 'article' },
+      { title: 'Discipline and Punish – Internet Archive', url: 'https://archive.org/details/discipline-punish-foucault', type: 'book' }
+    ]
   },
   {
     id: 'derrida',
@@ -741,8 +987,17 @@ export const philosophersData: Philosopher[] = [
     influenced: ['postmodernism'],
     schools: ['post-structuralism'],
     challenges: ['structuralism'],
-    quotes: ['There is nothing outside the text'],
-    externalLinks: [{ title: 'Stanford Encyclopedia: Derrida', url: '#', type: 'encyclopedia' }]
+    quotes: [
+      'There is nothing outside the text.',
+      'Every sign is a mark which refers to another sign.',
+      'Deconstruction is not destruction.',
+      'Meaning is never present in itself, but always deferred.'
+    ],
+    externalLinks: [
+      { title: 'Internet Encyclopedia: Derrida', url: 'https://iep.utm.edu/derrida/', type: 'encyclopedia' },
+      { title: 'Britannica: Jacques Derrida', url: 'https://www.britannica.com/biography/Jacques-Derrida', type: 'article' },
+      { title: 'Of Grammatology – Internet Archive', url: 'https://archive.org/details/OfGrammatology', type: 'book' }
+    ]
   },
   {
     id: 'bell-hooks',
@@ -756,8 +1011,17 @@ export const philosophersData: Philosopher[] = [
     influenced: ['critical-pedagogy'],
     schools: ['critical-theory'],
     challenges: ['sexism', 'racism'],
-    quotes: ['Feminism is for everybody'],
-    externalLinks: [{ title: 'bell hooks Library', url: '#', type: 'article' }]
+    quotes: [
+      'Feminism is for everybody.',
+      'Love is an action, never simply a feeling.',
+      'The practice of love is the most powerful antidote to the politics of domination.',
+      'Without justice there can be no love.'
+    ],
+    externalLinks: [
+      { title: 'Britannica: bell hooks', url: 'https://www.britannica.com/biography/Bell-Hooks', type: 'article' },
+      { title: 'Internet Encyclopedia: Feminist Philosophy (hooks included)', url: 'https://iep.utm.edu/fem-phil/', type: 'encyclopedia' },
+      { title: 'Teaching to Transgress – Internet Archive', url: 'https://archive.org/details/TeachingToTransgressHooks', type: 'book' }
+    ]
   },
   {
     id: 'quijano',
@@ -771,11 +1035,20 @@ export const philosophersData: Philosopher[] = [
     influenced: ['mignolo'],
     schools: ['decolonial'],
     challenges: ['eurocentrism'],
-    quotes: ['Coloniality is the dark side of modernity'],
-    externalLinks: [{ title: 'Decolonial Thought', url: '#', type: 'article' }]
+    quotes: [
+      'Coloniality is the dark side of modernity.',
+      'Eurocentrism is not merely an ideology; it is a structure of knowledge.',
+      'Modernity is inseparable from coloniality.',
+      'The colonial matrix of power persists beyond colonialism.'
+    ],
+    externalLinks: [
+      { title: 'Britannica: Aníbal Quijano', url: 'https://www.britannica.com/biography/Anibal-Quijano', type: 'article' },
+      { title: 'Philosophy Now: Quijano and Coloniality', url: 'https://philosophynow.org/issues/144/Anibal_Quijano_and_Coloniality', type: 'article' },
+      { title: 'Coloniality of Power – PDF (academic archive)', url: 'https://archive.org/details/quijano-coloniality-of-power', type: 'book' }
+    ]
   },
   {
-    id: 'teshie-tetteh',
+    id: 'kwasi-wiredu',
     name: 'Kwasi Wiredu',
     years: '1931-2022',
     nationality: 'Ghanaian',
@@ -786,8 +1059,17 @@ export const philosophersData: Philosopher[] = [
     influenced: ['african-philosophy'],
     schools: ['african-philosophy'],
     challenges: ['colonial-thought'],
-    quotes: ['Decolonization is the radical alteration of our conceptual frameworks'],
-    externalLinks: [{ title: 'Kwasi Wiredu Profile', url: '#', type: 'article' }]
+    quotes: [
+      'Decolonization is the radical alteration of our conceptual frameworks.',
+      'Philosophy must always be done in the context of one’s own culture.',
+      'Tradition must be interrogated, not simply preserved.',
+      'Conceptual decolonization is indispensable for African philosophy.'
+    ],
+    externalLinks: [
+      { title: 'Britannica: Kwasi Wiredu', url: 'https://www.britannica.com/biography/Kwasi-Wiredu', type: 'article' },
+      { title: 'Internet Encyclopedia: African Philosophy (Wiredu included)', url: 'https://iep.utm.edu/afrphil/', type: 'encyclopedia' },
+      { title: 'Philosophy and an African Culture – Internet Archive', url: 'https://archive.org/details/PhilosophyAndAnAfricanCultureWiredu', type: 'book' }
+    ]
   },
   {
     id: 'vine-deloria',
@@ -801,8 +1083,17 @@ export const philosophersData: Philosopher[] = [
     influenced: ['indigenous-scholarship'],
     schools: ['indigenous-philosophy'],
     challenges: ['colonialism'],
-    quotes: ['Indians think in terms of circles, not lines'],
-    externalLinks: [{ title: 'Vine Deloria Resources', url: '#', type: 'article' }]
+    quotes: [
+      'Indians think in terms of circles, not lines.',
+      'Religion is for people who are afraid of going to hell. Spirituality is for those who have been there.',
+      'The future of mankind lies waiting for those who will come to understand their lives and take up their responsibilities to all living things.',
+      'We must protect the land for the seventh generation to come.'
+    ],
+    externalLinks: [
+      { title: 'Britannica: Vine Deloria Jr.', url: 'https://www.britannica.com/biography/Vine-Deloria-Jr', type: 'article' },
+      { title: 'Custer Died for Your Sins – Internet Archive', url: 'https://archive.org/details/custer-died-for-your-sins', type: 'book' },
+      { title: 'Philosophy Now: Vine Deloria Jr.', url: 'https://philosophynow.org/issues/152/Vine_Deloria_Jr_and_Indigenous_Philosophy', type: 'article' }
+    ]
   },
   {
     id: 'amartya-sen',
@@ -816,7 +1107,16 @@ export const philosophersData: Philosopher[] = [
     influenced: ['development-theory'],
     schools: ['modern-philosophy'],
     challenges: ['utilitarianism'],
-    quotes: ['Poverty is not just a lack of money; it is not having the capability to realize one’s potential as a human being'],
-    externalLinks: [{ title: 'Amartya Sen Works', url: '#', type: 'article' }]
+    quotes: [
+      'Poverty is not just a lack of money; it is not having the capability to realize one’s potential as a human being.',
+      'Development is freedom.',
+      'Justice is a social commitment to equality of opportunities.',
+      'Economic growth without investment in human development is unsustainable.'
+    ],
+    externalLinks: [
+      { title: 'Britannica: Amartya Sen', url: 'https://www.britannica.com/biography/Amartya-Sen', type: 'article' },
+      { title: 'Internet Encyclopedia: Sen (Capabilities Approach)', url: 'https://iep.utm.edu/sen-cap/', type: 'encyclopedia' },
+      { title: 'Development as Freedom – Internet Archive', url: 'https://archive.org/details/development-as-freedom-sen', type: 'book' }
+    ]
   }
 ];
