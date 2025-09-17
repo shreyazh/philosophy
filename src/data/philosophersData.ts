@@ -818,5 +818,101 @@ export const philosophersData: Philosopher[] = [
     challenges: ['utilitarianism'],
     quotes: ['Poverty is not just a lack of money; it is not having the capability to realize one’s potential as a human being'],
     externalLinks: [{ title: 'Amartya Sen Works', url: '#', type: 'article' }]
+  },
+  {
+    id: 'spinoza',
+    name: 'Baruch Spinoza',
+    years: '1632-1677',
+    nationality: 'Dutch',
+    keyWorks: ['Ethics', 'Theological-Political Treatise'],
+    biography: 'Spinoza was a Dutch philosopher of Sephardi Portuguese origin, one of the early thinkers of the Enlightenment. His work in ethics and rationalism laid foundations for modern biblical criticism and secular philosophy.',
+    keyIdeas: ['pantheism', 'determinism', 'ethics-of-joy'],
+    influences: ['descartes', 'stoics', 'jewish-philosophy'],
+    influenced: ['hegel', 'nietzsche', 'einstein'],
+    schools: ['rationalism'],
+    challenges: ['orthodoxy'],
+    quotes: [
+      'The more you struggle to live, the less you live. Give up the notion that you must be sure of what you are doing.',
+      'The highest activity a human being can attain is learning for understanding, because to understand is to be free.',
+      'Peace is not an absence of war; it is a virtue, a state of mind.',
+      'Man is a social animal.'
+    ],
+    externalLinks: [
+      { title: 'Internet Encyclopedia: Spinoza', url: 'https://iep.utm.edu/spinoza/', type: 'encyclopedia' },
+      { title: 'Britannica: Spinoza', url: 'https://www.britannica.com/biography/Baruch-Spinoza', type: 'article' },
+      { title: 'Ethics – Gutenberg', url: 'https://www.gutenberg.org/ebooks/3800', type: 'book' }
+    ]
+  },
+  {
+    id: 'leibniz',
+    name: 'Gottfried Wilhelm Leibniz',
+    years: '1646-1716',
+    nationality: 'German',
+    keyWorks: ['Monadology', 'Discourse on Metaphysics'],
+    biography: 'Leibniz was a German polymath and philosopher who developed calculus independently of Newton and proposed metaphysical theories of monads, optimism, and pre-established harmony.',
+    keyIdeas: ['monadology', 'pre-established-harmony', 'optimism'],
+    influences: ['descartes', 'aristotle'],
+    influenced: ['kant', 'wolff'],
+    schools: ['rationalism'],
+    challenges: ['empiricism'],
+    quotes: [
+      'This is the best of all possible worlds.',
+      'Music is the pleasure the human mind experiences from counting without being aware that it is counting.',
+      'Reality cannot be found except in one single source.',
+      'The present is pregnant with the future.'
+    ],
+    externalLinks: [
+      { title: 'Internet Encyclopedia: Leibniz', url: 'https://iep.utm.edu/leibniz/', type: 'encyclopedia' },
+      { title: 'Britannica: Leibniz', url: 'https://www.britannica.com/biography/Gottfried-Wilhelm-Leibniz', type: 'article' },
+      { title: 'Monadology – Gutenberg', url: 'https://www.gutenberg.org/ebooks/17147', type: 'book' }
+    ]
+  },
+  {
+    id: 'hobbes',
+    name: 'Thomas Hobbes',
+    years: '1588-1679',
+    nationality: 'English',
+    keyWorks: ['Leviathan'],
+    biography: 'Hobbes was an English philosopher considered one of the founders of modern political philosophy. His social contract theory laid the groundwork for later liberal thought.',
+    keyIdeas: ['social-contract', 'political-realism', 'materialism'],
+    influences: ['aristotle', 'descartes'],
+    influenced: ['locke', 'rousseau'],
+    schools: ['political-philosophy'],
+    challenges: ['idealism'],
+    quotes: [
+      'The condition of man is a condition of war of everyone against everyone.',
+      'Hell is truth seen too late.',
+      'It is not wisdom but authority that makes a law.',
+      'The life of man, solitary, poor, nasty, brutish, and short.'
+    ],
+    externalLinks: [
+      { title: 'Internet Encyclopedia: Hobbes', url: 'https://iep.utm.edu/hobbes/', type: 'encyclopedia' },
+      { title: 'Britannica: Hobbes', url: 'https://www.britannica.com/biography/Thomas-Hobbes', type: 'article' },
+      { title: 'Leviathan – Gutenberg', url: 'https://www.gutenberg.org/ebooks/3207', type: 'book' }
+    ]
+  },
+  {
+    id: 'camus',
+    name: 'Albert Camus',
+    years: '1913-1960',
+    nationality: 'French-Algerian',
+    keyWorks: ['The Myth of Sisyphus', 'The Stranger'],
+    biography: 'Camus was a French-Algerian philosopher, author, and journalist, known for developing the concept of the absurd and influencing existentialism and modern literature.',
+    keyIdeas: ['absurdism', 'rebellion', 'freedom'],
+    influences: ['nietzsche', 'sartre'],
+    influenced: ['existentialism', 'absurdist-literature'],
+    schools: ['existentialism', 'absurdism'],
+    challenges: ['nihilism'],
+    quotes: [
+      'In the depth of winter, I finally learned that within me there lay an invincible summer.',
+      'The struggle itself toward the heights is enough to fill a man’s heart. One must imagine Sisyphus happy.',
+      'The only way to deal with an unfree world is to become so absolutely free that your very existence is an act of rebellion.',
+      'Seeking what is true is not seeking what is desirable.'
+    ],
+    externalLinks: [
+      { title: 'Internet Encyclopedia: Camus', url: 'https://iep.utm.edu/camus/', type: 'encyclopedia' },
+      { title: 'Britannica: Albert Camus', url: 'https://www.britannica.com/biography/Albert-Camus', type: 'article' },
+      { title: 'The Myth of Sisyphus – Internet Archive', url: 'https://archive.org/details/myth-of-sisyphus', type: 'book' }
+    ]
   }
 ];
