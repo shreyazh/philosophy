@@ -30,19 +30,17 @@ export function ChallengePage() {
         </Link>
 
         {/* Header */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
-          <div className="flex items-start gap-6">
-            <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
-              <Zap size={32} className="text-white" />
+        <div className="bg-white rounded-xl shadow-lg p-6 mb-7">
+          <div className="flex items-center gap-2 mb-4">
+            <div className="w-8 h-8 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center">
+              <Zap className="text-white" size={20} />
             </div>
-            <div className="flex-1">
-              <h1 className="text-4xl font-bold text-gray-800 mb-4">{challenge.name}</h1>
-              <p className="text-lg text-gray-700 leading-relaxed">{challenge.description}</p>
-            </div>
+            <h2 className="text-2xl font-bold text-gray-800">{challenge.name}</h2>
           </div>
-        </div>
+          <p className="text-gray-700 leading-relaxed text-justify">{challenge.description}</p>
+          </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+      <div className="grid lg:grid-cols-3 gap-8">
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-8">
             {/* The Conflict */}
@@ -73,13 +71,13 @@ export function ChallengePage() {
                 <Award className="text-green-600" size={24} />
                 <h2 className="text-2xl font-bold text-gray-800">Outcome</h2>
               </div>
-              <p className="text-gray-700 leading-relaxed">{challenge.outcome}</p>
+              <p className="text-gray-700 leading-relaxed text-justify">{challenge.outcome}</p>
             </div>
 
             {/* Historical Significance */}
             <div className="bg-white rounded-xl shadow-lg p-6">
               <h2 className="text-2xl font-bold text-gray-800 mb-4">Historical Significance</h2>
-              <p className="text-gray-700 leading-relaxed">{challenge.significance}</p>
+              <p className="text-gray-700 leading-relaxed text-justify">{challenge.significance}</p>
             </div>
           </div>
 
