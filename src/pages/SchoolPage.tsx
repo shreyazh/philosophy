@@ -1,4 +1,4 @@
-import React from "react";
+// SchoolPage.tsx
 import { useParams, Link } from "react-router-dom";
 import {
   ArrowLeft,
@@ -6,7 +6,6 @@ import {
   Lightbulb,
   GraduationCap,
   BookOpen,
-  
   ExternalLink,
   Clock,
   MapPin,
@@ -20,6 +19,7 @@ import { ideasData } from "../data/ideasData";
 export function SchoolPage() {
   const { id } = useParams<{ id: string }>();
   const school = allSchools.find((s) => s.id === id);
+  
 
   if (!school) {
     return (
@@ -39,30 +39,64 @@ export function SchoolPage() {
   const schoolPhilosophers = philosophersData.filter((p) =>
     p.schools.includes(school.id)
   );
-  const schoolIdeas = ideasData.filter((i) => i.originSchool === school.id);
+  
   const relatedSchools = allSchools.filter((s) =>
     school.relatedSchools.includes(s.id)
   );
 
+  // Back navigation is handled globally with scroll restoration
+
+  // Try to connect school key idea labels to concrete ideas in ideasData
+  function findIdeaForLabel(label: string) {
+    const normalized = label.trim().toLowerCase();
+    const slug = normalized
+      .replace(/[^a-z0-9\s-]/g, "")
+      .replace(/\s+/g, "-");
+
+    // 1) Exact name match (case-insensitive)
+    let found = ideasData.find((idea) => idea.name.trim().toLowerCase() === normalized);
+    if (found) return found;
+
+    // 2) ID equals slug
+    found = ideasData.find((idea) => idea.id === slug);
+    if (found) return found;
+
+    // 3) Related ideas contain the slug
+    found = ideasData.find((idea) => idea.relatedIdeas?.some((r) => r.toLowerCase() === slug));
+    if (found) return found;
+
+    // 4) Name contains the label (loose contains)
+    found = ideasData.find((idea) => idea.name.toLowerCase().includes(normalized));
+    if (found) return found;
+
+    return undefined;
+  }
+
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-6 py-8">
-        <Link
-          to="/schools"
+        {/* Back Button */}
+        <button
+           onClick={() => window.history.back()}
           className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-6 transition-colors"
         >
-          <ArrowLeft size={20} />
-          Back to Schools
-        </Link>
+          <ArrowLeft size={20} />Move Back
+        </button>
+
+        {/* School Header */}
         <div className="bg-white rounded-xl shadow-lg p-6 mb-7">
           <div className="flex items-start gap-2 mb-2">
-            <div className="w-8 h-8 bg-gradient-to-br rounded-full m-1 flex items-center justify-center" style={{ backgroundColor: school.color }}>
-            <GraduationCap className="text-white" size={18} /></div>
+            <div
+              className="w-8 h-8 rounded-full m-1 flex items-center justify-center"
+              style={{ backgroundColor: school.color }}
+            >
+              <GraduationCap className="text-white" size={18} />
+            </div>
             <div className="flex-1">
               <h1 className="text-2xl font-bold text-gray-800">
                 {school.name}
               </h1>
-              <div className="flex flex-wrap text-gray-600 mb-4">
+              <div className="flex flex-wrap text-gray-600 mb-4 gap-4">
                 <div className="flex items-center gap-2">
                   <Clock size={18} />
                   <span>{school.years}</span>
@@ -72,16 +106,17 @@ export function SchoolPage() {
                   <span>{school.region}</span>
                 </div>
               </div>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-md text-gray-700 leading-relaxed text-justify">
                 {school.detailedDescription}
               </p>
             </div>
           </div>
         </div>
 
+        {/* Main Content */}
         <div className="grid lg:grid-cols-3 gap-8">
-          {/* Main Content */}
           <div className="lg:col-span-2 space-y-8">
+            
             {/* Key Ideas */}
             <div className="bg-white rounded-xl shadow-lg p-6">
               <div className="flex items-center gap-2 mb-4">
@@ -89,14 +124,28 @@ export function SchoolPage() {
                 <h2 className="text-2xl font-bold text-gray-800">Key Ideas</h2>
               </div>
               <div className="grid md:grid-cols-2 gap-4">
-                {school.keyIdeas.map((idea, index) => (
-                  <div
-                    key={index}
-                    className="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-                  >
-                    <span className="font-medium text-gray-800">{idea}</span>
-                  </div>
-                ))}
+                {school.keyIdeas.map((ideaLabel, index) => {
+                  const linked = findIdeaForLabel(ideaLabel);
+                  const content = (
+                    <span className="font-medium text-gray-800">
+                      {linked ? linked.name : ideaLabel}
+                    </span>
+                  );
+                  return (
+                    <div
+                      key={index}
+                      className="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                    >
+                      {linked ? (
+                        <Link to={`/idea/${linked.id}`} className="hover:underline">
+                          {content}
+                        </Link>
+                      ) : (
+                        content
+                      )}
+                    </div>
+                  );
+                })}
               </div>
             </div>
 
@@ -127,18 +176,16 @@ export function SchoolPage() {
               </div>
             </div>
 
-            {/* Influences and Challenges */}
+            {/* Influences & Challenges */}
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white rounded-xl shadow-lg p-6">
                 <div className="flex items-center gap-2 mb-4">
                   <TrendingUp className="text-green-600" size={24} />
-                  <h2 className="text-xl font-bold text-gray-800">
-                    Influences
-                  </h2>
+                  <h2 className="text-xl font-bold text-gray-800">Influences</h2>
                 </div>
                 <ul className="space-y-2">
-                  {school.influences.map((influence, index) => (
-                    <li key={index} className="flex items-start gap-2">
+                  {school.influences.map((influence, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
                       <span className="text-green-600 mt-1">•</span>
                       <span className="text-gray-700">{influence}</span>
                     </li>
@@ -149,13 +196,11 @@ export function SchoolPage() {
               <div className="bg-white rounded-xl shadow-lg p-6">
                 <div className="flex items-center gap-2 mb-4">
                   <Target className="text-red-600" size={24} />
-                  <h2 className="text-xl font-bold text-gray-800">
-                    Challenged
-                  </h2>
+                  <h2 className="text-xl font-bold text-gray-800">Challenged</h2>
                 </div>
                 <ul className="space-y-2">
-                  {school.challenged.map((challenge, index) => (
-                    <li key={index} className="flex items-start gap-2">
+                  {school.challenged.map((challenge, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
                       <span className="text-red-600 mt-1">•</span>
                       <span className="text-gray-700">{challenge}</span>
                     </li>
@@ -169,18 +214,14 @@ export function SchoolPage() {
               <h2 className="text-2xl font-bold text-gray-800 mb-4">
                 Legacy & Impact
               </h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                {school.legacy}
-              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">{school.legacy}</p>
               <div className="space-y-2">
-                <h3 className="font-semibold text-gray-800">
-                  Key Developments:
-                </h3>
+                <h3 className="font-semibold text-gray-800">Key Developments:</h3>
                 <ul className="grid md:grid-cols-2 gap-2">
-                  {school.developments.map((development, index) => (
-                    <li key={index} className="flex items-start gap-2">
+                  {school.developments.map((dev, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
                       <span className="text-blue-600 mt-1">•</span>
-                      <span className="text-gray-700">{development}</span>
+                      <span className="text-gray-700">{dev}</span>
                     </li>
                   ))}
                 </ul>
@@ -190,7 +231,6 @@ export function SchoolPage() {
 
           {/* Sidebar */}
           <div className="space-y-6">
-            {/* Related Schools */}
             {relatedSchools.length > 0 && (
               <div className="bg-white rounded-xl shadow-lg p-6">
                 <h3 className="text-lg font-bold text-gray-800 mb-4">
@@ -225,8 +265,8 @@ export function SchoolPage() {
                 <h3 className="text-lg font-bold text-gray-800">Key Texts</h3>
               </div>
               <ul className="space-y-2">
-                {school.keyTexts.map((text, index) => (
-                  <li key={index} className="text-gray-700 text-sm">
+                {school.keyTexts.map((text, idx) => (
+                  <li key={idx} className="text-gray-700 text-sm">
                     {text}
                   </li>
                 ))}
@@ -240,9 +280,9 @@ export function SchoolPage() {
                 <h3 className="text-lg font-bold text-gray-800">Learn More</h3>
               </div>
               <div className="space-y-3">
-                {school.externalLinks.map((link, index) => (
+                {school.externalLinks.map((link, idx) => (
                   <a
-                    key={index}
+                    key={idx}
                     href={link.url}
                     className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-blue-50 transition-colors group"
                   >
