@@ -1,22 +1,34 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Users, Search, Filter, User } from 'lucide-react';
-import { philosophersData } from '../data/philosophersData';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { Users, Search, Filter, User } from "lucide-react";
+import { philosophersData } from "../data/philosophersData";
 
 export function PhilosophersListPage() {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [selectedNationality, setSelectedNationality] = useState('All');
-  const [selectedCentury, setSelectedCentury] = useState('All');
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedNationality, setSelectedNationality] = useState("All");
+  const [selectedCentury, setSelectedCentury] = useState("All");
 
-  const nationalities = ['All', ...Array.from(new Set(philosophersData.map(p => p.nationality))).sort()];
-  const centuries = ['All', 'Ancient', 'Medieval', 'Renaissance', 'Modern', 'Contemporary'];
+  const nationalities = [
+    "All",
+    ...Array.from(new Set(philosophersData.map((p) => p.nationality))).sort(),
+  ];
+  const centuries = [
+    "All",
+    "Ancient",
+    "Medieval",
+    "Renaissance",
+    "Modern",
+    "Contemporary",
+  ];
 
-  const filteredPhilosophers = philosophersData.filter(philosopher => {
-    const matchesSearch = searchTerm === '' || 
+  const filteredPhilosophers = philosophersData.filter((philosopher) => {
+    const matchesSearch =
+      searchTerm === "" ||
       philosopher.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       philosopher.biography.toLowerCase().includes(searchTerm.toLowerCase());
 
-    const matchesNationality = selectedNationality === 'All' || 
+    const matchesNationality =
+      selectedNationality === "All" ||
       philosopher.nationality === selectedNationality;
 
     // Helper to extract century from years string
@@ -57,12 +69,28 @@ export function PhilosophersListPage() {
     const philosopherCentury = getCentury(philosopher.years);
 
     const matchesCentury =
-      selectedCentury === 'All' ||
-      (selectedCentury === 'Ancient' && philosopherCentury && philosopherCentury.includes('BCE')) ||
-      (selectedCentury === 'Medieval' && philosopherCentury && !philosopherCentury.includes('BCE') && ['5','6','7','8','9','10','11','12','13','14','15'].includes(philosopherCentury)) ||
-      (selectedCentury === 'Renaissance' && philosopherCentury && !philosopherCentury.includes('BCE') && ['15','16'].includes(philosopherCentury)) ||
-      (selectedCentury === 'Modern' && philosopherCentury && !philosopherCentury.includes('BCE') && ['17','18','19'].includes(philosopherCentury)) ||
-      (selectedCentury === 'Contemporary' && philosopherCentury && !philosopherCentury.includes('BCE') && ['20','21'].includes(philosopherCentury));
+      selectedCentury === "All" ||
+      (selectedCentury === "Ancient" &&
+        philosopherCentury &&
+        philosopherCentury.includes("BCE")) ||
+      (selectedCentury === "Medieval" &&
+        philosopherCentury &&
+        !philosopherCentury.includes("BCE") &&
+        ["5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"].includes(
+          philosopherCentury
+        )) ||
+      (selectedCentury === "Renaissance" &&
+        philosopherCentury &&
+        !philosopherCentury.includes("BCE") &&
+        ["15", "16"].includes(philosopherCentury)) ||
+      (selectedCentury === "Modern" &&
+        philosopherCentury &&
+        !philosopherCentury.includes("BCE") &&
+        ["17", "18", "19"].includes(philosopherCentury)) ||
+      (selectedCentury === "Contemporary" &&
+        philosopherCentury &&
+        !philosopherCentury.includes("BCE") &&
+        ["20", "21"].includes(philosopherCentury));
 
     return matchesSearch && matchesNationality && matchesCentury;
   });
@@ -75,8 +103,10 @@ export function PhilosophersListPage() {
           <div className="flex justify-center items-center gap-3 mb-4">
             <Users size={48} className="text-blue-600" />
           </div>
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">Philosophers</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center sm:text-center">
+            Philosophers
+          </h1>
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4 sm:px-0 text-center sm:text-center">
             Explore the great minds that shaped human thought throughout history
           </p>
         </div>
@@ -85,12 +115,17 @@ export function PhilosophersListPage() {
         <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
           <div className="flex items-center gap-2 mb-4">
             <Filter size={20} className="text-gray-600" />
-            <h2 className="text-lg font-semibold text-gray-800">Search & Filter</h2>
+            <h2 className="text-lg font-semibold text-gray-800">
+              Search & Filter
+            </h2>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-4">
             <div className="relative">
-              <Search size={20} className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+              <Search
+                size={20}
+                className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+              />
               <input
                 type="text"
                 placeholder="Search philosophers..."
@@ -105,8 +140,10 @@ export function PhilosophersListPage() {
               onChange={(e) => setSelectedNationality(e.target.value)}
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             >
-              {nationalities.map(nationality => (
-                <option key={nationality} value={nationality}>{nationality}</option>
+              {nationalities.map((nationality) => (
+                <option key={nationality} value={nationality}>
+                  {nationality}
+                </option>
               ))}
             </select>
 
@@ -115,8 +152,10 @@ export function PhilosophersListPage() {
               onChange={(e) => setSelectedCentury(e.target.value)}
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             >
-              {centuries.map(century => (
-                <option key={century} value={century}>{century}</option>
+              {centuries.map((century) => (
+                <option key={century} value={century}>
+                  {century}
+                </option>
               ))}
             </select>
           </div>
@@ -125,7 +164,9 @@ export function PhilosophersListPage() {
         {/* Results */}
         <div className="mb-6">
           <p className="text-gray-600">
-            {filteredPhilosophers.length} {filteredPhilosophers.length === 1 ? 'philosopher' : 'philosophers'} found
+            {filteredPhilosophers.length}{" "}
+            {filteredPhilosophers.length === 1 ? "philosopher" : "philosophers"}{" "}
+            found
           </p>
         </div>
 
@@ -143,19 +184,30 @@ export function PhilosophersListPage() {
                     <User size={24} className="text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-800">{philosopher.name}</h3>
-                    <p className="text-sm text-gray-600">{philosopher.years} • {philosopher.nationality}</p>
+                    <h3 className="text-xl font-bold text-gray-800">
+                      {philosopher.name}
+                    </h3>
+                    <p className="text-sm text-gray-600">
+                      {philosopher.years} • {philosopher.nationality}
+                    </p>
                   </div>
                 </div>
-                
-                <p className="text-gray-700 mb-4 line-clamp-3">{philosopher.biography}</p>
-                
+
+                <p className="text-gray-700 mb-4 line-clamp-3">
+                  {philosopher.biography}
+                </p>
+
                 {philosopher.keyWorks && philosopher.keyWorks.length > 0 && (
                   <div className="mb-4">
-                    <h4 className="font-semibold text-gray-800 mb-2">Key Works:</h4>
+                    <h4 className="font-semibold text-gray-800 mb-2">
+                      Key Works:
+                    </h4>
                     <div className="flex flex-wrap gap-2">
                       {philosopher.keyWorks.slice(0, 2).map((work, index) => (
-                        <span key={index} className="px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs">
+                        <span
+                          key={index}
+                          className="px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs"
+                        >
                           {work}
                         </span>
                       ))}
@@ -170,8 +222,11 @@ export function PhilosophersListPage() {
 
                 <div className="flex flex-wrap gap-2">
                   {philosopher.keyIdeas.slice(0, 3).map((idea, index) => (
-                    <span key={index} className="px-2 py-1 bg-yellow-100 text-yellow-800 rounded text-xs">
-                      {idea.replace(/-/g, ' ')}
+                    <span
+                      key={index}
+                      className="px-2 py-1 bg-yellow-100 text-yellow-800 rounded text-xs"
+                    >
+                      {idea.replace(/-/g, " ")}
                     </span>
                   ))}
                 </div>
@@ -182,8 +237,12 @@ export function PhilosophersListPage() {
 
         {filteredPhilosophers.length === 0 && (
           <div className="text-center py-12">
-            <p className="text-gray-500 text-lg">No philosophers match your current filters.</p>
-            <p className="text-gray-400 mt-2">Try adjusting your search terms or filters.</p>
+            <p className="text-gray-500 text-lg">
+              No philosophers match your current filters.
+            </p>
+            <p className="text-gray-400 mt-2">
+              Try adjusting your search terms or filters.
+            </p>
           </div>
         )}
       </div>
