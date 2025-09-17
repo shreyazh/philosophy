@@ -1,9 +1,15 @@
-import React from 'react';
+import React from 'react'; 
 import { Link, useLocation } from 'react-router-dom';
 import { Brain, Home, Users, Lightbulb, BookOpen, Zap } from 'lucide-react';
 
 export function Navigation() {
   const location = useLocation();
+
+  const handleLinkClick = (path: string) => {
+    if (location.pathname === path) {
+      window.scrollTo(0, 0); // Scroll to top if the same route is clicked
+    }
+  };
 
   const navItems = [
     { path: '/', label: 'Home', icon: Home },
@@ -12,7 +18,7 @@ export function Navigation() {
     { path: '/ideas', label: 'Ideas', icon: Lightbulb },
     { path: '/challenges', label: 'Challenges', icon: Zap }
   ];
-
+  
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -28,6 +34,7 @@ export function Navigation() {
               <Link
                 key={path}
                 to={path}
+                onClick={() => handleLinkClick(path)} // ✅ Add this line
                 className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-all duration-200 text-sm lg:text-base ${
                   location.pathname === path
                     ? 'bg-blue-100 text-blue-700 font-medium'
@@ -47,6 +54,7 @@ export function Navigation() {
                 <Link
                   key={path}
                   to={path}
+                  onClick={() => handleLinkClick(path)} // ✅ Add this line
                   className={`p-2 rounded-lg transition-all duration-200 ${
                     location.pathname === path
                       ? 'bg-blue-100 text-blue-700'
