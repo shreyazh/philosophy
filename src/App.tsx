@@ -1,4 +1,4 @@
-// src/App.js
+// src/App.tsx
 
 import { Github } from "lucide-react";
 import React from "react";
@@ -14,7 +14,7 @@ import { IdeasListPage } from "./pages/IdeasListPage";
 import { SchoolsListPage } from "./pages/SchoolsListPage";
 import { ChallengesListPage } from "./pages/ChallengesListPage";
 
-// ✅ Import the ScrollToTop component
+// Import the ScrollToTop component
 import { ScrollToTop } from "./ScrollToTop";
 
 function GithubStarButton() {
@@ -34,9 +34,9 @@ function GithubStarButton() {
 function App() {
   return (
     <Router>
-      {/* ✅ Add ScrollToTop here so it listens to path changes */}
+      {/* ScrollToTop handles scroll restoration */}
       <ScrollToTop />
-      
+
       <div className="min-h-screen bg-gray-50">
         <Navigation />
         <Routes>
@@ -56,7 +56,6 @@ function App() {
             <p className="text-gray-300 text-sm sm:text-base">
               A comprehensive guide to the history of philosophical thought.
             </p>
-
             <div className="mt-4">
               <GithubStarButton />
             </div>
@@ -66,4 +65,5 @@ function App() {
     </Router>
   );
 }
+
 export default App;
