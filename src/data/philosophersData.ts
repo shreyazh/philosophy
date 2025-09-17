@@ -25,6 +25,27 @@ export const philosophersData: Philosopher[] = [
     ]
   },
   {
+    id: 'thomas-hobbes',
+    name: 'Thomas Hobbes',
+    years: '1588-1679',
+    nationality: 'English',
+    keyWorks: ['Leviathan'],
+    biography: 'Hobbes was an English philosopher best known for his political philosophy. In Leviathan, he argued that in the state of nature life would be “solitary, poor, nasty, brutish, and short,” justifying an absolute sovereign for peace and security.',
+    keyIdeas: ['hobbes-social-contract'],
+    influences: ['descartes', 'bacon'],
+    influenced: ['locke', 'rousseau'],
+    schools: ['early-modern'],
+    challenges: ['anarchism'],
+    quotes: [
+      'The condition of man... is a condition of war of everyone against everyone.',
+      'Covenants, without the sword, are but words.'
+    ],
+    externalLinks: [
+      { title: 'Britannica: Thomas Hobbes', url: 'https://www.britannica.com/biography/Thomas-Hobbes', type: 'article' },
+      { title: 'Leviathan – Project Gutenberg', url: 'https://www.gutenberg.org/ebooks/3207', type: 'book' }
+    ]
+  },
+  {
     id: 'plato',
     name: 'Plato',
     years: '428-348 BCE',
@@ -46,6 +67,27 @@ export const philosophersData: Philosopher[] = [
       { title: 'Internet Encyclopedia: Plato', url: 'https://iep.utm.edu/plato/', type: 'encyclopedia' },
       { title: 'Britannica: Plato', url: 'https://www.britannica.com/biography/Plato', type: 'article' },
       { title: 'The Allegory of the Cave (full text at MIT Classics)', url: 'http://classics.mit.edu/Plato/republic.7.vii.html', type: 'book' }
+    ]
+  },
+  {
+    id: 'martha-nussbaum',
+    name: 'Martha C. Nussbaum',
+    years: '1947-present',
+    nationality: 'American',
+    keyWorks: ['Creating Capabilities', 'Frontiers of Justice'],
+    biography: 'Nussbaum is a contemporary philosopher known for the capabilities approach to human development and for contributions to political philosophy, ethics, and the emotions.',
+    keyIdeas: ['capabilities-approach'],
+    influences: ['aristotle', 'sen'],
+    influenced: ['development-theory'],
+    schools: ['modern-philosophy'],
+    challenges: ['utilitarianism'],
+    quotes: [
+      'The capabilities approach asks: what is each person able to do and to be?',
+      'Human dignity requires opportunities to flourish.'
+    ],
+    externalLinks: [
+      { title: 'Britannica: Martha Nussbaum', url: 'https://www.britannica.com/biography/Martha-C-Nussbaum', type: 'article' },
+      { title: 'Creating Capabilities – Internet Archive', url: 'https://archive.org/details/creatingcapabilities', type: 'book' }
     ]
   },
   {
