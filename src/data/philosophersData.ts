@@ -1,6 +1,6 @@
 import { Philosopher } from '../types/philosophy';
 
-export const philosophersData: Philosopher[] = [
+export const philosophersDataBatch1: Philosopher[] = [
   {
     id: 'socrates',
     name: 'Socrates',
@@ -13,15 +13,15 @@ export const philosophersData: Philosopher[] = [
     schools: ['classical'],
     challenges: ['sophistry', 'moral-relativism'],
     quotes: [
-      'The unexamined life is not worth living',
-      'I know that I know nothing',
-      'Virtue is knowledge',
-      'No one does wrong willingly'
+      'The unexamined life is not worth living.',
+      'I know that I know nothing.',
+      'Virtue is knowledge.',
+      'No one does wrong willingly.'
     ],
     externalLinks: [
-      { title: 'Stanford Encyclopedia: Socrates', url: '#', type: 'encyclopedia' },
-      { title: 'The Trial of Socrates', url: '#', type: 'article' },
-      { title: 'Socratic Method in Practice', url: '#', type: 'video' }
+      { title: 'Internet Encyclopedia: Socrates', url: 'https://iep.utm.edu/socrates/', type: 'encyclopedia' },
+      { title: 'Britannica: Socrates', url: 'https://www.britannica.com/biography/Socrates', type: 'article' },
+      { title: 'Socratic Method Overview – Philosophy Now', url: 'https://philosophynow.org/issues/137/The_Socratic_Method', type: 'article' }
     ]
   },
   {
@@ -37,15 +37,15 @@ export const philosophersData: Philosopher[] = [
     schools: ['classical'],
     challenges: ['materialism', 'sophistry', 'democracy'],
     quotes: [
-      'The beginning is the most important part of the work',
-      'Ignorance, the root and stem of all evil',
-      'Justice is nothing other than the advantage of the stronger',
-      'Philosophy begins in wonder'
+      'The beginning is the most important part of the work.',
+      'Ignorance, the root and stem of all evil.',
+      'Justice is nothing other than the advantage of the stronger.',
+      'Philosophy begins in wonder.'
     ],
     externalLinks: [
-      { title: 'Stanford Encyclopedia: Plato', url: '#', type: 'encyclopedia' },
-      { title: 'The Republic - Full Text', url: '#', type: 'book' },
-      { title: 'Plato\'s Cave Allegory Explained', url: '#', type: 'video' }
+      { title: 'Internet Encyclopedia: Plato', url: 'https://iep.utm.edu/plato/', type: 'encyclopedia' },
+      { title: 'Britannica: Plato', url: 'https://www.britannica.com/biography/Plato', type: 'article' },
+      { title: 'The Allegory of the Cave (full text at MIT Classics)', url: 'http://classics.mit.edu/Plato/republic.7.vii.html', type: 'book' }
     ]
   },
   {
@@ -61,15 +61,15 @@ export const philosophersData: Philosopher[] = [
     schools: ['classical'],
     challenges: ['platonic-idealism', 'pre-socratic-materialism'],
     quotes: [
-      'We are what we repeatedly do. Excellence, then, is not an act, but a habit',
-      'The whole is greater than the sum of its parts',
-      'Man is by nature a political animal',
-      'Knowing yourself is the beginning of all wisdom'
+      'Man is by nature a political animal.',
+      'We are what we repeatedly do. Excellence then, is not an act, but a habit.',
+      'The whole is greater than the sum of its parts.',
+      'Knowing yourself is the beginning of all wisdom.'
     ],
     externalLinks: [
-      { title: 'Stanford Encyclopedia: Aristotle', url: '#', type: 'encyclopedia' },
-      { title: 'Nicomachean Ethics - Study Guide', url: '#', type: 'article' },
-      { title: 'Aristotle\'s Logic System', url: '#', type: 'course' }
+      { title: 'Internet Encyclopedia: Aristotle', url: 'https://iep.utm.edu/aristotl/', type: 'encyclopedia' },
+      { title: 'Britannica: Aristotle', url: 'https://www.britannica.com/biography/Aristotle', type: 'article' },
+      { title: 'Nicomachean Ethics – Project Gutenberg', url: 'https://www.gutenberg.org/ebooks/8438', type: 'book' }
     ]
   },
   {
@@ -85,15 +85,15 @@ export const philosophersData: Philosopher[] = [
     schools: ['german-idealism'],
     challenges: ['dogmatic-metaphysics', 'moral-heteronomy', 'empirical-skepticism'],
     quotes: [
-      'Act only according to that maxim whereby you can at the same time will that it should become a universal law',
-      'Sapere aude! Have courage to use your own understanding',
-      'Two things fill the mind with ever-increasing wonder and awe: the starry heavens above me and the moral law within me',
-      'Enlightenment is man\'s emergence from his self-incurred immaturity'
+      'Act only according to that maxim whereby you can at the same time will that it should become a universal law.',
+      'Two things fill the mind with ever-increasing wonder and awe: the starry heavens above me and the moral law within me.',
+      'Science is organized knowledge. Wisdom is organized life.',
+      'Enlightenment is man’s emergence from his self-incurred immaturity.'
     ],
     externalLinks: [
-      { title: 'Stanford Encyclopedia: Kant', url: '#', type: 'encyclopedia' },
-      { title: 'Kant\'s Categorical Imperative Explained', url: '#', type: 'video' },
-      { title: 'Critical Philosophy Course', url: '#', type: 'course' }
+      { title: 'Internet Encyclopedia: Kant', url: 'https://iep.utm.edu/kantview/', type: 'encyclopedia' },
+      { title: 'Britannica: Immanuel Kant', url: 'https://www.britannica.com/biography/Immanuel-Kant', type: 'article' },
+      { title: 'Critique of Pure Reason – Project Gutenberg', url: 'https://www.gutenberg.org/ebooks/4280', type: 'book' }
     ]
   },
   {
