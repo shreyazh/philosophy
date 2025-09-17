@@ -114,7 +114,9 @@ export function SchoolsListPage() {
             <Link
               key={school.id}
               to={`/school/${school.id}`}
+              state={{ scrollToId: `school-${school.id}` }} // pass the scroll target
               className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
+              id={`school-${school.id}`} // unique id for scroll
             >
               <div
                 className="h-2"
