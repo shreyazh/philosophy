@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { PhilosophicalPeriod } from "../types/philosophy";
-import { Clock, ChevronRight } from "lucide-react";
+import { Clock } from "lucide-react";
 
 interface TimelineProps {
   periods: PhilosophicalPeriod[];
@@ -8,7 +8,7 @@ interface TimelineProps {
   onPeriodSelect: (periodId: string) => void;
 }
 
-export function Timeline({ periods, selectedPeriod, onPeriodSelect }: TimelineProps) {
+export function Timeline({ periods, onPeriodSelect }: TimelineProps) {
   const [expanded, setExpanded] = useState<string | null>(null);
 
   const toggleExpand = (id: string) => {
@@ -101,7 +101,6 @@ export function Timeline({ periods, selectedPeriod, onPeriodSelect }: TimelinePr
                           {period.years}
                         </span>
                       </div>
-                      
                     </div>
 
                     <p
