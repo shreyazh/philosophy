@@ -46,7 +46,14 @@ export interface Challenge {
 export interface ExternalLink {
   title: string;
   url: string;
-  type: 'article' | 'book' | 'video' | 'course' | 'encyclopedia';
+  type:
+    | "article"
+    | "book"
+    | "video"
+    | "course"
+    | "encyclopedia"
+    | "chapter"
+    | "academic paper";
 }
 
 export interface PhilosophicalSchool {
