@@ -15,9 +15,9 @@ export const ideasData: PhilosophicalIdea[] = [
     legacy: 'Foundation for Western philosophical inquiry and modern pedagogy',
     keyTexts: ['Plato\'s Dialogues'],
     externalLinks: [
-      { title: 'The Socratic Method in Education', url: '#', type: 'article' },
-      { title: 'Socratic Questioning Techniques', url: '#', type: 'video' },
-      { title: 'Modern Applications of Socratic Method', url: '#', type: 'course' }
+      { title: 'Internet Encyclopedia of Philosophy: Socratic Method', url: 'https://iep.utm.edu/socratic-method/', type: 'encyclopedia' },
+      { title: 'Britannica: Socratic Method', url: 'https://www.britannica.com/topic/Socratic-method', type: 'article' },
+      { title: 'Philosophy Now: Socratic Method and Critical Thinking', url: 'https://philosophynow.org/issues/141/Socratic_Questioning_and_Critical_Thinking', type: 'article' }
     ]
   },
   {
@@ -34,9 +34,9 @@ export const ideasData: PhilosophicalIdea[] = [
     legacy: 'Shaped metaphysics and epistemology across millennia',
     keyTexts: ['Republic', 'Parmenides'],
     externalLinks: [
-      { title: 'Plato\'s Forms Explained', url: '#', type: 'video' },
-      { title: 'The Theory of Forms - Academic Paper', url: '#', type: 'article' },
-      { title: 'Forms and Modern Mathematics', url: '#', type: 'encyclopedia' }
+      { title: 'Internet Encyclopedia of Philosophy: Plato’s Metaphysics', url: 'https://iep.utm.edu/plato-metaphysics-epistemology/', type: 'encyclopedia' },
+      { title: 'Britannica: Theory of Forms', url: 'https://www.britannica.com/topic/Platos-theory-of-forms', type: 'article' },
+      { title: 'Plato, Parmenides – Full Text (Perseus Digital Library)', url: 'http://www.perseus.tufts.edu/hopper/text?doc=Plat.+Parm.+126a', type: 'book' }
     ]
   },
   {
@@ -47,15 +47,15 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['kant'],
     relatedIdeas: ['moral-autonomy', 'good-will', 'kingdom-of-ends'],
     challenges: ['consequentialism', 'moral-relativism', 'virtue-ethics'],
-    modernApplications: ['Medical ethics', 'Business ethics', 'Human rights law', 'AI ethics'],
+    modernApplications: ['Medical ethics', 'Business ethics', 'Human rights law', 'AI ethics', 'Data governance', 'Responsible AI audits'],
     influences: ['Rationalism', 'Christian ethics'],
     developments: ['Deontological frameworks'],
     legacy: 'Cornerstone of deontological ethics and human rights',
     keyTexts: ['Groundwork of the Metaphysics of Morals'],
     externalLinks: [
-      { title: 'Kant\'s Categorical Imperative', url: '#', type: 'encyclopedia' },
-      { title: 'Deontological Ethics in Practice', url: '#', type: 'article' },
-      { title: 'Kant\'s Moral Philosophy Course', url: '#', type: 'course' }
+      { title: 'Internet Encyclopedia of Philosophy: Kant’s Moral Philosophy', url: 'https://iep.utm.edu/kant-moral/', type: 'encyclopedia' },
+      { title: 'Britannica: Categorical Imperative', url: 'https://www.britannica.com/topic/categorical-imperative', type: 'article' },
+      { title: 'Project Gutenberg: Groundwork of the Metaphysics of Morals', url: 'https://www.gutenberg.org/ebooks/5682', type: 'book' }
     ]
   },
   {
@@ -66,15 +66,15 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['nietzsche'],
     relatedIdeas: ['ubermensch', 'eternal-recurrence', 'master-slave-morality'],
     challenges: ['christian-morality', 'democratic-equality', 'utilitarian-happiness'],
-    modernApplications: ['Psychology', 'Leadership theory', 'Evolutionary psychology', 'Self-improvement'],
+    modernApplications: ['Psychology', 'Leadership theory', 'Evolutionary psychology', 'Self-improvement', 'Organizational behavior'],
     influences: ['Schopenhauer', 'Greek tragedy'],
     developments: ['Genealogical method'],
     legacy: 'Catalyst for existentialism and postmodern critiques',
     keyTexts: ['Thus Spoke Zarathustra'],
     externalLinks: [
-      { title: 'Nietzsche\'s Will to Power', url: '#', type: 'encyclopedia' },
-      { title: 'Power and Human Nature', url: '#', type: 'article' },
-      { title: 'Nietzschean Psychology', url: '#', type: 'video' }
+      { title: 'Internet Encyclopedia of Philosophy: Nietzsche’s Ethics', url: 'https://iep.utm.edu/nietz-eth/', type: 'encyclopedia' },
+      { title: 'Britannica: Nietzsche – Will to Power', url: 'https://www.britannica.com/topic/will-to-power', type: 'article' },
+      { title: 'Nietzsche’s Will to Power (Internet Archive full text)', url: 'https://archive.org/details/willtopower00nietuoft', type: 'book' }
     ]
   },
   {
@@ -85,8 +85,12 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['aristotle'],
     relatedIdeas: ['golden-mean', 'eudaimonia', 'practical-wisdom'],
     challenges: ['utilitarianism', 'deontology', 'moral-relativism'],
-    modernApplications: ['Character education', 'Medical ethics', 'Leadership training'],
-    externalLinks: []
+    modernApplications: ['Character education', 'Medical ethics', 'Leadership training', 'AI value alignment', 'Professional ethics'],
+    externalLinks: [
+      { title: 'Internet Encyclopedia of Philosophy: Virtue Ethics', url: 'https://iep.utm.edu/virtue-ethics/', type: 'encyclopedia' },
+      { title: 'Britannica: Virtue Ethics', url: 'https://www.britannica.com/topic/virtue-ethics', type: 'article' },
+      { title: 'Philosophy Now: Virtue Ethics in the Modern World', url: 'https://philosophynow.org/issues/82/Virtue_Ethics_in_the_Modern_World', type: 'article' }
+    ]
   },
   {
     id: 'confucian-ren',
@@ -96,8 +100,12 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['confucius'],
     relatedIdeas: ['li', 'filial-piety', 'virtue-ethics'],
     challenges: ['legalism', 'individualism'],
-    modernApplications: ['East Asian education', 'Political theory', 'Business ethics'],
-    externalLinks: []
+    modernApplications: ['East Asian education', 'Political theory', 'Business ethics', 'Corporate governance'],
+    externalLinks: [
+      { title: 'Internet Encyclopedia of Philosophy: Confucius', url: 'https://iep.utm.edu/confucius/', type: 'encyclopedia' },
+      { title: 'Britannica: Ren (Confucianism)', url: 'https://www.britannica.com/topic/ren', type: 'article' },
+      { title: 'The Analects of Confucius – Complete Text', url: 'https://www.gutenberg.org/ebooks/3330', type: 'book' }
+    ]
   },
   {
     id: 'daoist-wuwei',
@@ -107,8 +115,12 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['laozi', 'zhuangzi'],
     relatedIdeas: ['dao', 'naturalness', 'yin-yang'],
     challenges: ['activism', 'rationalism'],
-    modernApplications: ['Mindfulness', 'Environmental ethics'],
-    externalLinks: []
+    modernApplications: ['Mindfulness', 'Environmental ethics', 'Management minimalism'],
+    externalLinks: [
+      { title: 'Internet Encyclopedia of Philosophy: Daoism', url: 'https://iep.utm.edu/daoism/', type: 'encyclopedia' },
+      { title: 'Britannica: Wu Wei', url: 'https://www.britannica.com/topic/wuwei', type: 'article' },
+      { title: 'Tao Te Ching – Full English Text (Sacred Texts)', url: 'https://www.sacred-texts.com/tao/taote.htm', type: 'book' }
+    ]
   },
   {
     id: 'advaita-vedanta-nondualism',
@@ -118,8 +130,12 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['adi-shankara'],
     relatedIdeas: ['maya', 'moksha', 'brahman'],
     challenges: ['dvaita-dualism', 'buddhist-emptiness'],
-    modernApplications: ['Spirituality', 'Nondual awareness studies'],
-    externalLinks: []
+    modernApplications: ['Spirituality', 'Nondual awareness studies', 'Contemplative neuroscience'],
+    externalLinks: [
+      { title: 'Internet Encyclopedia of Philosophy: Advaita Vedanta', url: 'https://iep.utm.edu/advaita/', type: 'encyclopedia' },
+      { title: 'Britannica: Vedanta Philosophy', url: 'https://www.britannica.com/topic/Vedanta', type: 'article' },
+      { title: 'Shankara: Crest-Jewel of Discrimination (Sacred Texts)', url: 'https://www.sacred-texts.com/hin/cjd/index.htm', type: 'book' }
+    ]
   },
   {
     id: 'buddhist-four-noble-truths',
@@ -129,8 +145,12 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['buddha'],
     relatedIdeas: ['eightfold-path', 'dependent-origination', 'nirvana'],
     challenges: ['materialism', 'eternalism', 'nihilism'],
-    modernApplications: ['Mindfulness-based therapy', 'Meditation research'],
-    externalLinks: []
+    modernApplications: ['Mindfulness-based therapy', 'Meditation research', 'CBT integrations'],
+    externalLinks: [
+      { title: 'Internet Encyclopedia of Philosophy: Buddhism', url: 'https://iep.utm.edu/buddha/', type: 'encyclopedia' },
+      { title: 'Britannica: Four Noble Truths', url: 'https://www.britannica.com/topic/Four-Noble-Truths', type: 'article' },
+      { title: 'Dhammapada – Full Text (Sacred Texts)', url: 'https://www.sacred-texts.com/bud/dhp/index.htm', type: 'book' }
+    ]
   },
   {
     id: 'mencian-goodness',
@@ -140,8 +160,12 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['mencius'],
     relatedIdeas: ['ren', 'li', 'virtue-ethics'],
     challenges: ['xunzi-evil-nature', 'legalism'],
-    modernApplications: ['Moral education', 'Positive psychology'],
-    externalLinks: []
+    modernApplications: ['Moral education', 'Positive psychology', 'Social policy design'],
+    externalLinks: [
+      { title: 'Internet Encyclopedia of Philosophy: Mencius', url: 'https://iep.utm.edu/mencius/', type: 'encyclopedia' },
+      { title: 'Britannica: Mencius', url: 'https://www.britannica.com/biography/Mencius', type: 'article' },
+      { title: 'The Works of Mencius – Full Text', url: 'https://www.gutenberg.org/ebooks/14065', type: 'book' }
+    ]
   },
   {
     id: 'xunzi-evil-nature',
@@ -151,8 +175,12 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['xunzi'],
     relatedIdeas: ['li', 'legalism'],
     challenges: ['mencius-goodness', 'daoist-naturalness'],
-    modernApplications: ['Law enforcement', 'Educational theory'],
-    externalLinks: []
+    modernApplications: ['Law enforcement', 'Educational theory', 'Behavioral public policy'],
+    externalLinks: [
+      { title: 'Internet Encyclopedia of Philosophy: Xunzi', url: 'https://iep.utm.edu/xunzi/', type: 'encyclopedia' },
+      { title: 'Britannica: Xunzi', url: 'https://www.britannica.com/biography/Xunzi', type: 'article' },
+      { title: 'Xunzi: Basic Writings (Full Text at Archive.org)', url: 'https://archive.org/details/xunzibasicwriting00hsun', type: 'book' }
+    ]
   },
   {
     id: 'al-farabi-virtue-city',
@@ -162,8 +190,12 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['al-farabi'],
     relatedIdeas: ['plato-republic', 'islamic-political-thought'],
     challenges: ['authoritarianism', 'secularism'],
-    modernApplications: ['Islamic political thought', 'Ethics of governance'],
-    externalLinks: []
+    modernApplications: ['Islamic political thought', 'Ethics of governance', 'City planning ethics'],
+    externalLinks: [
+      { title: 'Internet Encyclopedia of Philosophy: Al-Farabi', url: 'https://iep.utm.edu/al-farabi/', type: 'encyclopedia' },
+      { title: 'Britannica: Al-Farabi – Political Philosophy', url: 'https://www.britannica.com/biography/Al-Farabi', type: 'article' },
+      { title: 'Al-Farabi: On the Perfect State (Archive.org full text)', url: 'https://archive.org/details/AlFarabiOnThePerfectState', type: 'book' }
+    ]
   },
   {
     id: 'avicenna-metaphysics',
@@ -173,8 +205,12 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['avicenna'],
     relatedIdeas: ['essence-existence', 'aristotelianism', 'monotheism'],
     challenges: ['al-ghazali-criticism', 'empiricism'],
-    modernApplications: ['Philosophy of religion', 'Metaphysics'],
-    externalLinks: []
+    modernApplications: ['Philosophy of religion', 'Metaphysics', 'Analytic theology'],
+    externalLinks: [
+      { title: 'Internet Encyclopedia of Philosophy: Avicenna', url: 'https://iep.utm.edu/ibn-sina/', type: 'encyclopedia' },
+      { title: 'Britannica: Avicenna', url: 'https://www.britannica.com/biography/Avicenna', type: 'article' },
+      { title: 'Avicenna: Metaphysics (Archive.org full text)', url: 'https://archive.org/details/IbnSinaMetaphysicsEnglish', type: 'book' }
+    ]
   },
   {
     id: 'al-ghazali-incoherence',
@@ -184,8 +220,12 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['al-ghazali'],
     relatedIdeas: ['sufism', 'theology'],
     challenges: ['avicenna-metaphysics', 'aristotelianism'],
-    modernApplications: ['Theology', 'Faith vs reason debates'],
-    externalLinks: []
+    modernApplications: ['Theology', 'Faith vs reason debates', 'Science and religion studies'],
+    externalLinks: [
+      { title: 'Internet Encyclopedia of Philosophy: Al-Ghazali', url: 'https://iep.utm.edu/al-ghazali/', type: 'encyclopedia' },
+      { title: 'Britannica: Al-Ghazali', url: 'https://www.britannica.com/biography/al-Ghazali', type: 'article' },
+      { title: 'Al-Ghazali: The Incoherence of the Philosophers (Archive.org)', url: 'https://archive.org/details/incoherenceofphi00ghaz', type: 'book' }
+    ]
   },
   {
     id: 'ibn-rushd-reconciliation',
@@ -195,8 +235,12 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['averroes'],
     relatedIdeas: ['aristotelianism', 'rationalism'],
     challenges: ['al-ghazali-incoherence'],
-    modernApplications: ['Science-religion dialogue'],
-    externalLinks: []
+    modernApplications: ['Science-religion dialogue', 'Philosophy of science'],
+    externalLinks: [
+      { title: 'Internet Encyclopedia of Philosophy: Averroes', url: 'https://iep.utm.edu/ibn-rushd/', type: 'encyclopedia' },
+      { title: 'Britannica: Averroes', url: 'https://www.britannica.com/biography/Averroes', type: 'article' },
+      { title: 'Averroes: The Incoherence of the Incoherence (Archive.org full text)', url: 'https://archive.org/details/averroes-incoherence-of-incoherence', type: 'book' }
+    ]
   },
   {
     id: 'sankhya-dualism',
@@ -206,8 +250,12 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['kapila'],
     relatedIdeas: ['yoga', 'purusha', 'prakriti'],
     challenges: ['advaita-nondualism', 'buddhist-emptiness'],
-    modernApplications: ['Yoga philosophy', 'Mind-body studies'],
-    externalLinks: []
+    modernApplications: ['Yoga philosophy', 'Mind-body studies', 'Cognitive science debates'],
+    externalLinks: [
+      { title: 'Internet Encyclopedia of Philosophy: Samkhya', url: 'https://iep.utm.edu/samkhya/', type: 'encyclopedia' },
+      { title: 'Britannica: Samkhya', url: 'https://www.britannica.com/topic/Sankhya', type: 'article' },
+      { title: 'Samkhya Karika – Full Text (Sacred Texts)', url: 'https://www.sacred-texts.com/hin/sbe01/index.htm', type: 'book' }
+    ]
   },
   {
     id: 'augustinian-theodicy',
@@ -217,8 +265,12 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['augustine'],
     relatedIdeas: ['original-sin', 'free-will-defense'],
     challenges: ['problem-of-evil', 'manichean-dualism'],
-    modernApplications: ['Philosophy of religion'],
-    externalLinks: []
+    modernApplications: ['Philosophy of religion', 'Pastoral counseling'],
+    externalLinks: [
+      { title: 'Internet Encyclopedia of Philosophy: Augustine', url: 'https://iep.utm.edu/augustine/', type: 'encyclopedia' },
+      { title: 'Britannica: Theodicy – Augustine', url: 'https://www.britannica.com/topic/theodicy/The-Augustinian-theodicy', type: 'article' },
+      { title: 'Augustine: Confessions (Project Gutenberg)', url: 'https://www.gutenberg.org/ebooks/3296', type: 'book' }
+    ]
   },
   {
     id: 'thomistic-natural-law',
@@ -228,8 +280,12 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['thomas-aquinas'],
     relatedIdeas: ['eternal-law', 'divine-law', 'human-law'],
     challenges: ['legal-positivism', 'moral-relativism'],
-    modernApplications: ['Law', 'Human rights'],
-    externalLinks: []
+    modernApplications: ['Law', 'Human rights', 'Bioethics'],
+    externalLinks: [
+      { title: 'Internet Encyclopedia of Philosophy: Natural Law', url: 'https://iep.utm.edu/natlaw/', type: 'encyclopedia' },
+      { title: 'Britannica: Natural Law', url: 'https://www.britannica.com/topic/natural-law', type: 'article' },
+      { title: 'Aquinas: Summa Theologica (Internet Sacred Texts)', url: 'https://www.sacred-texts.com/chr/aquinas/summa/index.htm', type: 'book' }
+    ]
   },
   {
     id: 'rousseau-general-will',
@@ -239,19 +295,27 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['rousseau'],
     relatedIdeas: ['social-contract', 'popular-sovereignty'],
     challenges: ['tyranny-of-majority', 'individual-liberty'],
-    modernApplications: ['Democratic theory'],
-    externalLinks: []
+    modernApplications: ['Democratic theory', 'Civic tech'],
+    externalLinks: [
+      { title: 'Internet Encyclopedia of Philosophy: Rousseau', url: 'https://iep.utm.edu/rousseau/', type: 'encyclopedia' },
+      { title: 'Britannica: Rousseau and General Will', url: 'https://www.britannica.com/biography/Jean-Jacques-Rousseau/Political-philosophy', type: 'article' },
+      { title: 'The Social Contract – Full Text (Gutenberg)', url: 'https://www.gutenberg.org/ebooks/46333', type: 'book' }
+    ]
   },
   {
     id: 'hobbes-social-contract',
     name: 'Hobbesian Social Contract',
     description: 'Hobbes argued that humans consent to a sovereign power to escape the state of nature and ensure order.',
     originSchool: 'early-modern',
-    keyThinkers: ['hobbes'],
+    keyThinkers: ['thomas-hobbes'],
     relatedIdeas: ['leviathan', 'political-order'],
     challenges: ['liberalism', 'anarchism'],
     modernApplications: ['Political science', 'International relations'],
-    externalLinks: []
+    externalLinks: [
+      { title: 'Internet Encyclopedia of Philosophy: Hobbes', url: 'https://iep.utm.edu/hobbes/', type: 'encyclopedia' },
+      { title: 'Britannica: Hobbes’s Social Contract', url: 'https://www.britannica.com/biography/Thomas-Hobbes', type: 'article' },
+      { title: 'Leviathan – Full Text (Gutenberg)', url: 'https://www.gutenberg.org/ebooks/3207', type: 'book' }
+    ]
   },
   {
     id: 'locke-natural-rights',
@@ -262,7 +326,11 @@ export const ideasData: PhilosophicalIdea[] = [
     relatedIdeas: ['social-contract', 'liberalism'],
     challenges: ['authoritarianism', 'collectivism'],
     modernApplications: ['Constitutional law', 'Human rights discourse'],
-    externalLinks: []
+    externalLinks: [
+      { title: 'Internet Encyclopedia of Philosophy: Locke', url: 'https://iep.utm.edu/locke/', type: 'encyclopedia' },
+      { title: 'Britannica: Locke’s Political Philosophy', url: 'https://www.britannica.com/biography/John-Locke', type: 'article' },
+      { title: 'Two Treatises of Government – Full Text (Gutenberg)', url: 'https://www.gutenberg.org/ebooks/7370', type: 'book' }
+    ]
   },
   {
     id: 'hegel-dialectics',
@@ -272,8 +340,12 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['hegel'],
     relatedIdeas: ['absolute-idealism', 'historicism'],
     challenges: ['materialism', 'empiricism'],
-    modernApplications: ['Political theory', 'Critical theory'],
-    externalLinks: []
+    modernApplications: ['Political theory', 'Critical theory', 'Design thinking iterations'],
+    externalLinks: [
+      { title: 'Internet Encyclopedia of Philosophy: Hegel', url: 'https://iep.utm.edu/hegel/', type: 'encyclopedia' },
+      { title: 'Britannica: Dialectic in Hegel', url: 'https://www.britannica.com/topic/dialectic', type: 'article' },
+      { title: 'Hegel: Phenomenology of Spirit (Archive.org)', url: 'https://archive.org/details/HegelsPhenomenologyOfSpirit', type: 'book' }
+    ]
   },
   {
     id: 'marx-historical-materialism',
@@ -283,8 +355,12 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['marx', 'engels'],
     relatedIdeas: ['class-struggle', 'dialectical-materialism'],
     challenges: ['idealism', 'liberal-democracy'],
-    modernApplications: ['Sociology', 'Political economy'],
-    externalLinks: []
+    modernApplications: ['Sociology', 'Political economy', 'Media studies'],
+    externalLinks: [
+      { title: 'Internet Encyclopedia of Philosophy: Marx’s Philosophy of History', url: 'https://iep.utm.edu/marx-hist/', type: 'encyclopedia' },
+      { title: 'Britannica: Marxism', url: 'https://www.britannica.com/topic/Marxism', type: 'article' },
+      { title: 'The Communist Manifesto – Full Text (Gutenberg)', url: 'https://www.gutenberg.org/ebooks/61', type: 'book' }
+    ]
   },
   {
     id: 'sartre-existentialism',
@@ -294,8 +370,12 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['sartre'],
     relatedIdeas: ['bad-faith', 'absurdism', 'freedom'],
     challenges: ['determinism', 'religious-essentialism'],
-    modernApplications: ['Literature', 'Psychology'],
-    externalLinks: []
+    modernApplications: ['Literature', 'Psychology', 'Existential therapy'],
+    externalLinks: [
+      { title: 'Internet Encyclopedia of Philosophy: Sartre', url: 'https://iep.utm.edu/sartre/', type: 'encyclopedia' },
+      { title: 'Britannica: Existentialism', url: 'https://www.britannica.com/topic/existentialism', type: 'article' },
+      { title: 'Sartre: Existentialism is a Humanism (Archive.org)', url: 'https://archive.org/details/existentialism_is_a_humanism', type: 'book' }
+    ]
   },
   {
     id: 'camus-absurdism',
@@ -305,8 +385,12 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['camus'],
     relatedIdeas: ['existentialism', 'nihilism'],
     challenges: ['religious-theism', 'dogmatism'],
-    modernApplications: ['Modern literature', 'Therapy'],
-    externalLinks: []
+    modernApplications: ['Modern literature', 'Therapy', 'Resilience training'],
+    externalLinks: [
+      { title: 'Internet Encyclopedia of Philosophy: Camus', url: 'https://iep.utm.edu/camus/', type: 'encyclopedia' },
+      { title: 'Britannica: The Absurd – Camus', url: 'https://www.britannica.com/biography/Albert-Camus', type: 'article' },
+      { title: 'Camus: The Myth of Sisyphus (Archive.org full text)', url: 'https://archive.org/details/in.ernet.dli.2015.218034', type: 'book' }
+    ]
   },
   {
     id: 'simone-de-beauvoir-feminism',
@@ -316,8 +400,12 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['simone-de-beauvoir'],
     relatedIdeas: ['existentialism', 'gender-theory'],
     challenges: ['patriarchy', 'essentialism'],
-    modernApplications: ['Gender studies', 'Social justice'],
-    externalLinks: []
+    modernApplications: ['Gender studies', 'Social justice', 'Policy analysis'],
+    externalLinks: [
+      { title: 'Internet Encyclopedia of Philosophy: Simone de Beauvoir', url: 'https://iep.utm.edu/beauvoir/', type: 'encyclopedia' },
+      { title: 'Britannica: Simone de Beauvoir', url: 'https://www.britannica.com/biography/Simone-de-Beauvoir', type: 'article' },
+      { title: 'The Second Sex – Full Text (Archive.org)', url: 'https://archive.org/details/secondsex1949debe', type: 'book' }
+    ]
   },
   {
     id: 'derrida-deconstruction',
@@ -327,7 +415,7 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['derrida'],
     relatedIdeas: ['logocentrism', 'différance'],
     challenges: ['analytic-philosophy', 'empiricism'],
-    modernApplications: ['Literary criticism', 'Cultural studies'],
+    modernApplications: ['Literary criticism', 'Cultural studies', 'Legal interpretation'],
     externalLinks: []
   },
   {
@@ -338,7 +426,7 @@ export const ideasData: PhilosophicalIdea[] = [
     keyThinkers: ['foucault'],
     relatedIdeas: ['biopolitics', 'disciplinary-power'],
     challenges: ['universal-truth', 'essentialism'],
-    modernApplications: ['Sociology', 'Critical theory'],
+    modernApplications: ['Sociology', 'Critical theory', 'Public health policy'],
     externalLinks: []
   },
   {
@@ -399,7 +487,22 @@ export const ideasData: PhilosophicalIdea[] = [
   { id: 'five-ways', name: 'Five Ways', description: 'Aquinas’s five arguments for the existence of God.', originSchool: 'scholasticism', keyThinkers: ['aquinas'], relatedIdeas: ['faith-and-reason'], challenges: ['atheism'], modernApplications: ['Philosophy of religion'], externalLinks: [] },
   { id: 'cogito-ergo-sum', name: 'Cogito ergo sum', description: 'Descartes’ foundational certainty: "I think, therefore I am."', originSchool: 'early-modern', keyThinkers: ['descartes'], relatedIdeas: ['methodic-doubt'], challenges: ['skepticism'], modernApplications: ['Epistemology'], externalLinks: [] },
   { id: 'dualism', name: 'Cartesian Dualism', description: 'Descartes’ division of mind and body as distinct substances.', originSchool: 'early-modern', keyThinkers: ['descartes'], relatedIdeas: ['cogito-ergo-sum'], challenges: ['materialism'], modernApplications: ['Philosophy of mind'], externalLinks: [] },
-  { id: 'kirtan', name: 'Kirtan',description: 'A devotional practice in Hinduism involving communal singing, chanting, and call-and-response recitation of divine names, central in Gaudiya Vaishnavism and Bhakti movements.',originSchool: 'indian-bhakti',keyThinkers: ['chaitanya-mahaprabhu', 'surdas', 'mirabai'],relatedIdeas: ['bhakti-devotion', 'gaudiya-vaishnavism', 'nama-sankirtana'],challenges: ['ritualism', 'sectarianism', 'externalism'],modernApplications: ['Yoga practice', 'Spiritual communities', 'Music therapy', 'Interfaith devotion'], externalLinks: [{ title: 'Kirtan and Bhakti Tradition', url: '#', type: 'article' },{ title: 'Devotional Singing in India', url: '#', type: 'video' },{ title: 'Kirtan Practice Guide', url: '#', type: 'course' }]},
+    {
+    id: 'kirtan',
+    name: 'Kirtan',
+    description: 'A devotional practice in Hinduism involving communal singing, chanting, and call-and-response recitation of divine names, central in Gaudiya Vaishnavism and Bhakti movements.',
+    originSchool: 'indian-bhakti',
+    keyThinkers: ['chaitanya-mahaprabhu', 'surdas', 'mirabai'],
+    relatedIdeas: ['bhakti-devotion', 'gaudiya-vaishnavism', 'nama-sankirtana'],
+    challenges: ['ritualism', 'sectarianism', 'externalism'],
+    modernApplications: ['Yoga practice', 'Spiritual communities', 'Music therapy', 'Interfaith devotion'],
+    externalLinks: [
+      { title: 'Kirtan and Bhakti Tradition', url: '#', type: 'article' },
+      { title: 'Devotional Singing in India', url: '#', type: 'video' },
+      { title: 'Kirtan Practice Guide', url: '#', type: 'course' }
+    ]
+  },
+  // --- Added ideas to cover school keyIdeas ---
   { id: 'brahman', name: 'Brahman', description: 'Ultimate, all-pervading reality in Vedanta philosophy.', originSchool: 'vedanta', keyThinkers: ['shankara'], relatedIdeas: ['atman', 'non-dualism'], challenges: ['materialism'], modernApplications: ['Comparative religion'], externalLinks: [] },
   { id: 'atman', name: 'Atman', description: 'The inner self or soul, identical with Brahman in Advaita Vedanta.', originSchool: 'vedanta', keyThinkers: ['shankara'], relatedIdeas: ['brahman', 'non-dualism'], challenges: ['buddhist-non-self'], modernApplications: ['Spirituality'], externalLinks: [] },
   { id: 'moksha', name: 'Moksha', description: 'Liberation from the cycle of birth and death in Indian philosophies.', originSchool: 'vedanta', keyThinkers: [], relatedIdeas: ['non-dualism'], challenges: ['worldly-attachment'], modernApplications: ['Spiritual practice'], externalLinks: [] },
