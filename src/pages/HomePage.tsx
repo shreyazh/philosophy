@@ -1,17 +1,11 @@
-import React from 'react';
-import { Header } from '../components/Header';
-import { Timeline } from '../components/Timeline';
-import { SearchFilter } from '../components/SearchFilter';
-import { PhilosophyGrid } from '../components/PhilosophyGrid';
-import { usePhilosophyFilter } from '../hooks/usePhilosophyFilter';
-import { philosophyData } from '../data/philosophyData';
+import { Header } from "../components/Header";
+import { Timeline } from "../components/Timeline";
+import { usePhilosophyFilter } from "../hooks/usePhilosophyFilter";
+import { philosophyData } from "../data/philosophyData";
 
 export function HomePage() {
-  const {
-    selectedTimelinePeriod,
-    setSelectedTimelinePeriod,
-    filteredSchools
-  } = usePhilosophyFilter(philosophyData);
+  const { selectedTimelinePeriod, setSelectedTimelinePeriod } =
+    usePhilosophyFilter(philosophyData);
 
   const handleTimelinePeriodSelect = (periodId: string) => {
     if (selectedTimelinePeriod === periodId) {
@@ -24,13 +18,13 @@ export function HomePage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-      
+
       <main className="container mx-auto px-6 py-8">
-        <Timeline 
+        <Timeline
           periods={philosophyData}
           selectedPeriod={selectedTimelinePeriod}
           onPeriodSelect={handleTimelinePeriodSelect}
-        />  
+        />
       </main>
     </div>
   );
