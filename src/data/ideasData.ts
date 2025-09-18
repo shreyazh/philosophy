@@ -75,6 +75,147 @@ export const ideasData: PhilosophicalIdea[] = [
     ],
   },
   {
+    id: "akrasia",
+    name: "Akrasia (Weakness of Will)",
+    description:
+      "The state of acting against one’s better judgment; a challenge to Socrates’ claim that virtue is knowledge.",
+    originSchool: "classical",
+    keyThinkers: ["socrates", "aristotle"],
+    relatedIdeas: ["virtue-is-knowledge", "virtue-ethics"],
+    challenges: ["self-control", "desire"],
+    modernApplications: ["Addiction studies", "Moral psychology"],
+    externalLinks: [
+      {
+        title: "Akrasia – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/akrasia/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Akrasia – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/akrasia/",
+        type: "article",
+      },
+      {
+        title: "Aristotle on Akrasia – Academic Paper (JSTOR)",
+        url: "https://www.jstor.org/stable/2253656",
+        type: "academic paper",
+      },
+    ],
+  },
+  {
+    id: "monism",
+    name: "Monism",
+    description:
+      "The metaphysical view that reality is ultimately one substance or principle, contrasting with dualism or pluralism.",
+    originSchool: "classical",
+    keyThinkers: ["parmenides", "spinoza"],
+    relatedIdeas: ["non-dualism", "materialism"],
+    challenges: ["pluralism", "dualism"],
+    modernApplications: ["Philosophy of mind", "Physics"],
+    externalLinks: [
+      {
+        title: "Monism – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/monism/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Monism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/monism/",
+        type: "article",
+      },
+      {
+        title: "Monism – Britannica",
+        url: "https://en.m.wikipedia.org/wiki/Monism",
+        type: "article",
+      },
+    ],
+  },
+  {
+    id: "empiricism",
+    name: "Empiricism",
+    description:
+      "The epistemological view that knowledge comes primarily from sensory experience, challenging rationalism and Platonic forms.",
+    originSchool: "early-modern",
+    keyThinkers: ["locke", "hume", "berkeley"],
+    relatedIdeas: ["skepticism", "realism"],
+    challenges: ["rationalism", "idealism"],
+    modernApplications: ["Scientific method", "Psychology"],
+    externalLinks: [
+      {
+        title: "Empiricism – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/empiricism/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Empiricism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/empiricism/",
+        type: "article",
+      },
+      {
+        title: "Empiricism – Britannica",
+        url: "https://www.britannica.com/topic/empiricism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "realism",
+    name: "Realism",
+    description:
+      "The philosophical position that universals or external reality exist independently of perception or concepts.",
+    originSchool: "ancient-medieval",
+    keyThinkers: ["plato", "aristotle", "aquinas"],
+    relatedIdeas: ["empiricism", "idealism"],
+    challenges: ["nominalism", "anti-realism"],
+    modernApplications: ["Metaphysics", "Science", "Political theory"],
+    externalLinks: [
+      {
+        title: "Realism – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/realism/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Realism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/realism/",
+        type: "article",
+      },
+      {
+        title: "Realism – Britannica",
+        url: "https://www.britannica.com/topic/realism-philosophy",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "heteronomy",
+    name: "Heteronomy",
+    description:
+      "Kant’s concept of being governed by external influences rather than self-legislated moral law, opposed to autonomy.",
+    originSchool: "german-idealism",
+    keyThinkers: ["kant"],
+    relatedIdeas: ["moral-autonomy", "categorical-imperative"],
+    challenges: ["freedom", "self-determination"],
+    modernApplications: ["Ethics", "Political theory"],
+    externalLinks: [
+      {
+        title: "Autonomy and Heteronomy – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/autonomy-moral/#Het",
+        type: "encyclopedia",
+      },
+      {
+        title:
+          "Kant: Autonomy and Heteronomy – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/kant-moral/#Heteronomy",
+        type: "article",
+      },
+      {
+        title: "Kant on Autonomy and Heteronomy – Academic Paper",
+        url: "https://www.jstor.org/stable/2107544",
+        type: "academic paper",
+      },
+    ],
+  },
+  {
     id: "categorical-imperative",
     name: "Categorical Imperative",
     description:
@@ -2888,6 +3029,1211 @@ export const ideasData: PhilosophicalIdea[] = [
         title: "Practical Wisdom – Britannica",
         url: "https://www.britannica.com/topic/phronesis",
         type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "hedonistic-calculus",
+    name: "Hedonistic Calculus",
+    description:
+      "Jeremy Bentham’s method for quantifying pleasure and pain to determine the moral worth of actions.",
+    originSchool: "utilitarianism",
+    keyThinkers: ["bentham"],
+    relatedIdeas: ["greatest-happiness-principle", "consequentialism"],
+    challenges: ["qualitative-differences", "virtue-ethics"],
+    modernApplications: [
+      "Policy analysis",
+      "Cost-benefit analysis",
+      "Criminal justice reform",
+    ],
+    externalLinks: [
+      {
+        title:
+          "Bentham’s Hedonistic Calculus – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/bentham/#HedCal",
+        type: "encyclopedia",
+      },
+      {
+        title:
+          "Hedonistic Calculus Explained – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/utilitarianism/#HedonisticCalculus",
+        type: "article",
+      },
+      {
+        title:
+          "Jeremy Bentham, An Introduction to the Principles of Morals and Legislation (1789)",
+        url: "https://www.gutenberg.org/ebooks/65413",
+        type: "book",
+      },
+    ],
+  },
+  {
+    id: "consequentialism",
+    name: "Consequentialism",
+    description:
+      "The ethical theory that the morality of actions depends solely on their outcomes or consequences.",
+    originSchool: "modern-ethics",
+    keyThinkers: ["bentham", "mill", "singer"],
+    relatedIdeas: ["utilitarianism", "greatest-happiness-principle"],
+    challenges: ["deontology", "virtue-ethics", "rights-theories"],
+    modernApplications: [
+      "Climate policy",
+      "Healthcare triage",
+      "Animal rights",
+    ],
+    externalLinks: [
+      {
+        title: "Consequentialism – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/consequentialism/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Consequentialism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/consequentialism/",
+        type: "article",
+      },
+      {
+        title: "Practical Ethics (Peter Singer, 2011)",
+        url: "https://global.oup.com/academic/product/practical-ethics-9780521707688",
+        type: "book",
+      },
+    ],
+  },
+  {
+    id: "social-reform",
+    name: "Social Reform",
+    description:
+      "The application of philosophical and ethical principles, especially utilitarianism, to improve social institutions, laws, and conditions.",
+    originSchool: "modern-ethics",
+    keyThinkers: ["bentham", "mill", "beatrice-webb"],
+    relatedIdeas: ["greatest-happiness-principle", "consequentialism"],
+    challenges: ["status-quo-defenses", "individual-rights"],
+    modernApplications: [
+      "Labor rights",
+      "Prison reform",
+      "Public education",
+      "Welfare policy",
+    ],
+    externalLinks: [
+      {
+        title:
+          "Jeremy Bentham and Social Reform – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/bentham/#SocReforms",
+        type: "encyclopedia",
+      },
+      {
+        title:
+          "Mill, Utilitarianism, and Social Reform – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/mill/#SocialReform",
+        type: "article",
+      },
+      {
+        title: "The Utilitarians and Social Reform (Book)",
+        url: "https://archive.org/details/utilitariansandsocialreform",
+        type: "book",
+      },
+    ],
+  },
+  {
+    id: "linear-history",
+    name: "Linear History",
+    description:
+      "The conception of history as a progressive, one-directional process, challenged by Nietzsche’s doctrine of eternal recurrence.",
+    originSchool: "modern-historicism",
+    keyThinkers: ["hegel", "marx"],
+    relatedIdeas: ["eternal-recurrence", "progressivism"],
+    challenges: ["cyclical-history", "existentialism"],
+    modernApplications: ["Philosophy of history", "Historiography"],
+    externalLinks: [
+      {
+        title: "Philosophy of History – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/history/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Nietzsche and History – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/nietzsche-hist/",
+        type: "article",
+      },
+      {
+        title: "Philosophy of History – Britannica",
+        url: "https://www.britannica.com/topic/philosophy-of-history",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "egalitarianism",
+    name: "Egalitarianism",
+    description:
+      "The principle that all humans are equal in fundamental worth or moral status, challenged by Nietzsche’s concept of the Übermensch.",
+    originSchool: "political-philosophy",
+    keyThinkers: ["rousseau", "rawls"],
+    relatedIdeas: ["justice", "humanism"],
+    challenges: ["elitism", "übermensch"],
+    modernApplications: ["Human rights", "Democratic theory"],
+    externalLinks: [
+      {
+        title: "Egalitarianism – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/egalitarianism/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Egalitarianism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/egalitarianism/",
+        type: "article",
+      },
+      {
+        title: "Egalitarianism – Britannica",
+        url: "https://www.britannica.com/topic/egalitarianism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "religious-theism",
+    name: "Religious Theism",
+    description:
+      "The belief in a divine being or beings, challenged by Nietzsche’s proclamation that ‘God is dead’.",
+    originSchool: "theology",
+    keyThinkers: ["aquinas", "anselm", "kierkegaard"],
+    relatedIdeas: ["faith-and-reason", "five-ways"],
+    challenges: ["atheism", "secularism"],
+    modernApplications: ["Philosophy of religion", "Apologetics"],
+    externalLinks: [
+      {
+        title: "Theism – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/theism/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Theism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/theism/",
+        type: "article",
+      },
+      {
+        title: "Theism – Britannica",
+        url: "https://www.britannica.com/topic/theism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "logocentrism",
+    name: "Logocentrism",
+    description:
+      "Derrida’s critique of Western philosophy’s privileging of speech and reason (‘logos’) as the foundation of meaning.",
+    originSchool: "post-structuralism",
+    keyThinkers: ["derrida"],
+    relatedIdeas: ["deconstruction", "différance"],
+    challenges: ["phonocentrism", "structuralism"],
+    modernApplications: ["Literary theory", "Cultural criticism"],
+    externalLinks: [
+      {
+        title: "Logocentrism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/logocentrism/",
+        type: "article",
+      },
+      {
+        title: "Logocentrism and Derrida – Academic Paper (JSTOR)",
+        url: "https://www.jstor.org/stable/1343463",
+        type: "academic paper",
+      },
+      {
+        title: "Logocentrism – Britannica",
+        url: "https://www.britannica.com/topic/logocentrism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "differance",
+    name: "Différance",
+    description:
+      "Derrida’s term for the endless deferral and difference inherent in language, undermining fixed meaning.",
+    originSchool: "post-structuralism",
+    keyThinkers: ["derrida"],
+    relatedIdeas: ["deconstruction", "logocentrism"],
+    challenges: ["fixed-meaning", "structuralism"],
+    modernApplications: ["Semiotics", "Critical theory"],
+    externalLinks: [
+      {
+        title: "Différance – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/derrida/#Diff",
+        type: "encyclopedia",
+      },
+      {
+        title: "Différance – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/differance/",
+        type: "article",
+      },
+      {
+        title: "Différance (Derrida, 1968) – Academic Paper",
+        url: "https://www.jstor.org/stable/1343194",
+        type: "academic paper",
+      },
+    ],
+  },
+  {
+    id: "biopolitics",
+    name: "Biopolitics",
+    description:
+      "Foucault’s concept of political power exercised over populations through regulation of life, health, and bodies.",
+    originSchool: "postmodernism",
+    keyThinkers: ["foucault"],
+    relatedIdeas: ["power-knowledge", "disciplinary-power"],
+    challenges: ["liberal-humanism", "individualism"],
+    modernApplications: ["Public health", "Surveillance studies"],
+    externalLinks: [
+      {
+        title: "Biopolitics – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/biopolitics/",
+        type: "encyclopedia",
+      },
+      {
+        title:
+          "Foucault, Biopolitics, and Governmentality – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/biopolitics/",
+        type: "article",
+      },
+      {
+        title: "Society Must Be Defended (Foucault, 1976)",
+        url: "https://monoskop.org/images/9/94/Foucault_Michel_Society_Must_Be_Defended.pdf",
+        type: "book",
+      },
+    ],
+  },
+  {
+    id: "disciplinary-power",
+    name: "Disciplinary Power",
+    description:
+      "Foucault’s notion of power that operates through surveillance, normalization, and institutions such as prisons and schools.",
+    originSchool: "postmodernism",
+    keyThinkers: ["foucault"],
+    relatedIdeas: ["power-knowledge", "biopolitics"],
+    challenges: ["freedom", "resistance"],
+    modernApplications: ["Criminology", "Education studies"],
+    externalLinks: [
+      {
+        title:
+          "Michel Foucault: Discipline and Punish – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/foucault/#DisPun",
+        type: "encyclopedia",
+      },
+      {
+        title: "Disciplinary Power – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/foucault/#Discipline",
+        type: "article",
+      },
+      {
+        title: "Discipline and Punish (Foucault, 1975)",
+        url: "https://monoskop.org/images/0/02/Foucault_Michel_Discipline_and_Punish_The_Birth_of_the_Prison.pdf",
+        type: "book",
+      },
+    ],
+  },
+  {
+    id: "legalism",
+    name: "Legalism",
+    description:
+      "A classical Chinese philosophy emphasizing strict laws, centralized authority, and harsh punishments, often contrasted with Confucian benevolence.",
+    originSchool: "chinese-philosophy",
+    keyThinkers: ["han-feizi"],
+    relatedIdeas: ["li-ritual", "dao"],
+    challenges: ["ren-benevolence", "confucianism"],
+    modernApplications: ["Law", "Political science"],
+    externalLinks: [
+      {
+        title:
+          "Legalism in Chinese Philosophy – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/chinese-legalism/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Legalism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/legalism/",
+        type: "article",
+      },
+      {
+        title: "Legalism – Britannica",
+        url: "https://www.britannica.com/topic/Legalism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "anarchy",
+    name: "Anarchy",
+    description:
+      "A state of disorder or absence of authority; in Confucian thought, the feared outcome of neglecting ritual and hierarchy.",
+    originSchool: "political-philosophy",
+    keyThinkers: ["proudhon", "bakunin"],
+    relatedIdeas: ["li-ritual", "daoism"],
+    challenges: ["statecraft", "authority"],
+    modernApplications: ["Political theory", "Anarchism studies"],
+    externalLinks: [
+      {
+        title: "Anarchism – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/anarchism/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Anarchism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/anarchism/",
+        type: "article",
+      },
+      {
+        title: "Anarchism – Britannica",
+        url: "https://www.britannica.com/topic/anarchism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "selfishness",
+    name: "Selfishness",
+    description:
+      "The pursuit of self-interest at the expense of communal or moral obligations, criticized in Confucian ethics.",
+    originSchool: "ethics",
+    keyThinkers: ["hobbes"],
+    relatedIdeas: ["junzi-gentleman", "virtue-ethics"],
+    challenges: ["altruism", "benevolence"],
+    modernApplications: ["Psychology", "Moral philosophy"],
+    externalLinks: [
+      {
+        title:
+          "Self-Interest and Morality – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/self-interest-moral/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Egoism and Selfishness – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/egoism/",
+        type: "article",
+      },
+      {
+        title: "Selfishness in Philosophy – Britannica",
+        url: "https://www.britannica.com/topic/egoism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "linguistic-relativism",
+    name: "Linguistic Relativism",
+    description:
+      "The idea that language shapes thought and cultural worldview, contrasting with Confucian advocacy of correct naming.",
+    originSchool: "philosophy-of-language",
+    keyThinkers: ["sapir", "whorf"],
+    relatedIdeas: ["rectification-of-names"],
+    challenges: ["universal-grammar", "realism"],
+    modernApplications: ["Anthropology", "Cognitive science"],
+    externalLinks: [
+      {
+        title: "Linguistic Relativism – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/relativism/#LinRel",
+        type: "encyclopedia",
+      },
+      {
+        title: "Sapir–Whorf Hypothesis – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/sapir-whorf/",
+        type: "article",
+      },
+      {
+        title: "Linguistic Relativity – Britannica",
+        url: "https://www.britannica.com/topic/linguistic-relativity",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "eurocentrism",
+    name: "Eurocentrism",
+    description:
+      "The tendency to interpret world history, culture, and philosophy from a European perspective, challenged by African and postcolonial thinkers.",
+    originSchool: "modern-critical-theory",
+    keyThinkers: ["wiredu", "fanon"],
+    relatedIdeas: ["conceptual-decolonization", "decolonization"],
+    challenges: ["pluralism", "indigenous-philosophy"],
+    modernApplications: ["Postcolonial studies", "Global ethics"],
+    externalLinks: [
+      {
+        title: "Eurocentrism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/eurocentrism/",
+        type: "article",
+      },
+      {
+        title: "Eurocentrism and Decolonial Thought – Academic Paper",
+        url: "https://www.jstor.org/stable/24584866",
+        type: "academic paper",
+      },
+      {
+        title: "Eurocentrism – Britannica",
+        url: "https://www.britannica.com/topic/Eurocentrism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "individualism",
+    name: "Individualism",
+    description:
+      "The belief in the moral worth and autonomy of the individual, contrasted with African communalism and Confucian ethics.",
+    originSchool: "modern-ethics",
+    keyThinkers: ["locke", "mill"],
+    relatedIdeas: ["communalism", "humanism"],
+    challenges: ["collectivism", "ubuntu"],
+    modernApplications: ["Liberalism", "Human rights"],
+    externalLinks: [
+      {
+        title: "Individualism – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/individualism-history/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Individualism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/individualism/",
+        type: "article",
+      },
+      {
+        title: "Individualism – Britannica",
+        url: "https://www.britannica.com/topic/individualism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "colonialism",
+    name: "Colonialism",
+    description:
+      "The domination and exploitation of foreign territories and peoples, opposed by Indigenous and postcolonial philosophies.",
+    originSchool: "political-theory",
+    keyThinkers: ["fanon", "cesaire"],
+    relatedIdeas: ["indigenous-sovereignty", "decolonization"],
+    challenges: ["anti-colonialism", "postcolonialism"],
+    modernApplications: ["Critical theory", "International relations"],
+    externalLinks: [
+      {
+        title: "Colonialism – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/colonialism/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Colonialism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/colonialism/",
+        type: "article",
+      },
+      {
+        title: "Colonialism – Britannica",
+        url: "https://www.britannica.com/topic/colonialism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "neocolonialism",
+    name: "Neocolonialism",
+    description:
+      "The continued economic and cultural domination of former colonies by powerful states and institutions, even after political independence.",
+    originSchool: "critical-theory",
+    keyThinkers: ["kwame-nkrumah"],
+    relatedIdeas: ["decolonization", "colonialism"],
+    challenges: ["sovereignty", "self-determination"],
+    modernApplications: ["Global politics", "Development studies"],
+    externalLinks: [
+      {
+        title: "Neocolonialism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/neocolonialism/",
+        type: "article",
+      },
+      {
+        title:
+          "Kwame Nkrumah: Neocolonialism, the Last Stage of Imperialism (1965)",
+        url: "https://www.marxists.org/subject/africa/nkrumah/neocolonialism/index.htm",
+        type: "book",
+      },
+      {
+        title: "Neocolonialism – Britannica",
+        url: "https://www.britannica.com/topic/neocolonialism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "mythology",
+    name: "Mythology",
+    description:
+      "Traditional narratives explaining the origins and order of the world, contrasted with the rational inquiry of early natural philosophy.",
+    originSchool: "ancient",
+    keyThinkers: ["hesiod", "homer"],
+    relatedIdeas: ["natural-philosophy"],
+    challenges: ["rationalism", "science"],
+    modernApplications: ["Cultural studies", "Comparative religion"],
+    externalLinks: [
+      {
+        title: "Greek Mythology – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/greek-myth/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Mythology – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/mythology/",
+        type: "article",
+      },
+      {
+        title: "Myth – Britannica",
+        url: "https://www.britannica.com/topic/myth",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "continuous-substance",
+    name: "Continuous Substance",
+    description:
+      "The view that matter is infinitely divisible and continuous, opposing atomistic theories of indivisible particles.",
+    originSchool: "presocratic",
+    keyThinkers: ["aristotle"],
+    relatedIdeas: ["atomism", "elements-theory"],
+    challenges: ["atomism"],
+    modernApplications: ["Philosophy of science", "Physics"],
+    externalLinks: [
+      {
+        title: "Ancient Atomism – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/atomism-ancient/#ConSub",
+        type: "encyclopedia",
+      },
+      {
+        title: "Atomism vs. Continuum – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/atomism/#Continuum",
+        type: "article",
+      },
+      {
+        title: "Continuum Theory – Britannica",
+        url: "https://www.britannica.com/science/continuum-physics",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "idealism",
+    name: "Idealism",
+    description:
+      "The metaphysical position that reality is fundamentally mental or immaterial, contrasted with materialism.",
+    originSchool: "modern-idealism",
+    keyThinkers: ["berkeley", "kant", "hegel"],
+    relatedIdeas: ["realism", "transcendental-idealism"],
+    challenges: ["materialism", "empiricism"],
+    modernApplications: ["Philosophy of mind", "Epistemology"],
+    externalLinks: [
+      {
+        title: "Idealism – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/idealism/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Idealism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/idealism/",
+        type: "article",
+      },
+      {
+        title: "Idealism – Britannica",
+        url: "https://www.britannica.com/topic/idealism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "theism",
+    name: "Theism",
+    description:
+      "The belief in the existence of a god or gods, often contrasted with atheism and naturalism.",
+    originSchool: "theology",
+    keyThinkers: ["anselm", "aquinas"],
+    relatedIdeas: ["faith-and-reason", "five-ways"],
+    challenges: ["atheism", "materialism"],
+    modernApplications: ["Religious philosophy", "Apologetics"],
+    externalLinks: [
+      {
+        title: "Theism – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/theism/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Theism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/theism/",
+        type: "article",
+      },
+      {
+        title: "Theism – Britannica",
+        url: "https://www.britannica.com/topic/theism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "inference-theories",
+    name: "Inference Theories",
+    description:
+      "Indian philosophical theories that knowledge can arise from logical inference, opposed by Carvaka’s reliance on perception alone.",
+    originSchool: "indian-philosophy",
+    keyThinkers: ["nyaya-school"],
+    relatedIdeas: ["pratyaksha", "materialism"],
+    challenges: ["carvaka-empiricism"],
+    modernApplications: ["Logic", "Epistemology"],
+    externalLinks: [
+      {
+        title: "Indian Epistemology – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/epistemology-india/#Infe",
+        type: "encyclopedia",
+      },
+      {
+        title: "Nyaya Inference – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/nyaya/#Inference",
+        type: "article",
+      },
+      {
+        title: "Inference in Indian Logic – Academic Paper",
+        url: "https://www.jstor.org/stable/24663312",
+        type: "academic paper",
+      },
+    ],
+  },
+  {
+    id: "essentialism",
+    name: "Essentialism",
+    description:
+      "The doctrine that entities have a set of essential properties necessary for their identity, challenged by Buddhist impermanence.",
+    originSchool: "ancient-greek",
+    keyThinkers: ["plato", "aristotle"],
+    relatedIdeas: ["realism", "forms"],
+    challenges: ["impermanence", "existentialism"],
+    modernApplications: ["Metaphysics", "Education", "Biology"],
+    externalLinks: [
+      {
+        title:
+          "Essential vs. Accidental Properties – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/essential-accidental/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Essentialism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/essentialism/",
+        type: "article",
+      },
+      {
+        title: "Essentialism – Britannica",
+        url: "https://www.britannica.com/topic/essentialism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "substance-metaphysics",
+    name: "Substance Metaphysics",
+    description:
+      "The philosophical view that reality is fundamentally composed of substances with inherent essences, challenged by Buddhist dependent origination.",
+    originSchool: "ancient-greek",
+    keyThinkers: ["aristotle", "descartes"],
+    relatedIdeas: ["essentialism", "realism"],
+    challenges: ["dependent-origination", "process-philosophy"],
+    modernApplications: ["Ontology", "Metaphysics"],
+    externalLinks: [
+      {
+        title: "Substance – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/substance/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Substance in Metaphysics – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/substance/",
+        type: "article",
+      },
+      {
+        title: "Substance – Britannica",
+        url: "https://www.britannica.com/topic/substance-metaphysics",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "fatalism",
+    name: "Fatalism",
+    description:
+      "The belief that all events are predetermined and inevitable, opposed by karma as moral causation.",
+    originSchool: "ancient",
+    keyThinkers: ["stoics"],
+    relatedIdeas: ["karma", "determinism"],
+    challenges: ["free-will", "moral-responsibility"],
+    modernApplications: ["Theology", "Philosophy of time"],
+    externalLinks: [
+      {
+        title: "Fatalism – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/fatalism/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Fatalism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/fatalism/",
+        type: "article",
+      },
+      {
+        title: "Fatalism – Britannica",
+        url: "https://www.britannica.com/topic/fatalism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "ascetic-extremes",
+    name: "Ascetic Extremes",
+    description:
+      "The pursuit of extreme self-denial and austerity, rejected by the Buddha in favor of the Middle Way.",
+    originSchool: "indian-philosophy",
+    keyThinkers: ["buddha"],
+    relatedIdeas: ["middle-way", "four-noble-truths"],
+    challenges: ["hedonism", "materialism"],
+    modernApplications: ["Spiritual practice", "Psychology of religion"],
+    externalLinks: [
+      {
+        title: "Buddhist Ethics – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/buddhism-ethics/#Asceticism",
+        type: "encyclopedia",
+      },
+      {
+        title:
+          "Asceticism in Indian Religions – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/asceticism/",
+        type: "article",
+      },
+      {
+        title: "Asceticism – Britannica",
+        url: "https://www.britannica.com/topic/asceticism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "tyranny",
+    name: "Tyranny",
+    description:
+      "A form of oppressive and absolute rule, opposed in classical and Indian political thought as the corruption of just authority.",
+    originSchool: "political-philosophy",
+    keyThinkers: ["plato", "aristotle", "chanakya"],
+    relatedIdeas: ["rajadharma", "statecraft"],
+    challenges: ["justice", "democracy"],
+    modernApplications: ["Political science", "Governance studies"],
+    externalLinks: [
+      {
+        title: "Tyranny – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/tyranny/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Plato on Tyranny – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/plato-politics/#Tyranny",
+        type: "article",
+      },
+      {
+        title: "Tyranny – Britannica",
+        url: "https://www.britannica.com/topic/tyranny",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "utopianism",
+    name: "Utopianism",
+    description:
+      "The pursuit of an ideal and perfect society, often criticized as impractical or authoritarian when contrasted with statecraft and realism.",
+    originSchool: "political-philosophy",
+    keyThinkers: ["more", "marx"],
+    relatedIdeas: ["statecraft", "cosmopolitanism"],
+    challenges: ["political-realism"],
+    modernApplications: ["Social theory", "Political movements"],
+    externalLinks: [
+      {
+        title: "Utopia and Utopianism – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/utopia/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Utopianism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/utopianism/",
+        type: "article",
+      },
+      {
+        title: "Utopia – Britannica",
+        url: "https://www.britannica.com/topic/utopia-philosophy",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "reductionism",
+    name: "Reductionism",
+    description:
+      "The view that complex phenomena can be explained entirely by their simpler parts, criticized in philosophy of economics and social sciences.",
+    originSchool: "modern-philosophy",
+    keyThinkers: ["descartes", "hobbes"],
+    relatedIdeas: ["materialism", "economics"],
+    challenges: ["holism", "systems-theory"],
+    modernApplications: ["Science", "Philosophy of mind"],
+    externalLinks: [
+      {
+        title: "Reductionism – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/reductionism/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Reductionism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/reductionism/",
+        type: "article",
+      },
+      {
+        title: "Reductionism – Britannica",
+        url: "https://www.britannica.com/topic/reductionism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "instrumentalism",
+    name: "Instrumentalism",
+    description:
+      "The view that theories and ideas are merely useful tools for prediction or practice, not necessarily true descriptions of reality.",
+    originSchool: "pragmatism",
+    keyThinkers: ["dewey"],
+    relatedIdeas: ["education", "pragmatism"],
+    challenges: ["realism", "essentialism"],
+    modernApplications: ["Science education", "Philosophy of science"],
+    externalLinks: [
+      {
+        title: "Instrumentalism – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/scientific-instrumentalism/",
+        type: "encyclopedia",
+      },
+      {
+        title:
+          "Instrumentalism in Science – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/instrumentalism/",
+        type: "article",
+      },
+      {
+        title: "Instrumentalism – Britannica",
+        url: "https://www.britannica.com/topic/instrumentalism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "pelagianism",
+    name: "Pelagianism",
+    description:
+      "The Christian doctrine denying original sin, holding that humans can achieve salvation through free will without divine grace.",
+    originSchool: "christian-philosophy",
+    keyThinkers: ["pelagius"],
+    relatedIdeas: ["original-sin", "grace"],
+    challenges: ["augustinianism"],
+    modernApplications: ["Theology", "Ethics"],
+    externalLinks: [
+      {
+        title: "Pelagianism – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/pelagianism/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Pelagianism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/pelagianism/",
+        type: "article",
+      },
+      {
+        title: "Pelagianism – Britannica",
+        url: "https://www.britannica.com/topic/Pelagianism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "pacifism",
+    name: "Pacifism",
+    description:
+      "The view that war and violence are always unjustifiable, contrasted with just war theory.",
+    originSchool: "ethics",
+    keyThinkers: ["tolstoy", "gandhi"],
+    relatedIdeas: ["ahimsa", "just-war-theory"],
+    challenges: ["military-ethics"],
+    modernApplications: ["Peace studies", "International relations"],
+    externalLinks: [
+      {
+        title: "Pacifism – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/pacifism/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Pacifism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/pacifism/",
+        type: "article",
+      },
+      {
+        title: "Pacifism – Britannica",
+        url: "https://www.britannica.com/topic/pacifism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "fideism",
+    name: "Fideism",
+    description:
+      "The view that religious belief depends on faith rather than reason, opposed to rational theology.",
+    originSchool: "christian-philosophy",
+    keyThinkers: ["tertullian", "kierkegaard"],
+    relatedIdeas: ["faith-and-reason"],
+    challenges: ["rational-theology"],
+    modernApplications: ["Philosophy of religion", "Theology"],
+    externalLinks: [
+      {
+        title: "Fideism – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/fideism/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Fideism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/fideism/",
+        type: "article",
+      },
+      {
+        title: "Fideism – Britannica",
+        url: "https://www.britannica.com/topic/fideism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "legal-positivism",
+    name: "Legal Positivism",
+    description:
+      "The theory that laws derive their validity from social facts and authority, not moral considerations.",
+    originSchool: "modern-legal-philosophy",
+    keyThinkers: ["austin", "hart", "kelsen"],
+    relatedIdeas: ["natural-law", "statecraft"],
+    challenges: ["natural-law-theory"],
+    modernApplications: ["Jurisprudence", "Constitutional law"],
+    externalLinks: [
+      {
+        title: "Legal Positivism – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/legal-positivism/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Legal Positivism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/legalpositivism/",
+        type: "article",
+      },
+      {
+        title: "Legal Positivism – Britannica",
+        url: "https://www.britannica.com/topic/legal-positivism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "atheism",
+    name: "Atheism",
+    description:
+      "The denial of the existence of God or gods, opposing classical theism and scholastic arguments for God’s existence.",
+    originSchool: "modern-philosophy",
+    keyThinkers: ["nietzsche", "hume", "dawkins"],
+    relatedIdeas: ["theism", "secularism"],
+    challenges: ["religion", "faith"],
+    modernApplications: ["Secular ethics", "Philosophy of religion"],
+    externalLinks: [
+      {
+        title: "Atheism – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/atheism-agnosticism/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Atheism – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/atheism/",
+        type: "article",
+      },
+      {
+        title: "Atheism – Britannica",
+        url: "https://www.britannica.com/topic/atheism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "rule-fetishism",
+    name: "Rule Fetishism",
+    description:
+      "The rigid adherence to rules without considering context or practical wisdom, opposed by Aristotle’s concept of phronesis.",
+    originSchool: "ethics",
+    keyThinkers: ["aristotle"],
+    relatedIdeas: ["practical-wisdom", "virtue-ethics"],
+    challenges: ["contextual-judgment"],
+    modernApplications: ["Leadership", "Applied ethics"],
+    externalLinks: [
+      {
+        title:
+          "Aristotle’s Practical Wisdom – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/aristotle-ethics/#Phronesis",
+        type: "encyclopedia",
+      },
+      {
+        title: "Virtue Ethics and Rules – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/virtue-ethics/#Rules",
+        type: "article",
+      },
+      {
+        title: "Rule-Dependence in Ethics – Academic Paper",
+        url: "https://www.jstor.org/stable/2254035",
+        type: "academic paper",
+      },
+    ],
+  },
+  {
+    id: "status-quo-defenses",
+    name: "Status Quo Defenses",
+    description:
+      "Philosophical or political arguments that justify maintaining existing social, political, or economic arrangements, often challenged by reformist thinkers.",
+    originSchool: "political-theory",
+    keyThinkers: ["burke"],
+    relatedIdeas: ["social-reform", "political-realism"],
+    challenges: ["progressivism"],
+    modernApplications: ["Political science", "Conservative theory"],
+    externalLinks: [
+      {
+        title:
+          "Conservatism and Tradition – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/conservatism/#StatQuo",
+        type: "encyclopedia",
+      },
+      {
+        title: "Status Quo Bias in Politics – Academic Paper",
+        url: "https://www.jstor.org/stable/2709515",
+        type: "academic paper",
+      },
+      {
+        title: "Conservatism – Britannica",
+        url: "https://www.britannica.com/topic/conservatism",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "individual-rights",
+    name: "Individual Rights",
+    description:
+      "The moral and legal entitlements of individuals, often raised against utilitarian calculations of collective welfare.",
+    originSchool: "modern-political-philosophy",
+    keyThinkers: ["locke", "mill", "rawls"],
+    relatedIdeas: ["justice", "utilitarianism"],
+    challenges: ["collectivism"],
+    modernApplications: ["Human rights law", "Political philosophy"],
+    externalLinks: [
+      {
+        title: "Rights – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/rights/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Human Rights – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/human-rights/",
+        type: "article",
+      },
+      {
+        title: "Rights – Britannica",
+        url: "https://www.britannica.com/topic/rights-legal",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "universal-truth",
+    name: "Universal Truth",
+    description:
+      "The claim that certain truths hold independently of culture or perspective, contested by postmodern critiques of knowledge and power.",
+    originSchool: "epistemology",
+    keyThinkers: ["kant", "stoics"],
+    relatedIdeas: ["universalism", "power-knowledge"],
+    challenges: ["relativism", "constructivism"],
+    modernApplications: ["Human rights", "Science"],
+    externalLinks: [
+      {
+        title: "Truth – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/truth/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Relativism and Truth – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/truth-relativism/",
+        type: "article",
+      },
+      {
+        title: "Truth – Britannica",
+        url: "https://www.britannica.com/topic/truth-philosophy",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "buddhist-non-self",
+    name: "Buddhist Non-Self (Anatta) Challenge",
+    description:
+      "The Buddhist rejection of a permanent soul or self (Atman), challenging Vedantic identity of Atman and Brahman.",
+    originSchool: "buddhism",
+    keyThinkers: ["buddha"],
+    relatedIdeas: ["non-self", "atman"],
+    challenges: ["essentialism", "hindu-dualism"],
+    modernApplications: ["Philosophy of mind", "Psychology of self"],
+    externalLinks: [
+      {
+        title: "Anatta (No-Self) – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/no-self/",
+        type: "encyclopedia",
+      },
+      {
+        title: "Anatta – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/anatta/",
+        type: "article",
+      },
+      {
+        title: "No-Self in Buddhism – Britannica",
+        url: "https://www.britannica.com/topic/anatta",
+        type: "encyclopedia",
+      },
+    ],
+  },
+  {
+    id: "contextual-judgment",
+    name: "Contextual Judgment",
+    description:
+      "The ethical practice of making decisions based on context and circumstances rather than rigid adherence to rules, aligned with Aristotle’s phronesis.",
+    originSchool: "ethics",
+    keyThinkers: ["aristotle"],
+    relatedIdeas: ["practical-wisdom", "virtue-ethics"],
+    challenges: ["rule-fetishism", "moral-absolutism"],
+    modernApplications: ["Leadership", "Applied ethics", "Law"],
+    externalLinks: [
+      {
+        title: "Aristotle’s Ethics – Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/aristotle-ethics/",
+        type: "encyclopedia",
+      },
+      {
+        title:
+          "Virtue Ethics and Contextual Judgment – Internet Encyclopedia of Philosophy",
+        url: "https://iep.utm.edu/virtue-ethics/#Context",
+        type: "article",
+      },
+      {
+        title: "Practical Judgment in Ethics – Academic Paper",
+        url: "https://www.jstor.org/stable/2253902",
+        type: "academic paper",
       },
     ],
   },
