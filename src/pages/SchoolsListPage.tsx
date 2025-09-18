@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { BookOpen, Search, Filter } from "lucide-react";
+import { Search, Filter } from "lucide-react";
 import { allSchools } from "../data/philosophyData";
+import { PhilosophicalSchool } from "../types/philosophy";
+import { PhilosophyGrid } from "./PhilosophyGrid";
 
 export function SchoolsListPage() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -38,19 +39,15 @@ export function SchoolsListPage() {
       <div className="container mx-auto px-6 py-8">
         {/* Header */}
         <div className="text-center mb-8">
-          <div className="flex justify-center items-center gap-3 mb-4">
-            <BookOpen size={48} className="text-purple-600" />
-          </div>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center sm:text-center">
+          <h1 className="text-3xl font-bold text-gray-800 mb-2">
             Philosophical Schools
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4 sm:px-0 text-center sm:text-center">
-            Explore the major schools of thought that have shaped philosophical
-            inquiry
+          <p className="text-lg text-gray-600">
+            Explore the major schools of thought that have shaped philosophy
           </p>
         </div>
 
-        {/* Search and Filter */}
+        {/* Search & Filter */}
         <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
           <div className="flex items-center gap-2 mb-4">
             <Filter size={20} className="text-gray-600" />
@@ -100,73 +97,8 @@ export function SchoolsListPage() {
           </div>
         </div>
 
-        {/* Results */}
-        <div className="mb-6">
-          <p className="text-gray-600">
-            {filteredSchools.length}{" "}
-            {filteredSchools.length === 1 ? "school" : "schools"} found
-          </p>
-        </div>
-
-        {/* Schools Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredSchools.map((school) => (
-            <Link
-              key={school.id}
-              to={`/school/${school.id}`}
-              state={{ scrollToId: `school-${school.id}` }} // pass the scroll target
-              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
-              id={`school-${school.id}`} // unique id for scroll
-            >
-              <div
-                className="h-2"
-                style={{ backgroundColor: school.color }}
-              ></div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">
-                  {school.name}
-                </h3>
-                <div className="flex items-center gap-4 text-sm text-gray-600 mb-3">
-                  <span>{school.years}</span>
-                  <span>•</span>
-                  <span>{school.region}</span>
-                </div>
-                <p className="text-gray-700 mb-4 line-clamp-3">
-                  {school.description}
-                </p>
-
-                <div className="space-y-2">
-                  <div>
-                    <h4 className="font-semibold text-gray-800 text-sm">
-                      Key Ideas:
-                    </h4>
-                    <div className="flex flex-wrap gap-1 mt-1">
-                      {school.keyIdeas.slice(0, 3).map((idea, index) => (
-                        <span
-                          key={index}
-                          className="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs"
-                        >
-                          {idea}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
-
-        {filteredSchools.length === 0 && (
-          <div className="text-center py-12">
-            <p className="text-gray-500 text-lg">
-              No schools match your current filters.
-            </p>
-            <p className="text-gray-400 mt-2">
-              Try adjusting your search terms or filters.
-            </p>
-          </div>
-        )}
+        {/* Schools grid */}
+        <PhilosophyGrid schools={filteredSchools} />
       </div>
     </div>
   );
