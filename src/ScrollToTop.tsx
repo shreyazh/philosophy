@@ -6,7 +6,12 @@ import { useLocation, useNavigationType } from "react-router-dom";
 // Use in-memory cache plus sessionStorage for robustness across remounts
 const memoryScrollPositions = new Map<string, number>();
 
-function buildKeys(location: { key: string; pathname: string; search: string; hash: string }) {
+function buildKeys(location: {
+  key: string;
+  pathname: string;
+  search: string;
+  hash: string;
+}) {
   const historyKey = location.key;
   const pathKey = `${location.pathname}${location.search}${location.hash}`;
   return { historyKey, pathKey };
@@ -90,7 +95,13 @@ export function ScrollToTop() {
     } else {
       window.scrollTo({ top: 0, left: 0 });
     }
-  }, [location.key, location.pathname, location.search, location.hash, navigationType]);
+  }, [
+    location.key,
+    location.pathname,
+    location.search,
+    location.hash,
+    navigationType,
+  ]);
 
   return null;
 }
