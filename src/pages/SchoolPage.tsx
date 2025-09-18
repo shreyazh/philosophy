@@ -19,7 +19,6 @@ import { ideasData } from "../data/ideasData";
 export function SchoolPage() {
   const { id } = useParams<{ id: string }>();
   const school = allSchools.find((s) => s.id === id);
-  
 
   if (!school) {
     return (
@@ -39,7 +38,7 @@ export function SchoolPage() {
   const schoolPhilosophers = philosophersData.filter((p) =>
     p.schools.includes(school.id)
   );
-  
+
   const relatedSchools = allSchools.filter((s) =>
     school.relatedSchools.includes(s.id)
   );
@@ -49,12 +48,12 @@ export function SchoolPage() {
   // Try to connect school key idea labels to concrete ideas in ideasData
   function findIdeaForLabel(label: string) {
     const normalized = label.trim().toLowerCase();
-    const slug = normalized
-      .replace(/[^a-z0-9\s-]/g, "")
-      .replace(/\s+/g, "-");
+    const slug = normalized.replace(/[^a-z0-9\s-]/g, "").replace(/\s+/g, "-");
 
     // 1) Exact name match (case-insensitive)
-    let found = ideasData.find((idea) => idea.name.trim().toLowerCase() === normalized);
+    let found = ideasData.find(
+      (idea) => idea.name.trim().toLowerCase() === normalized
+    );
     if (found) return found;
 
     // 2) ID equals slug
@@ -62,11 +61,15 @@ export function SchoolPage() {
     if (found) return found;
 
     // 3) Related ideas contain the slug
-    found = ideasData.find((idea) => idea.relatedIdeas?.some((r) => r.toLowerCase() === slug));
+    found = ideasData.find((idea) =>
+      idea.relatedIdeas?.some((r) => r.toLowerCase() === slug)
+    );
     if (found) return found;
 
     // 4) Name contains the label (loose contains)
-    found = ideasData.find((idea) => idea.name.toLowerCase().includes(normalized));
+    found = ideasData.find((idea) =>
+      idea.name.toLowerCase().includes(normalized)
+    );
     if (found) return found;
 
     return undefined;
@@ -77,10 +80,11 @@ export function SchoolPage() {
       <div className="container mx-auto px-6 py-8">
         {/* Back Button */}
         <button
-           onClick={() => window.history.back()}
+          onClick={() => window.history.back()}
           className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-6 transition-colors"
         >
-          <ArrowLeft size={20} />Move Back
+          <ArrowLeft size={20} />
+          Move Back
         </button>
 
         {/* School Header */}
@@ -116,7 +120,6 @@ export function SchoolPage() {
         {/* Main Content */}
         <div className="grid lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-8">
-            
             {/* Key Ideas */}
             <div className="bg-white rounded-xl shadow-lg p-6">
               <div className="flex items-center gap-2 mb-4">
@@ -137,7 +140,10 @@ export function SchoolPage() {
                       className="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
                     >
                       {linked ? (
-                        <Link to={`/idea/${linked.id}`} className="hover:underline">
+                        <Link
+                          to={`/idea/${linked.id}`}
+                          className="hover:underline"
+                        >
                           {content}
                         </Link>
                       ) : (
@@ -181,7 +187,9 @@ export function SchoolPage() {
               <div className="bg-white rounded-xl shadow-lg p-6">
                 <div className="flex items-center gap-2 mb-4">
                   <TrendingUp className="text-green-600" size={24} />
-                  <h2 className="text-xl font-bold text-gray-800">Influences</h2>
+                  <h2 className="text-xl font-bold text-gray-800">
+                    Influences
+                  </h2>
                 </div>
                 <ul className="space-y-2">
                   {school.influences.map((influence, idx) => (
@@ -196,7 +204,9 @@ export function SchoolPage() {
               <div className="bg-white rounded-xl shadow-lg p-6">
                 <div className="flex items-center gap-2 mb-4">
                   <Target className="text-red-600" size={24} />
-                  <h2 className="text-xl font-bold text-gray-800">Challenged</h2>
+                  <h2 className="text-xl font-bold text-gray-800">
+                    Challenged
+                  </h2>
                 </div>
                 <ul className="space-y-2">
                   {school.challenged.map((challenge, idx) => (
@@ -214,9 +224,13 @@ export function SchoolPage() {
               <h2 className="text-2xl font-bold text-gray-800 mb-4">
                 Legacy & Impact
               </h2>
-              <p className="text-gray-700 leading-relaxed mb-4">{school.legacy}</p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                {school.legacy}
+              </p>
               <div className="space-y-2">
-                <h3 className="font-semibold text-gray-800">Key Developments:</h3>
+                <h3 className="font-semibold text-gray-800">
+                  Key Developments:
+                </h3>
                 <ul className="grid md:grid-cols-2 gap-2">
                   {school.developments.map((dev, idx) => (
                     <li key={idx} className="flex items-start gap-2">
