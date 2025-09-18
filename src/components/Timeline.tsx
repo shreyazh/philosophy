@@ -101,12 +101,7 @@ export function Timeline({ periods, selectedPeriod, onPeriodSelect }: TimelinePr
                           {period.years}
                         </span>
                       </div>
-                      <ChevronRight
-                        size={18}
-                        className={`transition-transform duration-300 ${
-                          isActive ? "rotate-90 text-white" : "text-gray-500"
-                        }`}
-                      />
+                      
                     </div>
 
                     <p
