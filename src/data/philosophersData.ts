@@ -210,7 +210,7 @@ export const philosophersData: Philosopher[] = [
     ],
     externalLinks: [
       { title: 'Internet Encyclopedia: Advaita Vedanta', url: 'https://iep.utm.edu/adv-veda/', type: 'encyclopedia' },
-      { title: 'Upadesasahasri – HolyBooks English PDF', url: 'https://www.holybooks.com/upadeshasahasri-english/', type: 'book' },
+      { title: 'Upadesasahasri – Book', url: 'https://estudantedavedanta.net/Sri_Shankaracharya-Upadeshasahasri%20-%20Swami%20Jagadananda%20%281949%29%20[Sanskrit-English].pdf', type: 'book' },
       { title: 'Britannica: Shankara', url: 'https://www.britannica.com/biography/Shankara', type: 'article' }
     ]
   },
@@ -235,7 +235,7 @@ export const philosophersData: Philosopher[] = [
     externalLinks: [
       { title: 'Internet Encyclopedia: Ramanuja', url: 'https://iep.utm.edu/ramanuja/', type: 'encyclopedia' },
       { title: 'Britannica: Ramanuja', url: 'https://www.britannica.com/biography/Ramanuja', type: 'article' },
-      { title: 'Sri Bhashya – Internet Archive', url: 'https://archive.org/details/sribhashyaenglish', type: 'book' }
+      { title: 'Sri Bhashya – Internet Archive', url: 'https://archive.org/details/vedantasutraswit00badaiala', type: 'book' }
     ]
   },
   {
@@ -258,8 +258,8 @@ export const philosophersData: Philosopher[] = [
     ],
     externalLinks: [
       { title: 'Britannica: Madhva', url: 'https://www.britannica.com/biography/Madhva', type: 'article' },
-      { title: 'Internet Encyclopedia: Dvaita Vedanta', url: 'https://iep.utm.edu/dvaita/', type: 'encyclopedia' },
-      { title: 'Works of Madhvacharya – Internet Archive', url: 'https://archive.org/details/MadhvacharyaTexts', type: 'book' }
+      { title: 'Dvaita Vedanta', url: 'https://www.wisdomlib.org/definition/dvaita', type: 'encyclopedia' },
+      { title: 'Works of Madhvacharya – Internet Archive', url: 'https://archive.org/search?query=subject%3A%22MADVACHARYA%22', type: 'book' }
     ]
   },
   {
