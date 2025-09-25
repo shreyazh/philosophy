@@ -9,7 +9,7 @@ export const philosophersData: Philosopher[] = [
     biography: 'Socrates was a classical Greek philosopher credited as the founder of Western philosophy and among the first moral philosophers of the ethical tradition of thought. He is known for his method of questioning and his claim that "the unexamined life is not worth living."',
     keyIdeas: ['socratic-method', 'virtue-is-knowledge', 'care-of-soul'],
     influences: ['Pre-Socratic naturalists', 'Sophists'],
-    influenced: ['plato', 'xenophon', 'antisthenes'],
+    influenced: ['plato', 'xenophon', 'antisthenes', 'aristotle'],
     schools: ['classical'],
     challenges: ['sophistry', 'moral-relativism'],
     quotes: [
@@ -21,7 +21,9 @@ export const philosophersData: Philosopher[] = [
     externalLinks: [
       { title: 'Internet Encyclopedia: Socrates', url: 'https://iep.utm.edu/socrates/', type: 'encyclopedia' },
       { title: 'Britannica: Socrates', url: 'https://www.britannica.com/biography/Socrates', type: 'article' },
-      { title: 'Socratic Method Overview – Philosophy Now', url: 'https://philosophynow.org/issues/137/The_Socratic_Method', type: 'article' }
+      { title: 'Socratic Method Overview – Wikipedia', url: 'https://en.wikipedia.org/wiki/Socratic_method', type: 'article' },
+      {title: 'The Socratic Dialogues - Plato', url: 'https://archive.org/details/platsd', type: 'course'},
+      {title: "Conversations of Socrates- Xenophon", url:'https://archive.org/details/conversationsofs00xeno', type: 'book'}
     ]
   },
   {
@@ -66,7 +68,9 @@ export const philosophersData: Philosopher[] = [
     externalLinks: [
       { title: 'Internet Encyclopedia: Plato', url: 'https://iep.utm.edu/plato/', type: 'encyclopedia' },
       { title: 'Britannica: Plato', url: 'https://www.britannica.com/biography/Plato', type: 'article' },
-      { title: 'The Allegory of the Cave (full text at MIT Classics)', url: 'http://classics.mit.edu/Plato/republic.7.vii.html', type: 'book' }
+      { title: 'The Allegory of the Cave', url: 'https://web.sbu.edu/theology/bychkov/plato%20republic%207.pdf', type: 'chapter' },
+      {title: 'The Socratic Dialogues - Plato', url: 'https://archive.org/details/platsd', type: 'course'},
+      {title: 'The Republic', url: 'https://www.sciencetheearth.com/uploads/2/4/6/5/24658156/plato_-_the_republic.pdf', type: 'book'}
     ]
   },
   {
@@ -86,8 +90,8 @@ export const philosophersData: Philosopher[] = [
       'Human dignity requires opportunities to flourish.'
     ],
     externalLinks: [
-      { title: 'Britannica: Martha Nussbaum', url: 'https://www.britannica.com/biography/Martha-C-Nussbaum', type: 'article' },
-      { title: 'Creating Capabilities – Internet Archive', url: 'https://archive.org/details/creatingcapabilities', type: 'book' }
+      { title: 'Britannica: Martha Nussbaum', url: 'https://www.britannica.com/biography/Martha-Nussbaum', type: 'article' },
+      { title: 'Creating Capabilities – Internet Archive', url: 'https://archive.org/details/creatingcapabili0000nuss', type: 'book' }
     ]
   },
   {
@@ -183,7 +187,7 @@ export const philosophersData: Philosopher[] = [
     externalLinks: [
       { title: 'Internet Encyclopedia: Confucius', url: 'https://iep.utm.edu/confucius/', type: 'encyclopedia' },
       { title: 'Britannica: Confucius', url: 'https://www.britannica.com/biography/Confucius', type: 'article' },
-      { title: 'The Analects – Internet Archive (Legge translation)', url: 'https://archive.org/details/analectsofconfuc00confuoft', type: 'book' }
+      { title: 'The Analects – Internet Archive (Annping Chin translation)', url: 'https://archive.org/details/theanalectsconfucius', type: 'book' }
     ]
   },
   {
@@ -206,7 +210,7 @@ export const philosophersData: Philosopher[] = [
     ],
     externalLinks: [
       { title: 'Internet Encyclopedia: Advaita Vedanta', url: 'https://iep.utm.edu/adv-veda/', type: 'encyclopedia' },
-      { title: 'Upadesasahasri – HolyBooks English PDF', url: 'https://www.holybooks.com/upadeshasahasri-english/', type: 'book' },
+      { title: 'Upadesasahasri – Book', url: 'https://estudantedavedanta.net/Sri_Shankaracharya-Upadeshasahasri%20-%20Swami%20Jagadananda%20%281949%29%20[Sanskrit-English].pdf', type: 'book' },
       { title: 'Britannica: Shankara', url: 'https://www.britannica.com/biography/Shankara', type: 'article' }
     ]
   },
@@ -231,7 +235,7 @@ export const philosophersData: Philosopher[] = [
     externalLinks: [
       { title: 'Internet Encyclopedia: Ramanuja', url: 'https://iep.utm.edu/ramanuja/', type: 'encyclopedia' },
       { title: 'Britannica: Ramanuja', url: 'https://www.britannica.com/biography/Ramanuja', type: 'article' },
-      { title: 'Sri Bhashya – Internet Archive', url: 'https://archive.org/details/sribhashyaenglish', type: 'book' }
+      { title: 'Sri Bhashya – Internet Archive', url: 'https://archive.org/details/vedantasutraswit00badaiala', type: 'book' }
     ]
   },
   {
@@ -254,8 +258,8 @@ export const philosophersData: Philosopher[] = [
     ],
     externalLinks: [
       { title: 'Britannica: Madhva', url: 'https://www.britannica.com/biography/Madhva', type: 'article' },
-      { title: 'Internet Encyclopedia: Dvaita Vedanta', url: 'https://iep.utm.edu/dvaita/', type: 'encyclopedia' },
-      { title: 'Works of Madhvacharya – Internet Archive', url: 'https://archive.org/details/MadhvacharyaTexts', type: 'book' }
+      { title: 'Dvaita Vedanta', url: 'https://www.wisdomlib.org/definition/dvaita', type: 'encyclopedia' },
+      { title: 'Works of Madhvacharya – Internet Archive', url: 'https://archive.org/search?query=subject%3A%22MADVACHARYA%22', type: 'book' }
     ]
   },
   {
