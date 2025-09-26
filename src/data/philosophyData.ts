@@ -27,13 +27,13 @@ export const philosophyData: PhilosophicalPeriod[] = [
         keyTexts: ["Upanishads", "Brahma Sutras", "Bhagavad Gita"],
         externalLinks: [
           {
-            title: "Vedanta Philosophy – Stanford Encyclopedia of Philosophy",
-            url: "https://plato.stanford.edu/entries/vedanta/",
-            type: "encyclopedia",
+            title: "Vedanta – Wikipedia",
+            url: "https://en.wikipedia.org/wiki/Vedanta",
+            type: "article",
           },
           {
-            title: "Vedanta Overview – Internet Encyclopedia of Philosophy",
-            url: "https://iep.utm.edu/vedanta/",
+            title: "Vedanta Philosophy",
+            url: "https://hinduvism.com/vedanta-philosophy-advaita-vishishtadvaita//",
             type: "article",
           },
           {
@@ -66,13 +66,13 @@ export const philosophyData: PhilosophicalPeriod[] = [
         externalLinks: [
           {
             title: "Jain Philosophy – Stanford Encyclopedia of Philosophy",
-            url: "https://plato.stanford.edu/entries/jainism/",
+            url: "https://plato.stanford.edu/entries/jaina-philosophy/",
             type: "encyclopedia",
           },
           {
             title:
               "Jain Philosophy Overview – Internet Encyclopedia of Philosophy",
-            url: "https://iep.utm.edu/jainism/",
+            url: "https://iep.utm.edu/jain/",
             type: "article",
           },
           {
@@ -122,7 +122,7 @@ export const philosophyData: PhilosophicalPeriod[] = [
           },
           {
             title: "The Presocratics – Internet Encyclopedia of Philosophy",
-            url: "https://iep.utm.edu/presokratikoi/",
+            url: "https://iep.utm.edu/presocra/",
             type: "article",
           },
           {
@@ -1558,8 +1558,8 @@ export const philosophyData: PhilosophicalPeriod[] = [
           },
           {
             title:
-              "Mill's Harm Principle – Internet Encyclopedia of Philosophy",
-            url: "https://iep.utm.edu/mill/",
+              "Mill's Harm Principle – Wikipedia",
+            url: "http://en.wikipedia.org/wiki/Harm_principle",
             type: "article",
           },
           {

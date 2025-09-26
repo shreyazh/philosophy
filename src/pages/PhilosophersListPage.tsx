@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Users, Search, Filter, User } from "lucide-react";
 import { philosophersData } from "../data/philosophersData";

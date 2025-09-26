@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Search, Filter } from "lucide-react";
 import { allSchools } from "../data/philosophyData";
-import { PhilosophicalSchool } from "../types/philosophy";
 import { PhilosophyGrid } from "./PhilosophyGrid";
 
 export function SchoolsListPage() {
@@ -97,8 +96,8 @@ export function SchoolsListPage() {
           </div>
         </div>
         <p className="text-gray-600 max-w-6xl mx-auto w-full">
-            {filteredSchools.length} {filteredSchools.length === 1 ? 'school' : 'schools'} found
-          </p><br/>
+          {filteredSchools.length} {filteredSchools.length === 1 ? 'school' : 'schools'} found
+        </p><br />
         {/* Schools grid */}
         <PhilosophyGrid schools={filteredSchools} />
       </div>

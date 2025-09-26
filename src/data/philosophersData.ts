@@ -22,8 +22,8 @@ export const philosophersData: Philosopher[] = [
       { title: 'Internet Encyclopedia: Socrates', url: 'https://iep.utm.edu/socrates/', type: 'encyclopedia' },
       { title: 'Britannica: Socrates', url: 'https://www.britannica.com/biography/Socrates', type: 'article' },
       { title: 'Socratic Method Overview – Wikipedia', url: 'https://en.wikipedia.org/wiki/Socratic_method', type: 'article' },
-      {title: 'The Socratic Dialogues - Plato', url: 'https://archive.org/details/platsd', type: 'course'},
-      {title: "Conversations of Socrates- Xenophon", url:'https://archive.org/details/conversationsofs00xeno', type: 'book'}
+      { title: 'The Socratic Dialogues - Plato', url: 'https://archive.org/details/platsd', type: 'course' },
+      { title: "Conversations of Socrates- Xenophon", url: 'https://archive.org/details/conversationsofs00xeno', type: 'book' }
     ]
   },
   {
@@ -69,8 +69,8 @@ export const philosophersData: Philosopher[] = [
       { title: 'Internet Encyclopedia: Plato', url: 'https://iep.utm.edu/plato/', type: 'encyclopedia' },
       { title: 'Britannica: Plato', url: 'https://www.britannica.com/biography/Plato', type: 'article' },
       { title: 'The Allegory of the Cave', url: 'https://web.sbu.edu/theology/bychkov/plato%20republic%207.pdf', type: 'chapter' },
-      {title: 'The Socratic Dialogues - Plato', url: 'https://archive.org/details/platsd', type: 'course'},
-      {title: 'The Republic', url: 'https://www.sciencetheearth.com/uploads/2/4/6/5/24658156/plato_-_the_republic.pdf', type: 'book'}
+      { title: 'The Socratic Dialogues - Plato', url: 'https://archive.org/details/platsd', type: 'course' },
+      { title: 'The Republic', url: 'https://www.sciencetheearth.com/uploads/2/4/6/5/24658156/plato_-_the_republic.pdf', type: 'book' }
     ]
   },
   {
@@ -286,7 +286,7 @@ export const philosophersData: Philosopher[] = [
       { title: 'Philosophy Now: Chanakya and Indian Political Thought', url: 'https://philosophynow.org/issues/117/Kautilya_and_the_Arthashastra', type: 'article' }
     ]
   },
-    {
+  {
     id: 'buddha',
     name: 'Siddhartha Gautama (Buddha)',
     years: '563-483 BCE',
@@ -743,6 +743,77 @@ export const philosophersData: Philosopher[] = [
     ]
   },
   {
+    id: 'thales',
+    name: 'Thales of Miletus',
+    years: '622 - 547 BCE',
+    nationality: 'Greek',
+    keyWorks: ['No surviving works (fragments/reports by later authors)'],
+    biography: 'Thales was a pre-Socratic philosopher from Miletus. He is often considered the first Greek philosopher. He tried to explain nature by principles rather than myth. He held that water is the arche (fundamental substance). He engaged in geometry, astronomy, statecraft. :contentReference[oaicite:0]{index=0}',
+    keyIdeas: ['water-as-arche', 'naturalism', 'cosmology-without-myth', 'unity-of-physis', 'mathematical propositions (geometry)'],
+    influences: ['Earlier Ionian traditions', 'natural philosophy'],
+    influenced: ['Anaximander', 'later pre-Socratics', 'Greek science'],
+    schools: ['presocratic', 'Milesian School'],
+    challenges: ['mythological cosmology', 'material monism criticisms'],
+    quotes: [
+      // no reliable direct quotes survive; attributed sayings like:
+      'All things are full of gods',
+      'Know thyself (traditionally assigned)',
+      'Nothing in excess (associated with Seven Wise Men)'
+    ],
+    externalLinks: [
+      { title: 'Stanford Encyclopedia: Thales of Miletus', url: 'https://plato.stanford.edu/entries/thales/', type: 'encyclopedia' },
+      { title: 'Internet Encyclopedia: Thales', url: 'https://iep.utm.edu/thales/', type: 'encyclopedia' },
+      { title: 'Britannica: Thales', url: 'https://www.britannica.com/biography/Thales-of-Miletus', type: 'encyclopedia' },
+      { title: 'Thales - Wikipedia', url: 'https://en.wikipedia.org/wiki/Thales_of_Miletus', type: 'article' }
+    ]
+  },
+  {
+    id: 'heraclitus',
+    name: 'Heraclitus of Ephesus',
+    years: '540–480 BCE',
+    nationality: 'Greek',
+    keyWorks: ['Fragments (collected sayings)'],
+    biography: 'Heraclitus was an early Greek philosopher from Ephesus known for his view that everything is in constant flux. He held that fire is the primary substance and introduced the idea of the Logos as the ordering principle of the cosmos. He emphasised unity of opposites and that change is fundamental. :contentReference[oaicite:0]{index=0}',
+    keyIdeas: ['flux (constant change)', 'unity-of-opposites', 'logos (cosmic reason)', 'fire as primal element'],
+    influences: ['pre-socratics'],
+    influenced: ['stoicism', 'plato', 'heraclitean tradition'],
+    schools: ['presocratic'],
+    challenges: ['permanence-oriented metaphysics', 'static ontology'],
+    quotes: [
+      'No man ever steps in the same river twice.',
+      'Everything flows; nothing remains.',
+      'Listening not to me but to the Logos, it is wise to agree that all things are one.'
+    ],
+    externalLinks: [
+      { title: 'Stanford Encyclopedia: Heraclitus', url: 'https://plato.stanford.edu/entries/heraclitus/', type: 'encyclopedia' },
+      { title: 'Heraclitus Biography & Facts (Britannica)', url: 'https://www.britannica.com/biography/Heraclitus', type: 'encyclopedia' },
+      { title: 'Heraclitus - Wikipedia', url: 'https://en.wikipedia.org/wiki/Heraclitus', type: 'article' }
+    ]
+  },
+  {
+    id: 'democritus',
+    name: 'Democritus',
+    years: '460–370 BCE',
+    nationality: 'Greek',
+    keyWorks: ['Fragments (surviving works)'],
+    biography: 'Democritus was a Greek pre-Socratic philosopher from Abdera. He is one of the founders of atomism. He proposed that matter is composed of indivisible atoms moving through the void. He also wrote on perception, ethics (cheerfulness), and believed that differences in properties stemmed from the shapes, arrangement, and motion of atoms. :contentReference[oaicite:1]{index=1}',
+    keyIdeas: ['atomism', 'void (vacuum)', 'materialism', 'theory-of-perception', 'cheerfulness as ethical ideal'],
+    influences: ['leucippus', 'pre-socratics'],
+    influenced: ['epicureans', 'modern atomic theory', 'later natural philosophers'],
+    schools: ['presocratic', 'atomism'],
+    challenges: ['teleological explanations', 'idealism'],
+    quotes: [
+      'Nothing exists except atoms and empty space; everything else is opinion.',
+      'By convention sweetness and bitterness, by convention color; in reality atoms and void.'
+    ],
+    externalLinks: [
+      { title: 'Stanford Encyclopedia: Democritus', url: 'https://plato.stanford.edu/entries/democritus/', type: 'encyclopedia' },
+      { title: 'Democritus - Britannica', url: 'https://www.britannica.com/biography/Democritus', type: 'encyclopedia' },
+      { title: 'Democritus - Wikipedia', url: 'https://en.wikipedia.org/wiki/Democritus', type: 'article' }
+    ]
+  }
+  ,
+  {
     id: 'al-farabi',
     name: 'Al-Farabi',
     years: '872-950',
@@ -862,7 +933,7 @@ export const philosophersData: Philosopher[] = [
       { title: 'Avesta (Sacred Texts)', url: 'https://www.sacred-texts.com/zor/sbe04/index.htm', type: 'book' }
     ]
   },
-    {
+  {
     id: 'hypatia',
     name: 'Hypatia of Alexandria',
     years: '350-415 CE',
@@ -905,9 +976,122 @@ export const philosophersData: Philosopher[] = [
       'Life is a constant oscillation between desire and boredom.'
     ],
     externalLinks: [
-      { title: 'Internet Encyclopedia: Schopenhauer', url: 'https://iep.utm.edu/schopenh/', type: 'encyclopedia' },
-      { title: 'Britannica: Schopenhauer', url: 'https://www.britannica.com/biography/Arthur-Schopenhauer', type: 'article' },
-      { title: 'On the Basis of Morality – Gutenberg', url: 'https://www.gutenberg.org/ebooks/44929', type: 'book' }
+      { title: 'Stanford Encyclopedia: Schopenhauer', url: 'https://plato.stanford.edu/entries/schopenhauer/', type: 'encyclopedia' },
+      { title: 'Internet Encyclopedia: Upanishads (Schopenhauer’s influence)', url: 'https://iep.utm.edu/upanisad/', type: 'encyclopedia' },
+      { title: 'On the Basis of Morality - Wikipedia', url: 'https://en.wikipedia.org/wiki/On_the_Basis_of_Morality', type: 'article' },
+      { title: 'On the Basis of Morality - Full Text (Project Gutenberg)', url: 'https://www.gutenberg.org/files/44929/44929-h/44929-h.htm', type: 'book' },
+      { title: 'Philosophy Now: Schopenhauer’s Compassionate Morality', url: 'https://philosophynow.org/issues/52/Schopenhauers_Compassionate_Morality', type: 'article' }
+    ]
+  },
+  {
+    id: 'mill',
+    name: 'John Stuart Mill',
+    years: '1806-1873',
+    nationality: 'British',
+    keyWorks: [
+      'On Liberty',
+      'Utilitarianism',
+      'The Subjection of Women',
+      'A System of Logic',
+      'Considerations on Representative Government',
+      'Principles of Political Economy'
+    ],
+    biography: 'John Stuart Mill was an English philosopher, political economist, and civil servant. He is one of the most influential thinkers in liberalism. He defended individual liberty, freedom of speech, women’s rights, and utilitarian ethics.',
+    keyIdeas: [
+      'utilitarianism (greatest happiness principle)',
+      'harm principle',
+      'higher and lower pleasures',
+      'individual liberty',
+      'representative government',
+      'freedom of expression'
+    ],
+    influences: [
+      'Jeremy Bentham',
+      'James Mill',
+      'Empiricism',
+      'Enlightenment thinkers'
+    ],
+    influenced: [
+      'modern liberal theory',
+      'feminist philosophy',
+      'political economy',
+      'human rights theory'
+    ],
+    schools: [
+      'utilitarianism',
+      'classical liberalism',
+      'political philosophy'
+    ],
+    challenges: [
+      'tyranny of majority',
+      'social conformity',
+      'conflicts between liberty and welfare'
+    ],
+    quotes: [
+      'The only purpose for which power can be rightfully exercised over any member of a civilized community, against his will, is to prevent harm to others',            // On Liberty :contentReference[oaicite:0]{index=0}  
+      'Actions are right in proportion as they tend to promote happiness, wrong as they tend to produce the reverse of happiness',                                    // Utilitarianism :contentReference[oaicite:1]{index=1}  
+      'Better to be a human being dissatisfied than a pig satisfied',                                                                                      // Higher vs lower pleasures :contentReference[oaicite:2]{index=2}  
+      'If all mankind minus one were of one opinion, and only one person were of the contrary opinion, mankind would be no more justified in silencing that one person…'  // On Liberty :contentReference[oaicite:3]{index=3}  
+    ],
+    externalLinks: [
+      { title: 'Stanford Encyclopedia: John Stuart Mill', url: 'https://plato.stanford.edu/entries/mill/', type: 'encyclopedia' },                                                // :contentReference[oaicite:4]{index=4}  
+      { title: 'Wikipedia: On Liberty', url: 'https://en.wikipedia.org/wiki/On_Liberty', type: 'book' },                                                                  // :contentReference[oaicite:5]{index=5}  
+      { title: 'Wikipedia: A System of Logic', url: 'https://en.wikipedia.org/wiki/A_System_of_Logic', type: 'book' },                                                    // :contentReference[oaicite:6]{index=6}  
+      { title: 'Wikipedia: Harm Principle', url: 'https://en.wikipedia.org/wiki/Harm_principle', type: 'article' },                                                       // :contentReference[oaicite:7]{index=7}  
+      { title: 'Project Gutenberg: Considerations on Representative Government (full text)', url: 'https://www.gutenberg.org/ebooks/5669', type: 'book' }                 // :contentReference[oaicite:8]{index=8}  
+    ]
+  },
+  {
+    id: 'bentham',
+    name: 'Jeremy Bentham',
+    years: '1748-1832',
+    nationality: 'English',
+    keyWorks: ['An Introduction to the Principles of Morals and Legislation', 'A Fragment on Government'],
+    biography: 'Bentham was an English philosopher, jurist and social reformer. He founded modern utilitarianism. He proposed that actions and laws should be judged by their utility, i.e. by how much they promote happiness or reduce suffering. He was an advocate for many reforms: legal codification, prison reform (including the Panopticon), freedoms of expression, equal rights, abolition of cruel punishment, animal welfare. :contentReference[oaicite:0]{index=0}',
+    keyIdeas: [
+      'principle-of-utility',
+      'greatest-happiness-of-the-greatest-number',
+      'felicific-calculus',
+      'consequentialism',
+      'legal-positivism'
+    ],
+    influences: ['enlightenment-philosophy', 'epicureanism'],
+    influenced: ['john-stuart-mill', 'legal-reform', 'welfare-economics'],
+    schools: ['utilitarianism', 'radicalism', 'liberalism'],
+    challenges: ['natural-rights', 'punishment-justification', 'measurement-of-pleasure-and-pain'],
+    quotes: [
+      'It is the greatest happiness of the greatest number that is the measure of right and wrong',
+      'The question is not, Can they reason? nor, Can they talk? but, Can they suffer?',
+      'Nature has placed mankind under two sovereign masters, pain and pleasure'
+    ],
+    externalLinks: [
+      { title: 'Stanford Encyclopedia: Jeremy Bentham', url: 'https://plato.stanford.edu/entries/bentham/', type: 'encyclopedia' },
+      { title: 'Britannica: Jeremy Bentham Biography', url: 'https://www.britannica.com/biography/Jeremy-Bentham', type: 'encyclopedia' },
+      { title: 'Writings: An Introduction to the Principles of Morals and Legislation (full text)', url: 'https://en.wikipedia.org/wiki/An_Introduction_to_the_Principles_of_Morals_and_Legislation', type: 'book' },
+      { title: 'Felicific Calculus', url: 'https://en.wikipedia.org/wiki/Felicific_calculus', type: 'article' }
+    ]
+  },
+  {
+    id: 'henry-sidgwick',
+    name: 'Henry Sidgwick',
+    years: '1838-1900',
+    nationality: 'English',
+    keyWorks: ['The Methods of Ethics', 'Principles of Political Economy', 'The Elements of Politics'],
+    biography: 'Henry Sidgwick was a British utilitarian philosopher and economist. He held the Knightbridge Professorship of Moral Philosophy at Cambridge and sought to reconcile intuitionism and utilitarianism in ethics. He was also active in advancing women’s education and in psychical research. :contentReference[oaicite:0]{index=0}',
+    keyIdeas: ['utilitarianism', 'intuitionism', 'egoism', 'dualism of practical reason', 'ethical hedonism'],
+    influences: ['john-stuart-mill', 'bentham', 'kant'],
+    influenced: ['modern-utilitarians', 'moral philosophy'],
+    schools: ['utilitarianism', 'ethical theory'],
+    challenges: ['reconciling egoism vs universal benevolence', 'justifying sacrifice via reason alone'],
+    quotes: [
+      '… without appreciating the effect of our action on the happiness of ourselves or of others we could have no idea of right & wrong.',
+      'The “Methods of Ethics” is the clearest and most accessible formulation of the classical utilitarian doctrine.'
+    ],
+    externalLinks: [
+      { title: 'Stanford Encyclopedia: Sidgwick', url: 'https://plato.stanford.edu/entries/sidgwick/', type: 'encyclopedia' },
+      { title: 'The Methods of Ethics (Wikipedia)', url: 'https://en.wikipedia.org/wiki/The_Methods_of_Ethics', type: 'article' },
+      { title: 'Sidgwick — Utilitarian Thinker', url: 'https://utilitarianism.net/utilitarian-thinker/henry-sidgwick/', type: 'article' },
+      { title: 'Britannica: Henry Sidgwick', url: 'https://www.britannica.com/biography/Henry-Sidgwick', type: 'encyclopedia' }
     ]
   },
   {

@@ -43,8 +43,6 @@ export function SchoolPage() {
     school.relatedSchools.includes(s.id)
   );
 
-  // Back navigation is handled globally with scroll restoration
-
   // Try to connect school key idea labels to concrete ideas in ideasData
   function findIdeaForLabel(label: string) {
     const normalized = label.trim().toLowerCase();
@@ -121,39 +119,44 @@ export function SchoolPage() {
         <div className="grid lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-8">
             {/* Key Ideas */}
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <div className="flex items-center gap-2 mb-4">
-                <Lightbulb className="text-yellow-600" size={24} />
-                <h2 className="text-2xl font-bold text-gray-800">Key Ideas</h2>
-              </div>
-              <div className="grid md:grid-cols-2 gap-4">
-                {school.keyIdeas.map((ideaLabel, index) => {
-                  const linked = findIdeaForLabel(ideaLabel);
-                  const content = (
-                    <span className="font-medium text-gray-800">
-                      {linked ? linked.name : ideaLabel}
-                    </span>
-                  );
-                  return (
-                    <div
-                      key={index}
-                      className="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-                    >
-                      {linked ? (
+            {school.keyIdeas.length > 0 && (
+              <div className="bg-white rounded-xl shadow-lg p-6">
+                <div className="flex items-center gap-2 mb-4">
+                  <Lightbulb className="text-yellow-600" size={24} />
+                  <h2 className="text-2xl font-bold text-gray-800">Key Ideas</h2>
+                </div>
+                <div className="space-y-4">
+                  {school.keyIdeas.map((ideaLabel, index) => {
+                    const linked = findIdeaForLabel(ideaLabel);
+
+                    if (linked) {
+                      return (
                         <Link
+                          key={linked.id}
                           to={`/idea/${linked.id}`}
-                          className="hover:underline"
+                          className="block p-4 bg-yellow-50 rounded-lg hover:bg-yellow-100 transition-colors"
                         >
-                          {content}
+                          <h3 className="font-semibold text-gray-800 mb-2">
+                            {linked.name}
+                          </h3>
+                          <p className="text-sm text-gray-600">{linked.description}</p>
                         </Link>
-                      ) : (
-                        content
-                      )}
-                    </div>
-                  );
-                })}
+                      );
+                    }
+
+                    // Fallback if no linked idea is found
+                    return (
+                      <div
+                        key={index}
+                        className="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                      >
+                        <span className="font-medium text-gray-800">{ideaLabel}</span>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
-            </div>
+            )}
 
             {/* Major Thinkers */}
             <div className="bg-white rounded-xl shadow-lg p-6">

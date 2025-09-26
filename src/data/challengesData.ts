@@ -277,7 +277,7 @@ export const challengesData: Challenge[] = [
     ]
   },
   {
-     id: 'reason-vs-emotion',
+    id: 'reason-vs-emotion',
     name: 'Reason vs Emotion',
     description: `This philosophical dispute concerns whether reason or emotion should guide decision-making and morality. Rationalists argue that logic and universal principles provide reliable guidance, while romantics and sentimentalists emphasize the moral insights of feeling, empathy, and passion. Thinkers from Plato to Hume, Kant, and Nietzsche debated the respective roles of intellect and affect. Modern psychology and neuroscience show cognition and emotion are deeply intertwined. The issue extends to ethics, aesthetics, and theories of human motivation.`,
     challenger: 'Romanticism',

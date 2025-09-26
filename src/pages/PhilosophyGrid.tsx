@@ -1,4 +1,3 @@
-import React from "react";
 import { PhilosophicalSchool } from "../types/philosophy";
 import { PhilosophyCard } from "./PhilosophyCard";
 
