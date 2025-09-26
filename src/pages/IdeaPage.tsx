@@ -4,11 +4,9 @@ import {
   ArrowLeft,
   Lightbulb,
   Users,
-  BookOpen,
   ExternalLink,
   Target,
   Zap,
-  TrendingUp,
 } from "lucide-react";
 import { ideasData } from "../data/ideasData";
 import { allSchools } from "../data/philosophyData";
@@ -204,8 +202,7 @@ export function IdeaPage() {
 
           {/* Sidebar */}
           <div className="space-y-6">
-            {/* Influences */}
-            <div className="bg-white rounded-xl shadow-lg p-6">
+              {/* <div className="bg-white rounded-xl shadow-lg p-6">
               <div className="flex items-center gap-2 mb-4">
                 <TrendingUp className="text-green-600" size={24} />
                 <h2 className="text-2xl font-bold text-gray-800">Influences</h2>
@@ -231,9 +228,9 @@ export function IdeaPage() {
               ) : (
                 <p className="text-gray-500 italic">No influences listed.</p>
               )}
-            </div>
-
-            {/* Developments */}
+            </div> */}
+{/* 
+            Developments
             <div className="bg-white rounded-xl shadow-lg p-6">
               <h2 className="text-2xl font-bold text-gray-800 mb-4">
                 Key Developments
@@ -261,7 +258,7 @@ export function IdeaPage() {
               )}
             </div>
 
-            {/* Legacy */}
+            Legacy
             <div className="bg-white rounded-xl shadow-lg p-6">
               <h2 className="text-2xl font-bold text-gray-800 mb-4">
                 Legacy & Impact
@@ -271,10 +268,10 @@ export function IdeaPage() {
               ) : (
                 <p className="text-gray-500 italic">No legacy added yet.</p>
               )}
-            </div>
+            </div> */}
 
             {/* Key Texts */}
-            <div className="bg-white rounded-xl shadow-lg p-6">
+            {/* <div className="bg-white rounded-xl shadow-lg p-6">
               <div className="flex items-center gap-2 mb-4">
                 <BookOpen className="text-purple-600" size={20} />
                 <h3 className="text-lg font-bold text-gray-800">Key Texts</h3>
@@ -299,7 +296,7 @@ export function IdeaPage() {
               ) : (
                 <p className="text-gray-500 italic">No key texts listed.</p>
               )}
-            </div>
+            </div> */}
 
             {/* Related Ideas */}
             <div className="bg-white rounded-xl shadow-lg p-6">
