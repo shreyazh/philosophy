@@ -74,7 +74,7 @@ export function SchoolPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 max-w-6xl mx-auto w-full">
+    <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-6 py-8">
         {/* Back Button */}
         <button
@@ -119,14 +119,14 @@ export function SchoolPage() {
         <div className="grid lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-8">
             {/* Key Ideas */}
-            {school.keyIdeas.length > 0 && (
-              <div className="bg-white rounded-xl shadow-lg p-6">
-                <div className="flex items-center gap-2 mb-4">
-                  <Lightbulb className="text-yellow-600" size={24} />
-                  <h2 className="text-2xl font-bold text-gray-800">Key Ideas</h2>
-                </div>
-                <div className="space-y-4">
-                  {school.keyIdeas.map((ideaLabel, index) => {
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <div className="flex items-center gap-2 mb-4">
+                <Lightbulb className="text-yellow-600" size={24} />
+                <h2 className="text-2xl font-bold text-gray-800">Key Ideas</h2>
+              </div>
+              <div className="space-y-4">
+                {school.keyIdeas && school.keyIdeas.length > 0 ? (
+                  school.keyIdeas.map((ideaLabel, index) => {
                     const linked = findIdeaForLabel(ideaLabel);
 
                     if (linked) {
@@ -139,85 +139,140 @@ export function SchoolPage() {
                           <h3 className="font-semibold text-gray-800 mb-2">
                             {linked.name}
                           </h3>
-                          <p className="text-sm text-gray-600">{linked.description}</p>
+                          <p className="text-sm text-gray-600">
+                            {linked.description}
+                          </p>
                         </Link>
                       );
                     }
 
-                    // Fallback if no linked idea is found
                     return (
                       <div
                         key={index}
                         className="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
                       >
-                        <span className="font-medium text-gray-800">{ideaLabel}</span>
+                        <span className="font-medium text-gray-800">
+                          {ideaLabel}
+                        </span>
                       </div>
+                    );
+                  })
+                ) : (
+                  <p className="text-gray-500 italic">
+                    No key ideas listed yet.
+                  </p>
+                )}
+              </div>
+            </div>
+
+            {/* Major Thinkers */}
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <div className="flex items-center gap-2 mb-4">
+                <Users className="text-blue-600" size={24} />
+                <h2 className="text-2xl font-bold text-gray-800">
+                  Major Thinkers
+                </h2>
+              </div>
+              {schoolPhilosophers && schoolPhilosophers.length > 0 ? (
+                <div className="grid md:grid-cols-2 gap-4">
+                  {schoolPhilosophers.map((philosopher) => {
+                    const hasPage = philosopher?.id;
+                    const linkUrl = hasPage
+                      ? `/philosopher/${philosopher.id}`
+                      : `https://www.google.com/search?q=${encodeURIComponent(
+                          philosopher.name
+                        )}`;
+
+                    return (
+                      <a
+                        key={philosopher.id || philosopher.name}
+                        href={linkUrl}
+                        target={hasPage ? "_self" : "_blank"}
+                        rel={hasPage ? undefined : "noopener noreferrer"}
+                        className="p-4 bg-gray-50 rounded-lg hover:bg-blue-50 hover:border-blue-200 border border-transparent transition-all duration-200 block"
+                      >
+                        <h3 className="font-semibold text-gray-800 mb-1">
+                          {philosopher.name}
+                        </h3>
+                        {philosopher.years && (
+                          <p className="text-sm text-gray-600">
+                            {philosopher.years}
+                          </p>
+                        )}
+                        {philosopher.biography && (
+                          <p className="text-sm text-gray-700 mt-2 line-clamp-2">
+                            {philosopher.biography}
+                          </p>
+                        )}
+                      </a>
                     );
                   })}
                 </div>
-              </div>
-            )}
+              ) : (
+                <p className="text-gray-500 italic">
+                  No major thinkers added yet.
+                </p>
+              )}
+            </div>
 
-            {/* Major Thinkers */}
-            {schoolPhilosophers && schoolPhilosophers.length > 0 && (
-              <div className="bg-white rounded-xl shadow-lg p-6">
-                <div className="flex items-center gap-2 mb-4">
-                  <Users className="text-blue-600" size={24} />
-                  <h2 className="text-2xl font-bold text-gray-800">Major Thinkers</h2>
-                </div>
-                <div className="grid md:grid-cols-2 gap-4">
-                  {schoolPhilosophers.map((philosopher) => (
-                    <Link
-                      key={philosopher.id}
-                      to={`/philosopher/${philosopher.id}`}
-                      className="p-4 bg-gray-50 rounded-lg hover:bg-blue-50 hover:border-blue-200 border border-transparent transition-all duration-200"
-                    >
-                      <h3 className="font-semibold text-gray-800 mb-1">{philosopher.name}</h3>
-                      <p className="text-sm text-gray-600">{philosopher.years}</p>
-                      <p className="text-sm text-gray-700 mt-2 line-clamp-2">
-                        {philosopher.biography}
-                      </p>
-                    </Link>
-                  ))}
-                </div>
+            {/* Influences */}
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <div className="flex items-center gap-2 mb-4">
+                <TrendingUp className="text-green-600" size={24} />
+                <h2 className="text-xl font-bold text-gray-800">Influences</h2>
               </div>
-            )}
-
-            {/* Influences & Challenges */}
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-xl shadow-lg p-6">
-                <div className="flex items-center gap-2 mb-4">
-                  <TrendingUp className="text-green-600" size={24} />
-                  <h2 className="text-xl font-bold text-gray-800">
-                    Influences
-                  </h2>
-                </div>
+              {school.influences && school.influences.length > 0 ? (
                 <ul className="space-y-2">
                   {school.influences.map((influence, idx) => (
                     <li key={idx} className="flex items-start gap-2">
                       <span className="text-green-600 mt-1">•</span>
-                      <span className="text-gray-700">{influence}</span>
+                      <a
+                        href={`https://www.google.com/search?q=${encodeURIComponent(
+                          influence
+                        )}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-700 hover:text-green-700 hover:underline"
+                      >
+                        {influence}
+                      </a>
                     </li>
                   ))}
                 </ul>
-              </div>
+              ) : (
+                <p className="text-gray-500 italic">No influences listed yet.</p>
+              )}
+            </div>
 
-              <div className="bg-white rounded-xl shadow-lg p-6">
-                <div className="flex items-center gap-2 mb-4">
-                  <Target className="text-red-600" size={24} />
-                  <h2 className="text-xl font-bold text-gray-800">
-                    Challenged
-                  </h2>
-                </div>
+            {/* Challenged */}
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <div className="flex items-center gap-2 mb-4">
+                <Target className="text-red-600" size={24} />
+                <h2 className="text-xl font-bold text-gray-800">Challenged</h2>
+              </div>
+              {school.challenged && school.challenged.length > 0 ? (
                 <ul className="space-y-2">
                   {school.challenged.map((challenge, idx) => (
                     <li key={idx} className="flex items-start gap-2">
                       <span className="text-red-600 mt-1">•</span>
-                      <span className="text-gray-700">{challenge}</span>
+                      <a
+                        href={`https://www.google.com/search?q=${encodeURIComponent(
+                          challenge
+                        )}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-700 hover:text-red-700 hover:underline"
+                      >
+                        {challenge}
+                      </a>
                     </li>
                   ))}
                 </ul>
-              </div>
+              ) : (
+                <p className="text-gray-500 italic">
+                  No challenges listed yet.
+                </p>
+              )}
             </div>
 
             {/* Legacy */}
@@ -225,53 +280,92 @@ export function SchoolPage() {
               <h2 className="text-2xl font-bold text-gray-800 mb-4">
                 Legacy & Impact
               </h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                {school.legacy}
-              </p>
+              {school.legacy ? (
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  {school.legacy}
+                </p>
+              ) : (
+                <p className="text-gray-500 italic mb-4">
+                  Legacy description not added yet.
+                </p>
+              )}
               <div className="space-y-2">
                 <h3 className="font-semibold text-gray-800">
                   Key Developments:
                 </h3>
-                <ul className="grid md:grid-cols-2 gap-2">
-                  {school.developments.map((dev, idx) => (
-                    <li key={idx} className="flex items-start gap-2">
-                      <span className="text-blue-600 mt-1">•</span>
-                      <span className="text-gray-700">{dev}</span>
-                    </li>
-                  ))}
-                </ul>
+                {school.developments && school.developments.length > 0 ? (
+                  <ul className="grid md:grid-cols-2 gap-2">
+                    {school.developments.map((dev, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <span className="text-blue-600 mt-1">•</span>
+                        <a
+                          href={`https://www.google.com/search?q=${encodeURIComponent(
+                            dev
+                          )}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-gray-700 hover:text-blue-700 hover:underline"
+                        >
+                          {dev}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-gray-500 italic">
+                    No developments added yet.
+                  </p>
+                )}
               </div>
             </div>
           </div>
 
           {/* Sidebar */}
           <div className="space-y-6">
-            {relatedSchools.length > 0 && (
-              <div className="bg-white rounded-xl shadow-lg p-6">
-                <h3 className="text-lg font-bold text-gray-800 mb-4">
-                  Related Schools
-                </h3>
+            {/* Related Schools */}
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <h3 className="text-lg font-bold text-gray-800 mb-4">
+                Related Schools
+              </h3>
+              {relatedSchools && relatedSchools.length > 0 ? (
                 <div className="space-y-3">
-                  {relatedSchools.map((relatedSchool) => (
-                    <Link
-                      key={relatedSchool.id}
-                      to={`/school/${relatedSchool.id}`}
-                      className="block p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-                    >
-                      <div className="flex items-center gap-3">
-                        <div
-                          className="w-4 h-4 rounded-full"
-                          style={{ backgroundColor: relatedSchool.color }}
-                        ></div>
-                        <span className="font-medium text-gray-800">
-                          {relatedSchool.name}
-                        </span>
-                      </div>
-                    </Link>
-                  ))}
+                  {relatedSchools.map((relatedSchool) => {
+                    const hasPage = relatedSchool?.id;
+                    const linkUrl = hasPage
+                      ? `/school/${relatedSchool.id}`
+                      : `https://www.google.com/search?q=${encodeURIComponent(
+                          relatedSchool.name
+                        )}`;
+
+                    return (
+                      <a
+                        key={relatedSchool.id || relatedSchool.name}
+                        href={linkUrl}
+                        target={hasPage ? "_self" : "_blank"}
+                        rel={hasPage ? undefined : "noopener noreferrer"}
+                        className="block p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                      >
+                        <div className="flex items-center gap-3">
+                          {relatedSchool.color && (
+                            <div
+                              className="w-4 h-4 rounded-full"
+                              style={{ backgroundColor: relatedSchool.color }}
+                            ></div>
+                          )}
+                          <span className="font-medium text-gray-800">
+                            {relatedSchool.name}
+                          </span>
+                        </div>
+                      </a>
+                    );
+                  })}
                 </div>
-              </div>
-            )}
+              ) : (
+                <p className="text-gray-500 italic">
+                  No related schools added yet.
+                </p>
+              )}
+            </div>
 
             {/* Key Texts */}
             <div className="bg-white rounded-xl shadow-lg p-6">
@@ -279,13 +373,26 @@ export function SchoolPage() {
                 <BookOpen className="text-purple-600" size={20} />
                 <h3 className="text-lg font-bold text-gray-800">Key Texts</h3>
               </div>
-              <ul className="space-y-2">
-                {school.keyTexts.map((text, idx) => (
-                  <li key={idx} className="text-gray-700 text-sm">
-                    {text}
-                  </li>
-                ))}
-              </ul>
+              {school.keyTexts && school.keyTexts.length > 0 ? (
+                <ul className="space-y-2">
+                  {school.keyTexts.map((text, idx) => (
+                    <li key={idx}>
+                      <a
+                        href={`https://www.google.com/search?q=${encodeURIComponent(
+                          text
+                        )}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-700 text-sm hover:text-purple-700 hover:underline"
+                      >
+                        {text}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="text-gray-500 italic">No key texts added yet.</p>
+              )}
             </div>
 
             {/* External Links */}
@@ -294,28 +401,46 @@ export function SchoolPage() {
                 <ExternalLink className="text-blue-600" size={20} />
                 <h3 className="text-lg font-bold text-gray-800">Learn More</h3>
               </div>
-              <div className="space-y-3">
-                {school.externalLinks.map((link, idx) => (
-                  <a
-                    key={idx}
-                    href={link.url}
-                    className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-blue-50 transition-colors group"
-                  >
-                    <ExternalLink
-                      size={16}
-                      className="text-gray-400 group-hover:text-blue-600"
-                    />
-                    <div>
-                      <div className="font-medium text-gray-800 group-hover:text-blue-800">
-                        {link.title}
-                      </div>
-                      <div className="text-xs text-gray-500 capitalize">
-                        {link.type}
-                      </div>
-                    </div>
-                  </a>
-                ))}
-              </div>
+              {school.externalLinks && school.externalLinks.length > 0 ? (
+                <div className="space-y-3">
+                  {school.externalLinks.map((link, idx) => {
+                    const finalUrl = link.url
+                      ? link.url
+                      : `https://www.google.com/search?q=${encodeURIComponent(
+                          link.title
+                        )}`;
+
+                    return (
+                      <a
+                        key={idx}
+                        href={finalUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-blue-50 transition-colors group"
+                      >
+                        <ExternalLink
+                          size={16}
+                          className="text-gray-400 group-hover:text-blue-600"
+                        />
+                        <div>
+                          <div className="font-medium text-gray-800 group-hover:text-blue-800">
+                            {link.title}
+                          </div>
+                          {link.type && (
+                            <div className="text-xs text-gray-500 capitalize">
+                              {link.type}
+                            </div>
+                          )}
+                        </div>
+                      </a>
+                    );
+                  })}
+                </div>
+              ) : (
+                <p className="text-gray-500 italic">
+                  No external links added yet.
+                </p>
+              )}
             </div>
           </div>
         </div>
