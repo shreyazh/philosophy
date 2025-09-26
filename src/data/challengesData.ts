@@ -13,7 +13,7 @@ export const challengesData: Challenge[] = [
     externalLinks: [
       { title: 'Rationalism vs. Empiricism (SEP)', url: 'https://plato.stanford.edu/entries/rationalism-empiricism/', type: 'encyclopedia' },
       { title: 'Immanuel Kant (IEP) – overview of transcendental idealism', url: 'https://iep.utm.edu/kantview/', type: 'encyclopedia' },
-      { title: 'Classics of Western Philosophy (MIT OpenCourseWare)', url: 'https://ocw.mit.edu/courses/24-01-classics-of-western-philosophy-spring-2006/', type: 'course' }
+      { title: 'Classics of Western Philosophy (MIT OpenCourseWare)', url: 'https://ocw.mit.edu/courses/24-01-classics-of-western-philosophy-spring-2016/', type: 'course' }
     ]
   },
   {
@@ -56,8 +56,8 @@ export const challengesData: Challenge[] = [
     outcome: `Vedānta became dominant in Hindu philosophy while Buddhism’s presence declined in India but persisted globally. The debates sharpened both traditions: Vedānta incorporated logical rigor and epistemological insights from Buddhism, while Buddhism influenced Indian and Tibetan thought in logic and meditation.`,
     significance: `Central to Indian metaphysics and comparative philosophy of self. The debate continues to shape global philosophy of mind and consciousness, interreligious dialogue, and the comparative study of personal identity and liberation.`,
     externalLinks: [
-      { title: 'Advaita Vedānta (SEP)', url: 'https://plato.stanford.edu/entries/vedanta-advaita/', type: 'encyclopedia' },
-      { title: 'Buddhist Philosophy: Anattā / No-Self (IEP)', url: 'https://iep.utm.edu/anatta/', type: 'encyclopedia' },
+      { title: 'Advaita Vedānta (IEP)', url: 'https://iep.utm.edu/advaita-vedanta/', type: 'encyclopedia' },
+      { title: 'Buddhist Philosophy: Anattā / No-Self (Britannica)', url: 'https://www.britannica.com/topic/anatta', type: 'encyclopedia' },
       { title: 'Vedānta (Britannica)', url: 'https://www.britannica.com/topic/Vedanta', type: 'encyclopedia' }
     ]
   },
@@ -71,8 +71,8 @@ export const challengesData: Challenge[] = [
     outcome: `Jainism established itself as an independent religious-philosophical system. While remaining a minority tradition, it endured through rich textual traditions, monastic orders, and lay communities. Its ethical emphasis influenced wider Indian thought, especially the value of ahimsa adopted by later Hindu, Buddhist, and modern reform movements.`,
     significance: `Jainism’s critique reshaped Indian philosophy by introducing pluralism and strict non-violence, later inspiring Gandhi and global non-violent resistance. It illustrates how minority traditions can shape broader cultural and ethical landscapes despite limited demographic presence.`,
     externalLinks: [
-      { title: 'Jain Philosophy (SEP)', url: 'https://plato.stanford.edu/entries/jainism/', type: 'encyclopedia' },
-      { title: 'Anekāntavāda (IEP)', url: 'https://iep.utm.edu/anekanta/', type: 'encyclopedia' },
+      { title: 'Jain Philosophy (IEP)', url: 'https://iep.utm.edu/jain/', type: 'encyclopedia' },
+      { title: 'Anekāntavāda (Britannica)', url: 'https://www.britannica.com/topic/anekantavada', type: 'encyclopedia' },
       { title: 'Jainism (Britannica)', url: 'https://www.britannica.com/topic/Jainism', type: 'encyclopedia' }
     ]
   },
@@ -87,7 +87,7 @@ export const challengesData: Challenge[] = [
     significance: `Cārvāka is important as India’s earliest materialist philosophy, anticipating modern naturalism and atheism. Its focus on empirical perception and rejection of supernatural claims foreshadowed later scientific approaches and critical philosophy.`,
     externalLinks: [
       { title: 'Indian Materialism (IEP)', url: 'https://iep.utm.edu/indmat/', type: 'encyclopedia' },
-      { title: 'Carvaka – Internet Encyclopedia of Philosophy', url: 'https://iep.utm.edu/lokayata/', type: 'encyclopedia' },
+      { title: 'Carvaka (IEP)', url: 'https://iep.utm.edu/indmat/', type: 'encyclopedia' },
       { title: 'Cārvāka / Lokāyata (Britannica)', url: 'https://www.britannica.com/topic/Charvaka', type: 'encyclopedia' }
     ]
   },
@@ -101,10 +101,10 @@ export const challengesData: Challenge[] = [
     outcome: `Both traditions enriched Indian logic and epistemology. Nyāya refined its defenses of realism, while Buddhist philosophers developed a sophisticated theory of perception and inference. Even as Buddhism declined in India, Nyāya absorbed and systematized aspects of Buddhist logical theory.`,
     significance: `The debate advanced theories of knowledge, logic, and language in Indian philosophy. It influenced later Hindu and Buddhist traditions and remains a major resource for comparative philosophy and the history of logic.`,
     externalLinks: [
-      { title: 'Dignāga (SEP)', url: 'https://plato.stanford.edu/entries/dignaga/', type: 'encyclopedia' },
+      { title: 'Dignāga (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Dign%C4%81ga', type: 'encyclopedia' },
       { title: 'Dharmakīrti (SEP)', url: 'https://plato.stanford.edu/entries/dharmakiirti/', type: 'encyclopedia' },
       { title: 'Nyāya (IEP)', url: 'https://iep.utm.edu/nyaya/', type: 'encyclopedia' },
-      { title: 'Buddhist Logic – Stanford Encyclopedia of Philosophy', url: 'https://plato.stanford.edu/entries/buddhist-logic/', type: 'encyclopedia' }
+      { title: 'Buddhist Logic – Delhi University', url: 'https://www.du.ac.in/du/uploads/departments/BuddhistStudies/Study%20Material/21052020_401B_Buddhist%20logic-epistemology.pdf', type: 'chapter' }
     ]
   },
   {
@@ -131,9 +131,10 @@ export const challengesData: Challenge[] = [
     outcome: `Both schools coexisted with vibrant traditions, creating a plurality of Vedāntic systems. Advaita gained intellectual prestige, while Dvaita inspired devotional communities. Their debates refined metaphysical arguments on self, world, and God, and shaped Hindu theology’s diversity.`,
     significance: `The rivalry defined central issues of Indian philosophy: whether reality is ultimately one or many, and whether devotion or knowledge leads to liberation. It shaped Hindu practice, theology, and interfaith dialogue, influencing both scholars and lay practitioners.`,
     externalLinks: [
-      { title: 'Dvaita Vedānta (IEP)', url: 'https://iep.utm.edu/dvaita/', type: 'encyclopedia' },
+      { title: 'Advaita vs Dvaita Vedānta', url: 'https://innerspiritualawakening.com/advaita-vendanta-philosopy/dvaita-vedanta/', type: 'article' },
+      { title: 'Dvaita Vedānta (Britannica)', url: 'https://www.britannica.com/topic/Dvaita', type: 'encyclopedia' },
       { title: 'Advaita Vedānta (IEP)', url: 'https://iep.utm.edu/adv-veda/', type: 'encyclopedia' },
-      { title: 'Madhva (Britannica)', url: 'https://www.britannica.com/biography/Madhva', type: 'encyclopedia' }
+      { title: 'Madhva (IEP)', url: 'https://iep.utm.edu/madhva/', type: 'encyclopedia' }
     ]
   },
   {
@@ -146,9 +147,10 @@ export const challengesData: Challenge[] = [
     outcome: `Vedānta absorbed Sāṃkhya categories of matter and evolution but reinterpreted them as appearances within Brahman. Sāṃkhya’s independent system declined, though its cosmology influenced Yoga and other schools.`,
     significance: `This debate shaped Indian metaphysical discourse, contributing enduring discussions of dualism, causation, and consciousness. It influenced Yoga philosophy and modern cross-cultural debates about the nature of matter and mind.`,
     externalLinks: [
-      { title: 'Sāṃkhya (IEP)', url: 'https://iep.utm.edu/samkhya/', type: 'encyclopedia' },
-      { title: 'Sāṃkhya (Britannica)', url: 'https://www.britannica.com/topic/Sankhya', type: 'encyclopedia' },
-      { title: 'Advaita Vedānta (SEP)', url: 'https://plato.stanford.edu/entries/vedanta-advaita/', type: 'encyclopedia' }
+      { title: 'Sāṃkhya (IEP)', url: 'https://iep.utm.edu/sankhya/', type: 'encyclopedia' },
+      { title: 'Sāṃkhya (Britannica)', url: 'https://www.britannica.com/topic/Samkhya', type: 'encyclopedia' },
+      { title: 'Dvaita Vedānta (Britannica)', url: 'https://www.britannica.com/topic/Dvaita', type: 'encyclopedia' },
+      { title: 'Advaita Vedānta (IEP)', url: 'https://iep.utm.edu/adv-veda/', type: 'encyclopedia' }
     ]
   },
   {
@@ -161,7 +163,7 @@ export const challengesData: Challenge[] = [
     outcome: `Mīmāṃsā declined in prominence, though its hermeneutics shaped Hindu law and ritual practice. Vedānta emerged as the dominant Hindu philosophy, integrating aspects of ritual but prioritizing metaphysical realization.`,
     significance: `This contest illustrates the evolution of Hindu philosophy from ritual orthodoxy to spirituality and metaphysical speculation. It shaped interpretive methods of scripture and influenced the balance between action and knowledge in Hindu practice.`,
     externalLinks: [
-      { title: 'Mīmāṃsā (IEP)', url: 'https://iep.utm.edu/mimamsa/', type: 'encyclopedia' },
+      { title: 'Mīmāṃsā (Book Chapter- IGNOU)', url: 'https://egyankosh.ac.in/bitstream/123456789/38172/1/Unit-5.pdf', type: 'chapter' },
       { title: 'Mīmāṃsā (Britannica)', url: 'https://www.britannica.com/topic/Mimamsa', type: 'encyclopedia' },
       { title: 'Vedānta (Britannica)', url: 'https://www.britannica.com/topic/Vedanta', type: 'encyclopedia' }
     ]
@@ -176,6 +178,7 @@ export const challengesData: Challenge[] = [
     outcome: `The interaction produced syncretic traditions such as Sufism’s influence on Bhakti and Sikhism’s blending of Hindu and Islamic elements. Intellectual exchange enriched both traditions, though political tensions often overshadowed dialogue.`,
     significance: `These debates shaped interfaith relations in South Asia, fostering syncretic traditions and shared spirituality. They remain relevant to contemporary interreligious dialogue and comparative theology.`,
     externalLinks: [
+      { title: 'Hinduism vs Islam', url: 'https://www.diffen.com/difference/Hinduism_vs_Islam', type: 'chapter' },
       { title: 'Dārā Shikōh (Britannica)', url: 'https://www.britannica.com/biography/Dara-Shikoh', type: 'encyclopedia' },
       { title: 'Sufism in India – Britannica', url: 'https://www.britannica.com/topic/Sufism', type: 'encyclopedia' },
       { title: 'Islamic Philosophy (Britannica)', url: 'https://www.britannica.com/topic/Islamic-philosophy', type: 'encyclopedia' }
@@ -195,8 +198,9 @@ export const challengesData: Challenge[] = [
       'Laid foundations for modern Indian political philosophy, religious pluralism, and cross-cultural dialogue.',
     externalLinks: [
       { title: 'Vivekananda (Britannica)', url: 'https://www.britannica.com/biography/Vivekananda', type: 'encyclopedia' },
-      { title: 'Modern Indian Philosophy – Internet Encyclopedia of Philosophy', url: 'https://iep.utm.edu/modern-indian-philosophy/', type: 'encyclopedia' },
-      { title: 'Gandhi – Stanford Encyclopedia of Philosophy', url: 'https://plato.stanford.edu/entries/gandhi/', type: 'encyclopedia' },
+      { title: 'Modern Indian Philosophy - IGNCA Book', url: 'https://ignca.gov.in/Asi_data/2778.pdf', type: 'encyclopedia' },
+      { title: 'Gandhi on Pacifism – IGNOU', url: 'https://egyankosh.ac.in/bitstream/123456789/63597/4/Unit-15.pdf', type: 'chapter' },
+      { title: 'Colonialism – Stanford Encyclopedia of Philosophy', url: 'https://plato.stanford.edu/entries/colonialism/', type: 'encyclopedia' },
       { title: 'Sri Aurobindo (Britannica)', url: 'https://www.britannica.com/biography/Sri-Aurobindo', type: 'encyclopedia' },
       { title: 'Pax Gandhiana (OUP book)', url: 'https://academic.oup.com/book/12258', type: 'book' }
     ]

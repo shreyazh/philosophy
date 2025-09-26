@@ -1442,7 +1442,7 @@ export const philosophersData: Philosopher[] = [
     externalLinks: [
       { title: 'Internet Encyclopedia: Camus', url: 'https://iep.utm.edu/camus/', type: 'encyclopedia' },
       { title: 'Britannica: Albert Camus', url: 'https://www.britannica.com/biography/Albert-Camus', type: 'article' },
-      { title: 'The Myth of Sisyphus – Internet Archive', url: 'https://archive.org/details/myth-of-sisyphus', type: 'book' }
+      { title: 'The Myth of Sisyphus – Archive', url: 'https://dhspriory.org/kenny/PhilTexts/Camus/Myth%20of%20Sisyphus-.pdf', type: 'book' }
     ]
   }
 ];
