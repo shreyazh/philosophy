@@ -146,7 +146,7 @@ export const philosophyData: PhilosophicalPeriod[] = [
           "Materialism",
           "Hedonism",
           "Skepticism",
-          "Pratyakṣa (perception) as knowledge",
+          "pratyaksha",
         ],
         majorThinkers: ["brihaspati"],
         influences: ["Sramana traditions", "Indian rationalist thought"],

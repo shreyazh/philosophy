@@ -74,7 +74,7 @@ export function SchoolPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 max-w-6xl mx-auto w-full">
       <div className="container mx-auto px-6 py-8">
         {/* Back Button */}
         <button
@@ -159,31 +159,29 @@ export function SchoolPage() {
             )}
 
             {/* Major Thinkers */}
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <div className="flex items-center gap-2 mb-4">
-                <Users className="text-blue-600" size={24} />
-                <h2 className="text-2xl font-bold text-gray-800">
-                  Major Thinkers
-                </h2>
+            {schoolPhilosophers && schoolPhilosophers.length > 0 && (
+              <div className="bg-white rounded-xl shadow-lg p-6">
+                <div className="flex items-center gap-2 mb-4">
+                  <Users className="text-blue-600" size={24} />
+                  <h2 className="text-2xl font-bold text-gray-800">Major Thinkers</h2>
+                </div>
+                <div className="grid md:grid-cols-2 gap-4">
+                  {schoolPhilosophers.map((philosopher) => (
+                    <Link
+                      key={philosopher.id}
+                      to={`/philosopher/${philosopher.id}`}
+                      className="p-4 bg-gray-50 rounded-lg hover:bg-blue-50 hover:border-blue-200 border border-transparent transition-all duration-200"
+                    >
+                      <h3 className="font-semibold text-gray-800 mb-1">{philosopher.name}</h3>
+                      <p className="text-sm text-gray-600">{philosopher.years}</p>
+                      <p className="text-sm text-gray-700 mt-2 line-clamp-2">
+                        {philosopher.biography}
+                      </p>
+                    </Link>
+                  ))}
+                </div>
               </div>
-              <div className="grid md:grid-cols-2 gap-4">
-                {schoolPhilosophers.map((philosopher) => (
-                  <Link
-                    key={philosopher.id}
-                    to={`/philosopher/${philosopher.id}`}
-                    className="p-4 bg-gray-50 rounded-lg hover:bg-blue-50 hover:border-blue-200 border border-transparent transition-all duration-200"
-                  >
-                    <h3 className="font-semibold text-gray-800 mb-1">
-                      {philosopher.name}
-                    </h3>
-                    <p className="text-sm text-gray-600">{philosopher.years}</p>
-                    <p className="text-sm text-gray-700 mt-2 line-clamp-2">
-                      {philosopher.biography}
-                    </p>
-                  </Link>
-                ))}
-              </div>
-            </div>
+            )}
 
             {/* Influences & Challenges */}
             <div className="grid md:grid-cols-2 gap-6">

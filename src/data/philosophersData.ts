@@ -402,8 +402,8 @@ export const philosophersData: Philosopher[] = [
     ],
     externalLinks: [
       { title: 'Britannica: Rabindranath Tagore', url: 'https://www.britannica.com/biography/Rabindranath-Tagore', type: 'article' },
-      { title: 'Internet Archive: Sadhana (Tagore)', url: 'https://archive.org/details/sadhanaotheress00tagouoft', type: 'book' },
-      { title: 'The Religion of Man – Internet Archive', url: 'https://archive.org/details/religionofman00rabi', type: 'book' }
+      { title: 'Internet Archive: Sadhana (Tagore)', url: 'https://archive.org/details/in.gov.ignca.5995', type: 'book' },
+      { title: 'The Religion of Man – Internet Archive', url: 'https://archive.org/details/in.ernet.dli.2015.110209', type: 'book' }
     ]
   },
   {
@@ -906,7 +906,7 @@ export const philosophersData: Philosopher[] = [
     externalLinks: [
       { title: 'Internet Encyclopedia: Al-Ghazali', url: 'https://iep.utm.edu/al-ghazali/', type: 'encyclopedia' },
       { title: 'Britannica: Al-Ghazali', url: 'https://www.britannica.com/biography/al-Ghazali', type: 'article' },
-      { title: 'The Incoherence of the Philosophers – Internet Archive', url: 'https://archive.org/details/GhazaliIncoherence', type: 'book' }
+      { title: 'The Incoherence of the Philosophers – Internet Archive', url: 'https://ia601204.us.archive.org/35/items/imamghazali_201510/Al%20Ghazali%20Incoherence%20of%20the%20Philosophers.pdf', type: 'book' }
     ]
   },
   {
@@ -1442,7 +1442,7 @@ export const philosophersData: Philosopher[] = [
     externalLinks: [
       { title: 'Internet Encyclopedia: Camus', url: 'https://iep.utm.edu/camus/', type: 'encyclopedia' },
       { title: 'Britannica: Albert Camus', url: 'https://www.britannica.com/biography/Albert-Camus', type: 'article' },
-      { title: 'The Myth of Sisyphus – Internet Archive', url: 'https://archive.org/details/myth-of-sisyphus', type: 'book' }
+      { title: 'The Myth of Sisyphus – Archive', url: 'https://dhspriory.org/kenny/PhilTexts/Camus/Myth%20of%20Sisyphus-.pdf', type: 'book' }
     ]
   }
 ];
