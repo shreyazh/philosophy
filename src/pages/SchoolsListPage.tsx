@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Search, Filter } from "lucide-react";
+import { Search, Filter, GraduationCap} from "lucide-react";
 import { allSchools } from "../data/philosophyData";
 import { PhilosophyGrid } from "./PhilosophyGrid";
 
@@ -38,10 +38,13 @@ export function SchoolsListPage() {
       <div className="container mx-auto px-6 py-8">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-800 mb-2">
+          <div className="flex justify-center items-center gap-3 mb-4">
+            <GraduationCap size={48} className="text-green-600" />
+          </div>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center sm:text-center">
             Philosophical Schools
           </h1>
-          <p className="text-lg text-gray-600">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4 sm:px-0 text-center sm:text-center">
             Explore the major schools of thought that have shaped philosophy
           </p>
         </div>
