@@ -1,4 +1,3 @@
-import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, Lightbulb, Users, BookOpen, ExternalLink, Target, Zap, TrendingUp } from "lucide-react";
 import { ideasData } from "../data/ideasData";
@@ -8,7 +7,7 @@ import { philosophersData } from "../data/philosophersData";
 export function IdeaPage() {
   const { id } = useParams<{ id: string }>();
   const idea = ideasData.find((i) => i.id === id);
-  
+
 
   if (!idea) {
     return (
@@ -25,7 +24,7 @@ export function IdeaPage() {
     );
   }
 
-  const originSchool = allSchools.find((s) => 
+  const originSchool = allSchools.find((s) =>
     s.id === idea.originSchool
   );
   const keyThinkers = philosophersData.filter((p) =>
@@ -35,17 +34,15 @@ export function IdeaPage() {
     idea.relatedIdeas.includes(i.id)
   );
 
-  // Back navigation is handled globally with scroll restoration
-  
   return (
     <div className="min-h-screen bg-gray-50 max-w-6xl mx-auto w-full">
       <div className="container mx-auto px-6 py-8">
         <button
-                   onClick={() => window.history.back()}
-                  className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-6 transition-colors"
-                >
-                  <ArrowLeft size={20} />Move Back
-                </button>
+          onClick={() => window.history.back()}
+          className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-6 transition-colors"
+        >
+          <ArrowLeft size={20} />Move Back
+        </button>
 
         {/* Header */}
         <div className="bg-white rounded-xl shadow-lg p-6 mb-7">

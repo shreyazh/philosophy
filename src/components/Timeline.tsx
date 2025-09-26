@@ -63,11 +63,10 @@ export function Timeline({ periods, onPeriodSelect }: TimelineProps) {
                 {/* Dot */}
                 <div className="relative z-10 flex-shrink-0">
                   <div
-                    className={`w-6 h-6 sm:w-8 sm:h-8 rounded-full border-2 sm:border-4 border-white shadow-lg transition-all duration-300 ${
-                      isActive
+                    className={`w-6 h-6 sm:w-8 sm:h-8 rounded-full border-2 sm:border-4 border-white shadow-lg transition-all duration-300 ${isActive
                         ? "bg-gradient-to-r from-blue-500 to-purple-500 scale-125"
                         : "bg-gradient-to-r from-gray-400 to-gray-500 group-hover:from-blue-400 group-hover:to-purple-400 group-hover:scale-110"
-                    }`}
+                      }`}
                   ></div>
                   <div className="absolute top-3 sm:top-4 left-6 sm:left-8 w-6 sm:w-8 h-0.5 bg-gradient-to-r from-gray-300 to-transparent"></div>
                 </div>
@@ -76,27 +75,24 @@ export function Timeline({ periods, onPeriodSelect }: TimelineProps) {
                 <div className="flex-1 ml-4 sm:ml-6 lg:ml-8">
                   <button
                     onClick={() => toggleExpand(period.id)}
-                    className={`w-full text-left p-4 sm:p-6 rounded-xl transition-all duration-300 transform hover:scale-[1.02] ${
-                      isActive
+                    className={`w-full text-left p-4 sm:p-6 rounded-xl transition-all duration-300 transform hover:scale-[1.02] ${isActive
                         ? "bg-gradient-to-br from-blue-500 to-purple-600 text-white shadow-2xl"
                         : "bg-white shadow-lg border border-gray-200 hover:bg-gradient-to-br hover:from-blue-50 hover:to-purple-50"
-                    }`}
+                      }`}
                   >
                     <div className="flex items-center justify-between flex-wrap gap-2">
                       <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
                         <h3
-                          className={`text-lg sm:text-xl font-bold ${
-                            isActive ? "text-white" : "text-gray-800"
-                          }`}
+                          className={`text-lg sm:text-xl font-bold ${isActive ? "text-white" : "text-gray-800"
+                            }`}
                         >
                           {period.name}
                         </h3>
                         <span
-                          className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium ${
-                            isActive
+                          className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium ${isActive
                               ? "bg-white/20 text-white"
                               : "bg-blue-100 text-blue-800"
-                          }`}
+                            }`}
                         >
                           {period.years}
                         </span>
@@ -104,9 +100,8 @@ export function Timeline({ periods, onPeriodSelect }: TimelineProps) {
                     </div>
 
                     <p
-                      className={`mt-2 text-sm sm:text-base leading-relaxed ${
-                        isActive ? "text-blue-100" : "text-gray-600"
-                      }`}
+                      className={`mt-2 text-sm sm:text-base leading-relaxed ${isActive ? "text-blue-100" : "text-gray-600"
+                        }`}
                     >
                       {period.description}
                     </p>
@@ -116,22 +111,20 @@ export function Timeline({ periods, onPeriodSelect }: TimelineProps) {
                       {period.schools.slice(0, 3).map((s, i) => (
                         <span
                           key={i}
-                          className={`px-2 sm:px-3 py-1 rounded-full text-xs font-medium ${
-                            isActive
+                          className={`px-2 sm:px-3 py-1 rounded-full text-xs font-medium ${isActive
                               ? "bg-white/20 text-white"
                               : "bg-gray-100 text-gray-700"
-                          }`}
+                            }`}
                         >
                           {s.name}
                         </span>
                       ))}
                       {period.schools.length > 3 && (
                         <span
-                          className={`px-2 sm:px-3 py-1 rounded-full text-xs font-medium ${
-                            isActive
+                          className={`px-2 sm:px-3 py-1 rounded-full text-xs font-medium ${isActive
                               ? "bg-white/20 text-white"
                               : "bg-gray-100 text-gray-700"
-                          }`}
+                            }`}
                         >
                           +{period.schools.length - 3} more
                         </span>

@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Brain, Home, Users, Lightbulb, BookOpen, Zap } from "lucide-react";
 
@@ -38,11 +37,10 @@ export function Navigation() {
                 key={path}
                 to={path}
                 onClick={() => handleLinkClick(path)} // Add this line
-                className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-all duration-200 text-sm lg:text-base ${
-                  location.pathname === path
+                className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-all duration-200 text-sm lg:text-base ${location.pathname === path
                     ? "bg-blue-100 text-blue-700 font-medium"
                     : "text-gray-600 hover:text-blue-600 hover:bg-gray-50"
-                }`}
+                  }`}
               >
                 <Icon size={16} className="lg:w-5 lg:h-5" />
                 {label}
@@ -58,11 +56,10 @@ export function Navigation() {
                   key={path}
                   to={path}
                   onClick={() => handleLinkClick(path)} // Add this line
-                  className={`p-2 rounded-lg transition-all duration-200 ${
-                    location.pathname === path
+                  className={`p-2 rounded-lg transition-all duration-200 ${location.pathname === path
                       ? "bg-blue-100 text-blue-700"
                       : "text-gray-600 hover:text-blue-600 hover:bg-gray-50"
-                  }`}
+                    }`}
                 >
                   <Icon size={18} />
                 </Link>

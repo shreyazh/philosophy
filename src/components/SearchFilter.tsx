@@ -1,4 +1,3 @@
-import React from 'react';
 import { Search, Filter } from 'lucide-react';
 
 interface SearchFilterProps {
@@ -27,7 +26,7 @@ export function SearchFilter({
         <Filter size={20} className="text-gray-600" />
         <h2 className="text-lg font-semibold text-gray-800">Search & Filter</h2>
       </div>
-      
+
       <div className="grid md:grid-cols-3 gap-4">
         {/* Search */}
         <div className="relative">

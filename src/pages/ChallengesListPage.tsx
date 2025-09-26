@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Zap, Search, Filter } from 'lucide-react';
 import { challengesData } from '../data/challengesData';
-
 export function ChallengesListPage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedPeriod, setSelectedPeriod] = useState('All');
@@ -10,7 +9,7 @@ export function ChallengesListPage() {
   const periods = ['All', ...Array.from(new Set(challengesData.map(c => c.period))).sort()];
 
   const filteredChallenges = challengesData.filter(challenge => {
-    const matchesSearch = searchTerm === '' || 
+    const matchesSearch = searchTerm === '' ||
       challenge.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       challenge.description.toLowerCase().includes(searchTerm.toLowerCase());
 
@@ -41,7 +40,7 @@ export function ChallengesListPage() {
             <Filter size={20} className="text-gray-600" />
             <h2 className="text-lg font-semibold text-gray-800">Search & Filter</h2>
           </div>
-          
+
           <div className="grid md:grid-cols-2 gap-4">
             <div className="relative">
               <Search size={20} className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
@@ -91,9 +90,9 @@ export function ChallengesListPage() {
                     <p className="text-sm text-gray-600">{challenge.period}</p>
                   </div>
                 </div>
-                
+
                 <p className="text-gray-700 mb-4 line-clamp-3">{challenge.description}</p>
-                
+
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
                     <span className="font-medium text-gray-600">Challenger:</span>

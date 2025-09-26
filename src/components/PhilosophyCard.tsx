@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { PhilosophicalSchool } from '../types/philosophy';
 import { User, MapPin, Clock, BookOpen, Lightbulb, Target, TrendingUp } from 'lucide-react';
@@ -9,16 +8,16 @@ interface PhilosophyCardProps {
 
 export function PhilosophyCard({ school }: PhilosophyCardProps) {
   return (
-    <Link 
+    <Link
       to={`/school/${school.id}`}
       className="block bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200"
     >
       {/* Header with school name and color indicator */}
-      <div 
+      <div
         className="h-2"
         style={{ backgroundColor: school.color }}
       ></div>
-      
+
       <div className="p-6">
         {/* Title and basic info */}
         <div className="mb-4">
@@ -46,7 +45,7 @@ export function PhilosophyCard({ school }: PhilosophyCardProps) {
           </div>
           <div className="flex flex-wrap gap-2">
             {school.keyIdeas.map((idea, index) => (
-              <span 
+              <span
                 key={index}
                 className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
               >
@@ -65,12 +64,12 @@ export function PhilosophyCard({ school }: PhilosophyCardProps) {
           <div className="flex flex-wrap gap-2">
             {school.majorThinkers.map((thinker, index) => (
               <div key={index} className="flex justify-between items-center text-sm">
-                <span 
-                key={index}
-                className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
-              >
-                {thinker}
-              </span>                               
+                <span
+                  key={index}
+                  className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
+                >
+                  {thinker}
+                </span>
               </div>
             ))}
           </div>
@@ -92,7 +91,7 @@ export function PhilosophyCard({ school }: PhilosophyCardProps) {
               ))}
             </ul>
           </div>
-          
+
           <div>
             <div className="flex items-center gap-2 mb-2">
               <Target size={16} className="text-red-600" />
