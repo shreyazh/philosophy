@@ -984,6 +984,67 @@ export const philosophersData: Philosopher[] = [
     ]
   },
   {
+  id: 'kierkegaard',
+  name: 'Søren Kierkegaard',
+  years: '1813-1855',
+  nationality: 'Danish',
+  keyWorks: ['Either/Or', 'Fear and Trembling', 'The Sickness unto Death', 'Philosophical Fragments'],
+  biography: 'Kierkegaard was a Danish philosopher, theologian, and cultural critic. He is often considered the father of existentialism. He focused on subjectivity, faith, the individual, and the stages of life. :contentReference[oaicite:0]{index=0}',
+  keyIdeas: ['subjectivity', 'leap-of-faith', 'despair', 'anxiety', 'stages-of-existence (aesthetic-ethical-religious)', 'indirect communication', 'faith vs reason', 'existential choice', 'inwardness', 'the knight of faith'],
+  influences: ['Kant', 'Hegel', 'Christian theology'],
+  influenced: ['existentialists', 'modern theology', 'psychology', 'Nietzsche'],
+  schools: ['existentialism'],
+  challenges: ['systematic philosophy', 'objective rationalism'],
+  quotes: [
+    'Life can only be understood backwards; but it must be lived forwards',
+    'Leap of faith', 'Subjectivity is truth', 'The self is a relation that relates itself to its own self',
+    'Anxiety is the dizziness of freedom'
+  ],
+  externalLinks: [
+    { title: 'Stanford Encyclopedia: Søren Kierkegaard', url: 'https://plato.stanford.edu/entries/kierkegaard/', type: 'encyclopedia' },
+    { title: 'Internet Encyclopedia of Philosophy: Kierkegaard', url: 'https://iep.utm.edu/kierkega/', type: 'encyclopedia' },
+    { title: 'Britannica: Søren Kierkegaard', url: 'https://www.britannica.com/biography/Soren-Kierkegaard', type: 'encyclopedia' }
+  ]
+},
+{
+  id: 'dostoevsky',
+  name: 'Fyodor Dostoevsky',
+  years: '1821-1881',
+  nationality: 'Russian',
+  keyWorks: [
+    'Notes from Underground',
+    'Crime and Punishment',
+    'The Idiot',
+    'Demons',
+    'The Brothers Karamazov'
+  ],
+  biography: 'Dostoevsky was a Russian novelist and thinker whose literary works probe deep philosophical questions: faith vs doubt, suffering, free will, moral responsibility, redemption. He is often considered part of Christian existential tradition. :contentReference[oaicite:1]{index=1}',
+  keyIdeas: [
+    'free will and moral responsibility',
+    'faith vs atheism / doubt',
+    'suffering as path to redemption',
+    'the problem of evil',
+    'psychology of guilt and conscience',
+    'existence of evil for human freedom',
+    'human dignity via suffering',
+    'community vs isolation'
+  ],
+  influences: ['Russian Orthodoxy', 'Christian theology', 'Philosophical idealism', 'Romanticism'],
+  influenced: ['existentialism', 'modern theology', 'psychology of literature'],
+  schools: ['Christian existentialism', 'literary philosophy'],
+  challenges: ['nihilism', 'rationalism', 'secularism'],
+  quotes: [
+    'If God does not exist, everything is permitted',
+    'The darker the night, the more glorious the sunrise',
+    'Pain and suffering are always inevitable for a large intelligence and a deep heart'  // paraphrase
+  ],
+  externalLinks: [
+    { title: 'Stanford University Press: Dostoevsky’s Religion', url: 'https://sup.org/books/literary-studies-and-literature/dostoevskys-religion', type: 'book' },
+    { title: 'Philosophy Notebook: Dostoevsky – The Problem of Evil', url: 'https://www.philosophynotebook.com/intro/dostoevsky.shtml', type: 'article' },
+    { title: 'God and the Good Life: The Grand Inquisitor – Free Will vs Authority', url: 'https://godandgoodlife.nd.edu/resource/fyodor-dostoevskys-the-grand-inquisitor-free-will-vs-authority/', type: 'article' }
+  ]
+},
+  {
     id: 'mill',
     name: 'John Stuart Mill',
     years: '1806-1873',

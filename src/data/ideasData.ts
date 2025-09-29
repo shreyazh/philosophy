@@ -910,6 +910,38 @@ export const ideasData: PhilosophicalIdea[] = [
     ],
   },
   {
+  id: "absurdity",
+  name: "Absurdity",
+  description:
+    "The existential condition that arises from the conflict between human beings' search for meaning and the apparent indifference or silence of the universe. Absurdity highlights the tension between rational desire for order and the irrationality of existence.",
+  originSchool: "existentialism",
+  keyThinkers: ["albert-camus", "søren-kierkegaard"],
+  relatedIdeas: ["meaninglessness", "rebellion", "existential-freedom", "nihilism"],
+  challenges: ["religious-theodicy", "rationalism", "scientific-positivism"],
+  modernApplications: [
+    "Literature and theater of the absurd",
+    "Philosophy of meaning and value",
+    "Clinical psychology and resilience studies"
+  ],
+  influences: ["existential-theology", "phenomenology", "dostoevskian-existentialism"],
+  developments: ["absurdist-literature", "existential-humanism"],
+  legacy: "Framed 20th-century debates on meaning, influenced literature, theater, and modern philosophy of life",
+  keyTexts: ["The Myth of Sisyphus (Camus)", "Fear and Trembling (Kierkegaard)"],
+  externalLinks: [
+    {
+      title: "Stanford Encyclopedia of Philosophy: The Absurd",
+      url: "https://plato.stanford.edu/entries/absurd/",
+      type: "encyclopedia"
+    },
+    {
+      title: "Internet Encyclopedia of Philosophy: Albert Camus",
+      url: "https://iep.utm.edu/camus/",
+      type: "encyclopedia"
+    }
+  ]
+},
+
+  {
     id: "camus-absurdism",
     name: "Absurdism",
     description:
@@ -3615,6 +3647,135 @@ export const ideasData: PhilosophicalIdea[] = [
       },
     ],
   },
+  {
+  id: "will-to-power",
+  name: "Will to Power",
+  description:
+    "Nietzsche's concept that the fundamental driving force in humans is not survival or pleasure but a striving to exert strength, overcome obstacles, and impose form upon the world. It underlies creativity, ambition, and self-overcoming.",
+  originSchool: "existentialism",
+  keyThinkers: ["friedrich-nietzsche"],
+  relatedIdeas: ["eternal-recurrence", "übermensch", "nihilism"],
+  challenges: ["darwinian-survivalism", "utilitarianism", "determinism"],
+  modernApplications: [
+    "Political theory and critiques of power",
+    "Psychoanalysis and depth psychology",
+    "Literary modernism and post-structuralism"
+  ],
+  influences: ["schopenhauerian-voluntarism", "greek-tragedy"],
+  developments: ["existentialist-ethics", "postmodern-theory"],
+  legacy: "Became central to Nietzsche’s philosophy and influenced existentialism, psychology, political thought, and postmodern critiques of power",
+  keyTexts: ["Thus Spoke Zarathustra", "Beyond Good and Evil", "The Will to Power (posthumous notes)"],
+  externalLinks: [
+    {
+      title: "Stanford Encyclopedia of Philosophy: Nietzsche",
+      url: "https://plato.stanford.edu/entries/nietzsche/",
+      type: "encyclopedia"
+    },
+    {
+      title: "Internet Encyclopedia of Philosophy: Nietzsche’s Will to Power",
+      url: "https://iep.utm.edu/nietzsche/#H6",
+      type: "encyclopedia"
+    },
+    {
+      title: "Nietzsche Source – The Will to Power (Digitized Texts)",
+      url: "http://www.nietzschesource.org/",
+      type: "book"
+    }
+  ]
+},
+  {
+  id: "anxiety",
+  name: "Anxiety",
+  description:
+    "A central existential condition reflecting human awareness of freedom, responsibility, and the uncertainty of existence. Distinguished from fear, anxiety arises not from concrete threats but from confronting the possibilities of being.",
+  originSchool: "existentialism",
+  keyThinkers: ["søren-kierkegaard", "martin-heidegger", "jean-paul-sartre"],
+  relatedIdeas: ["angst", "freedom", "authenticity", "existential-dread"],
+  challenges: ["determinism", "scientific-naturalism", "stoicism"],
+  modernApplications: [
+    "Existential psychotherapy",
+    "Philosophy of mental health",
+    "Literature and art exploring alienation"
+  ],
+  influences: ["Christian theology", "phenomenology"],
+  developments: ["existential-psychology", "humanistic-psychology"],
+  legacy: "Framed modern understandings of subjectivity, freedom, and mental health",
+  keyTexts: ["The Concept of Anxiety (Kierkegaard)", "Being and Time (Heidegger)"],
+  externalLinks: [
+    {
+      title: "Stanford Encyclopedia of Philosophy: Existentialism",
+      url: "https://plato.stanford.edu/entries/existentialism/",
+      type: "encyclopedia"
+    },
+    {
+      title: "Internet Encyclopedia of Philosophy: Kierkegaard",
+      url: "https://iep.utm.edu/kierkegaard/",
+      type: "encyclopedia"
+    }
+  ]
+},
+{
+  id: "subjective-truth",
+  name: "Subjective Truth",
+  description:
+    "The idea that truth is not only an objective correspondence with reality but also involves personal appropriation, commitment, and lived experience. It emphasizes how truth becomes meaningful when internalized by the individual.",
+  originSchool: "existentialism",
+  keyThinkers: ["søren-kierkegaard"],
+  relatedIdeas: ["faith", "authenticity", "individualism"],
+  challenges: ["objectivism", "scientific-realism", "relativism"],
+  modernApplications: [
+    "Religious philosophy",
+    "Personal identity theory",
+    "Narrative ethics"
+  ],
+  influences: ["Christian existentialism"],
+  developments: ["existential-hermeneutics", "postmodern-perspectivism"],
+  legacy: "Reframed the nature of truth as a lived and personal reality rather than detached abstraction",
+  keyTexts: ["Concluding Unscientific Postscript (Kierkegaard)"],
+  externalLinks: [
+    {
+      title: "Stanford Encyclopedia of Philosophy: Kierkegaard",
+      url: "https://plato.stanford.edu/entries/kierkegaard/",
+      type: "encyclopedia"
+    },
+    {
+      title: "Internet Encyclopedia of Philosophy: Truth",
+      url: "https://iep.utm.edu/truth/",
+      type: "encyclopedia"
+    }
+  ]
+},
+{
+  id: "underground-consciousness",
+  name: "Underground Consciousness",
+  description:
+    "A state of heightened self-awareness marked by alienation, resentment, and paralysis in action. Popularized by Dostoevsky, it depicts individuals caught between rational self-interest and irrational defiance.",
+  originSchool: "existentialism",
+  keyThinkers: ["fyodor-dostoevsky"],
+  relatedIdeas: ["alienation", "nihilism", "freedom", "resentment"],
+  challenges: ["utilitarianism", "rational-egoism", "enlightenment-optimism"],
+  modernApplications: [
+    "Critique of rational choice theory",
+    "Literary existentialism",
+    "Psychological studies of alienation"
+  ],
+  influences: ["Russian literature", "Christian theology"],
+  developments: ["existential-psychology", "absurdism"],
+  legacy: "Shaped existential critiques of rationalism and influenced 20th-century philosophy and literature",
+  keyTexts: ["Notes from Underground (Dostoevsky)"],
+  externalLinks: [
+    {
+      title: "Stanford Encyclopedia of Philosophy: Dostoevsky",
+      url: "https://plato.stanford.edu/entries/dostoevsky/",
+      type: "encyclopedia"
+    },
+    {
+      title: "Internet Encyclopedia of Philosophy: Existentialism",
+      url: "https://iep.utm.edu/existent/",
+      type: "encyclopedia"
+    }
+  ]
+ },
   {
     id: "idealism",
     name: "Idealism",

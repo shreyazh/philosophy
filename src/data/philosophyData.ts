@@ -200,13 +200,13 @@ export const philosophyData: PhilosophicalPeriod[] = [
         keyTexts: ["Dhammapada", "Mūlamadhyamakakārikā", "Abhidharmakosha"],
         externalLinks: [
           {
-            title: "Buddhist Philosophy – Stanford Encyclopedia of Philosophy",
-            url: "https://plato.stanford.edu/entries/buddhist-philosophy/",
+            title: "Buddhist Philosophy – Wikipedia",
+            url: "https://en.wikipedia.org/wiki/Buddhist_philosophy",
             type: "encyclopedia",
           },
           {
-            title: "Buddhism – Internet Encyclopedia of Philosophy",
-            url: "https://iep.utm.edu/buddhism/",
+            title: "Buddhist Philosophy - Philosophies of Life",
+            url: "https://philosophiesoflife.org/buddhist-philosophy/",
             type: "article",
           },
           {
@@ -222,6 +222,7 @@ export const philosophyData: PhilosophicalPeriod[] = [
         period: "Ancient",
         years: "6th century BCE - 6th century CE",
         region: "Asia",
+        relatedSchools: ['buddhism','vedanta','samkhya'],
         description:
           "Diverse philosophical traditions from India, China, and surrounding regions",
         detailedDescription:
@@ -252,7 +253,6 @@ export const philosophyData: PhilosophicalPeriod[] = [
         legacy:
           "Continues to influence billions and modern mindfulness practices",
         color: "#F59E0B",
-        relatedSchools: [],
         keyTexts: ["Dhammapada", "Analects", "Tao Te Ching", "Lotus Sutra"],
         externalLinks: [
           {
@@ -1654,8 +1654,8 @@ export const philosophyData: PhilosophicalPeriod[] = [
           },
           {
             title:
-              "Kierkegaard and Hegel – Internet Encyclopedia of Philosophy",
-            url: "https://iep.utm.edu/kierkegaard-hegel/",
+              "Kierkegaard's Relation to Hegel Reconsidered – Notre Dame Philosophical Review",
+            url: "https://ndpr.nd.edu/reviews/kierkegaard-s-relation-to-hegel-reconsidered/",
             type: "article",
           },
           {
@@ -1760,8 +1760,8 @@ export const philosophyData: PhilosophicalPeriod[] = [
           },
           {
             title:
-              "Historical Materialism – Internet Encyclopedia of Philosophy",
-            url: "https://iep.utm.edu/hist-mat/",
+              "Historical Materialism – Wikipedia",
+            url: "https://en.wikipedia.org/wiki/Historical_materialism",
             type: "article",
           },
           {
