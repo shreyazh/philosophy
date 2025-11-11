@@ -970,7 +970,7 @@ export const ideasData: PhilosophicalIdea[] = [
     ],
   },
   {
-    id: "simone-de-beauvoir-feminism",
+    id: "existentialist-feminism",
     name: "Existentialist Feminism",
     description:
       'De Beauvoir’s view that women are historically constructed as "Other" and must assert freedom and equality.',
