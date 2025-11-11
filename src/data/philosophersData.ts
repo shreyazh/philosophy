@@ -739,7 +739,7 @@ export const philosophersData: Philosopher[] = [
     externalLinks: [
       { title: 'Internet Encyclopedia: Simone de Beauvoir', url: 'https://iep.utm.edu/beauvoir/', type: 'encyclopedia' },
       { title: 'Britannica: Simone de Beauvoir', url: 'https://www.britannica.com/biography/Simone-de-Beauvoir', type: 'article' },
-      { title: 'The Second Sex – Internet Archive', url: 'https://archive.org/details/second-sex-de-beauvoir', type: 'book' }
+      { title: 'The Second Sex – Internet Archive', url: 'https://newuniversityinexileconsortium.org/wp-content/uploads/2021/07/Simone-de-Beauvoir-The-Second-Sex-Jonathan-Cape-1956.pdf', type: 'book' }
     ]
   },
   {
