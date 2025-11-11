@@ -703,7 +703,7 @@ export const philosophersData: Philosopher[] = [
     biography: 'Sartre was a French existentialist philosopher, playwright, and novelist. He emphasized human freedom, bad faith, responsibility, and the absurd.',
     keyIdeas: ['existentialism', 'bad-faith', 'radical-freedom'],
     influences: ['heidegger', 'husserl'],
-    influenced: ['foucault', 'camus', 'de-beauvoir', 'fanon'],
+    influenced: ['foucault', 'camus', 'simone-de-beauvoir', 'fanon'],
     schools: ['existentialism'],
     challenges: ['determinism'],
     quotes: [
