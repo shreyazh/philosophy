@@ -1585,7 +1585,7 @@ export const philosophyData: PhilosophicalPeriod[] = [
         challenged: ["Absolutism", "Feudalism"],
         developments: ["Democratic theory", "Human rights"],
         legacy: "Foundation of modern democracies",
-        color: "#0891B2",
+        color: "#BE123C",
         relatedSchools: ["enlightenment", "modern-indian-philosophy"],
         keyTexts: ["Two Treatises of Government", "On Liberty"],
         externalLinks: [
@@ -1745,7 +1745,7 @@ export const philosophyData: PhilosophicalPeriod[] = [
           "Revolutionary praxis",
         ],
         legacy: "Shaped modern political movements and economic theory",
-        color: "#BE123C",
+        color: "#0891B2",
         relatedSchools: ["german-idealism"],
         keyTexts: [
           "Das Kapital",
